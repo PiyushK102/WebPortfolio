@@ -1,0 +1,42 @@
+
+
+.videos{
+    margin-top: 21vh;
+    background-color: rgba(103, 209, 254, 0.799);
+    border-radius: 30px;
+}
+
+.videolist{
+    display:flex;
+    margin-top:5vh;
+   
+    
+}
+
+.video1,.video2,.video3{
+    display: flex;
+    width: 33vw;
+    text-align: center;
+    background-color:#77b9ff;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px grey;
+}
+.video1 img,.video2 img,.video3 img{
+    display: flex;
+    width: 25vw;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+}
+.videothumb{
+    
+    border-radius: 30px;
+}
+.videothumb button{
+    border-radius: 8%;
+    height: 40px;
+    background-color: rgba(36, 248, 255, 0.652);
+}

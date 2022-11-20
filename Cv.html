@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="certificate.css">
+    <link rel="ProjectPage" href="project.html" > 
+    <link rel="ProjectPage" href="VideoZone.html" >  
+    <link rel="CertificatePage" href="certificate.html" >    
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    
+    <title>HomePage</title>
+</head>
+<body >
+<div class="navigation">
+  <div class="navButtons">
+    <div><a href="Cv.html" title="Click here to Go to HomePage" ><button style="border-radius: 5px 5px 5px 5px;background-color: rgb(255, 255, 255); color: black;border: 1.3mm solid blue;" ><img src="images/Home.ico" alt="Home" ><br><strong> Home</strong></button></a></div>
+
+    <div><a href="project.html"  title="Click here to see Projects"><button  style="border-radius: 5px 5px 5px 5px;" ><img src="images/project.ico" alt="Project" target="Intro" ><br><strong> Projects</strong></button></a></div>  
+
+    <div><a href="certificate.html" title="Click here to view Certificates"><button style="border-radius: 5px 5px 5px 5px;"><img src="images/certificate.ico" alt="Certificate" ><br><strong> Certificates</strong></button></a></div>
+
+    <div class="Social"><a href="Cv.html#footer"><button style="border-radius: 5px 5px 5px 5px;"><img src="images/SocialMedia.png" alt="Social Media and Contact" ><br><strong> Social Media & Contact</strong></button></a></div>
+
+    <div><a href="https://drive.google.com/uc?id=1yVJfIEE4we3nAodHgtHNhnbq1MQpaOKT" download="Piyush's Resume (1).pdf" title="Click here to View Resume" target="_blank"><button style="border-radius: 5px 5px 5px 5px;" ><img src="images/resumeIcon.ico"alt="Resume"><br><b> View/Download Resume</b></button></a></div>
+
+    <div><a href="VideoZoneHome.html"  title="Click here to go to VideoZone"><button style="border-radius: 5px 5px 5px 5px;" ><img src="images/Vz.jpg"alt="Video Zone"><br><b> Video Zone </b></button></a></div>
+
+    <div><a href="MusicD.html"  title="Click here to go to MusicDome"><button style="border-radius: 5px 5px 5px 5px;"><img src="images/musicDome.jpg"alt="Music Dome"><br><b> Music Dome </b></button></a></div>
+  </div>
+    
+        <div class="clock">
+            <script>setInterval(() => {
+                d = new Date(); //object of date()
+                hr = d.getHours();
+                min = d.getMinutes();
+                sec = d.getSeconds();
+                hr_rotation = 30 * hr + min / 2; //converting current time
+                min_rotation = 6 * min;
+                sec_rotation = 6 * sec;
+                
+                hour.style.transform = `rotate(${hr_rotation}deg)`;
+                minute.style.transform = `rotate(${min_rotation}deg)`;
+                second.style.transform = `rotate(${sec_rotation}deg)`;
+                
+            },1000);</script>
+            <div id="hour"></div>
+            <div id="minute"></div>
+            <div id="second"></div>
+        </div>
+    
+</div>  
+
+<br>
+<div class="HomeBody" id="homebody">
+    
+    
+    <div class="leftSide"> 
+        <img src="images/PageIcon.png" title="Hi! Piyush Kachhwal This Side : )" alt="Image of Piyush" >
+    </div> 
+
+    <div class="Intro">
+        <h2><u>''' About '''</u></h2>
+        
+            <p>
+                
+                ⇒A Tech Enthusiast || Aspiring Electronic and Communication Engineer || Interested in Internet of Things || Robotics and Automation || Embedded Systems 
+                ⇐<br> 
+            </p>
+        </div> 
+</div>
+<div class="Team">
+    <div class="header">
+        <br>
+        <h1>Meet Team</h1>
+        <h1 Style="background-color:rgba(203, 231, 255, 0.582);"><em style="color:crimson"><u>Pandavas</u></em> </h1>
+        <br><img src="images/pandavsLogo.png">
+    </div>
+    <br>
+    <div class="teamMemb">
+    <div class="column">
+        <div class="card">
+          <img src="images/TeamImage/Yugvansh.PNG" alt="Yugvansh" title="Yugvansh">
+          <div class="container">
+            <h2>Yugvansh</h2>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>example@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="images/TeamImage/Gayatri.PNG" alt="Gayatri" title="Gayatri">
+          <div class="container">
+            <h2>Gayatri</h2>            
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>example@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="images/TeamImage/Shrey.PNG" alt="Shreya" title="Shrey">
+          <div class="container">
+            <h2>Banya</h2>            
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>example@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<br>
+
+<div class="footer" id="footer">
+    <h4 style="text-align:center;vertical-align: bottom;">
+
+    ⇒                
+        Follow on :<a href="https://www.linkedin.com/in/piyushkachhwal" title="Click here to see LinkedIn Profile"><button style="background-color: rgba(25, 122, 219, 0.74);color: aliceblue;"  ><img src="images/LinkedInLogo.ico" alt="LinkedIn" ><b> LinkedIn</b></button></a> 
+        
+    <a href="https://github.com/PiyushK102" title="Click here to see GitHub Profile"><button style="background-color: rgba(0, 0, 0); color: aliceblue;"><img src="images/GithubLogo.ico" alt="GitHub" > <b> Github</b></button></a>
+
+    <a href="https://www.instagram.com/piyush__kachhwal/" title="Click here to see Instagram Profile"><button style="background-color: rgb(255, 255, 255); color: rgb(216, 0, 191);"><img src="images/InstaGramLogo.ico" alt="Instagram" > <b> Instagram</b></button></a>
+    
+    &emsp; &emsp;⇒ For Enquiry :<a href="https://wa.me/message/ISKWSUTBCNWCO1"  title="Click here to message on WhatsApp" ><button style="background-color: rgba(0, 206, 76, 0.705);color: aliceblue;" ><img src="images/whatsappVector.ico"  alt="WhatsApp" > <b> WhatsApp</b></button></a>
+        
+    <a href="mailto:piyushkachhwal1812@gmail.com"  title="Click here to Mail"><button style="background-color: rgba(255, 12, 4, 0.77);color: white;"><img src="images/email.ico" alt="Email" > <b>Email</b></button></a>
+    &emsp; &emsp;
+    ⇒  Want me to Contact :<a href="https://forms.gle/TTheS4d9Ts5eFzrR9"><Button  style="background-color:deepskyblue;"><b> Fill Form</b></Button></a>
+    
+    </h4>
+    <div class="toTop"><a style="float: right;" href="#homebody"><img src="images/toparrow.webp"></a></div>
+</div>
+
+
+</body>
+</html>
