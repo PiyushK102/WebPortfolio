@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    background-image:url(images/musicDbg.jfif);
+    
+    
+}
+hr{
+    height:0.2em;
+    background-color: rgb(51, 51, 51);
+    border-radius: 20px;
+}
+.VZ{
+    margin:0.5vw;
+    width: 99vw;
+    
+}
+.topstrip{
+    margin:0.5vw;
+    display:flex; 
+    
+}
+.ham{
+    margin:0.5vw;
+    display: relative;
+    text-align: center;
+    width:3em;
+    height:4em;
+    padding: 0.3em;
+    transition: height 20ms widht 20ms;
+    background-color: rgb(62, 245, 255);
+    border-radius:2em ;
+    
+}
+
+.navigation {
+    display: none;
+    position: absolute;
+    background-color: rgb(107, 247, 247);
+    min-width: 160px;
+    padding: 0.3em;
+    text-align:center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 0;
+    border-radius: 20px 20px 20px 20px;
+}
+.navigation img,.ham img{
+    height:1.5em;
+    width:1.5em;
+    vertical-align: middle;
+    border-radius: 50%; 
+    border:2px solid black;
+    transition: height 20ms widht 20ms;
+}
+
+.VZ img{
+    height:1.5em;
+    width:1.5em;
+    vertical-align: middle;
+    border-radius: 50%; 
+    border:2px solid black;
+    transition: height 20ms widht 20ms;
+}
+.ham:hover+.navigation{
+    display:inline-block;
+    
+    
+    transition: height 20ms widht 20ms;
+    
+}
+.navigation:hover{
+    display: block;
+    background-color: rgba(99, 182, 255, 0.681);
+    padding: 0.3em;
+    text-align:center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+
+}
+button{
+    word-wrap: break-word;
+    width:8.9em;
+    height:5em;
+    padding: 0.07em;
+    border-radius: 5px 20px 5px 20px;
+    font-family: 'DynaPuff', cursive;
+    font-size:12px;
+    border-color: rgb(26, 100, 248);
+    background-color: rgb(255, 255, 255);
+    transition: width 1ms, height 1ms, background-color 1ms,border-color 1ms ;
+    color: blue;
+}
+button:hover{
+    background-color: rgb(62, 245, 255);
+    border-color: rgb(0, 34, 255);
+    border-width: 0.8mm;
+    width:8.9em;
+    height:5em;
+    padding: 0.07em;
+    color: black;
+    
+}
+
+button:active,.equlizer button:active{
+    transform: translateY(2px);
+}
+.navigation a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.equlizer{
+    width:36.1vw;
+    height:78vh;
+    padding-top:1.5vh;
+    padding-left: 1.5vw;
+    background-color: rgba(53, 154, 255, 0.811);
+    border-radius:1em ; 
+    margin-left: 2vw;
+}
+.MusicList{
+    width: 55vw;
+    height:80vh;
+    background-color: rgba(0, 191, 255, 0.942);
+    margin-left: 2vw;
+    border-radius: 1em;
+    overflow: hidden;
+}
+.equlizer img{
+    border-radius: 1em;
+    margin-top: 0.8em;
+    width:34.1vw;
+    height:60vh;
+    opacity: 90%;
+}
+.equlizer button{
+    width:2vw;
+    height:2vw;
+    padding: 0.1em;
+    border-radius:50%;
+    text-align: center;
+    font-size:12px;
+    border-color: rgb(20, 251, 101);
+    background-color: rgb(201, 243, 255);
+    transition: width 1ms, height 1ms, background-color 1ms,border-color 1ms ;
+}
+.equlizer button:hover{
+    background-color: rgb(235, 255, 157);
+    border-color: rgb(0, 0, 0);
+}
+
+.progressB{
+    width: 34.1vw;
+    height: 2vh;
+    
+   
+}
+li{
+    list-style-type: none;
+    margin-left: 1em;
+}
+.Social{
+    display: relative;
+   
+}
+
+.socialButtons {
+    display: none;
+    position: absolute;
+    background-color: rgba(42, 188, 255, 0.73);
+    padding: 0.3em;
+    text-align:center;
+    border: 2px black solid;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px 20px 20px 20px;
+}
+.socialButtons img{
+    border-width: 1px;
+    border-color: aliceblue;
+}
+.Social:hover .socialButtons{
+    display:inline-flex;
+    
+    transition: height 20ms width 20ms;
+    
+}
+.socialButtons:hover{
+    display: inline-flex;
+    position:absolute;
+    background-color: rgba(88, 177, 255, 0.842);
+    padding: 0.3em;
+    text-align:center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+}

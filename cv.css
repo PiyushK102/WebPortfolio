@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://colorhunt.co/palette/b1b2ffaac4ffd2daffeef1ff');
+
+body{
+    background-color: #F2F4FF;
+    max-width: 100%;
+    max-height: 100%;
+    text-justify: auto; 
+}
+
+a{
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+.navigation{
+    display: flex;   
+    position: fixed;
+    justify-content: center;
+    width:fit-content;
+    height:fit-content;
+    padding:10px;
+    
+    font-family:'Times New Roman', Times, serif;
+    
+    border-radius: 20px;  
+    opacity: 90%;
+    font-weight: 800; 
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px; 
+    scroll-behavior: smooth;
+    transition: width 50ms, height 50ms; 
+}
+
+
+
+
+
+.navigation img{
+    border-radius: 50%; 
+    vertical-align: top;
+    border:2px solid;
+    border-color: rgb(92, 92, 92);
+    vertical-align: middle;
+    border-radius: 50%;
+    width:2.5vw;
+    height:2.5vw;
+   
+      
+}
+.leftSide{
+    margin:10px;
+    box-shadow: 2px 2px 5px rgb(53, 53, 53);
+    width:11vw;
+    height:27vh;
+    vertical-align:middle; 
+    background-color: rgb(229, 255, 0);
+    font-family:'Times New Roman', Times, serif; 
+    border-radius: 50%;
+    
+         
+}
+.leftSide img{
+    border-radius: 50%;
+    width:11vw;
+    height:27vh;
+    vertical-align: auto;
+    transition: widht 10ms,height10ms; 
+     
+}
+.leftSide img:hover{
+    width:20vw;
+    height:45vh;
+    box-shadow: 2px 2px 5px rgb(1, 86, 213);
+    position: absolute;
+       
+}
+
+ .Intro img,.footer img,.socialButtons img{
+    vertical-align: middle;
+    border-radius: 50%;
+    width:2em;
+    height:2em;
+
+ }
+ .navButtons{
+    display:flex;
+    margin-top: 0.5em;
+    background-color: #A9D3FF;
+    padding: 0.5em;
+    border-radius: 1em;
+ }
+ .navigation button{
+    
+    border-radius: 5px 5px 5px 5px;
+    vertical-align: middle;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    padding: 0.5em;
+    margin-left: 1px;
+    font-family: 'DynaPuff', cursive;
+    font-size:12px;
+    width:auto;
+    height:auto;
+    box-shadow: 0px 0px 2px 0px rgb(90, 90, 90);
+    color:rgb(14, 0, 166);
+    text-decoration: blue;
+    border:solid 0.5mm blue;
+    background-color: #3195ff;
+    transition: width 1ms, height 1ms, background-color 1ms,border-color 1ms ;
+    
+}
+.Intro button,.footer button,.Team button,.socialButtons button{
+    border-radius: 80px;
+    vertical-align: middle;
+    margin: 5px;
+    padding:0.3em;
+    font-family: 'DynaPuff', cursive;
+    font-size:10px;
+    width:auto;
+    height:35px;
+    box-shadow: 4px 4px 5px rgb(53, 53, 53);
+    color:rgb(14, 0, 166);
+    background-color: rgba(226, 226, 226, 0.622);
+    border-color: rgb(0, 51, 145);
+    transition: width 1ms, height 1ms, background-color 1ms,border-color 1ms ;
+}
+.navigation button:hover{
+    width: auto;
+    height:auto ;
+    padding: 0.5em;
+    color:black;
+    box-shadow: 0px 4px 0px rgb(194, 194, 194);
+    background-color: rgb(255, 255, 255);
+    font-family: 'DynaPuff', cursive;
+    font-size:16px;
+    border-color: rgb(43, 0, 199);
+    cursor: pointer;
+}
+.navigation button:active{
+    transform: translateY(2px);
+    border-bottom:rgb(43, 0, 199) ;
+    
+    border-color: white;
+}
+.Social{
+    display: relative;
+    width:fit-content;
+    height:fit-content;
+    transition: height 20ms width 20ms;
+    
+}
+
+.socialButtons {
+    display: none;
+    position: absolute;
+    border: #000000 2px solid;
+    background-color: rgba(240, 255, 255, 0.841);
+    padding: 0.3em;
+    text-align:center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px 20px 20px 20px;
+}
+.Social:hover .socialButtons{
+    display:block;
+    
+    transition: height 20ms width 20ms;
+    
+}
+.socialButtons:hover{
+    display: inline-block;
+    position:absolute;
+    background-color: rgba(240, 248, 255, 0.842);
+    padding: 0.2em;
+    text-align:center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+}
+
+.footer button:hover,.Team button:hover{
+    width: auto;
+    height:4em ;
+    padding: 5px;
+    border-radius: 80px;
+    color:black;
+    box-shadow: 4px 4px 5px rgb(255, 37, 45);
+    
+    font-family: 'DynaPuff', cursive;
+    font-size:12px;
+   
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.Intro button:active,.footer button:active,.Team button:active{
+    transform: translateY(2px);
+}
+.HomeBody{
+    display:flex;
+    margin-top:10em;
+    border-radius: 80px;
+    
+}
+.Intro{
+    
+    display: flexbox;
+    margin:10px;
+    padding: 10px;    
+    width:auto;
+    height:auto;
+    text-shadow: 1px 1px rgb(51, 0, 255);
+    text-align: center; 
+    background-color:#acc7fe;
+    font-family: 'DynaPuff', cursive;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 80px; 
+    box-shadow: 3px 3px 5px grey; 
+}
+.footer{
+    
+    display: flexbox;
+    margin:10px;
+    padding: 10px;    
+    width:auto;
+    height:auto;
+    text-shadow: 1px 1px rgb(51, 0, 255);
+    text-align: center; 
+    background-color:#A9D3FF;
+    font-family: 'DynaPuff', cursive;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 80px; 
+    box-shadow: 3px 3px 5px grey;
+}
+.header{
+    background-image: radial-gradient(rgba(255, 255, 0, 0.866),rgba(255, 166, 0, 0.91),rgba(255, 0, 0, 0.811));
+    border-radius: 80px;
+    box-shadow: none;
+    height:auto;
+    
+}
+.header img{
+    
+    width:70vw;
+    height:25vh;
+}
+::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-track
+{
+    border-radius: 7px;
+    background: rgb(0, 0, 0);
+    
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+
+}
+.clock{
+    background:url(images/clock.jpg) no-repeat;
+    position: fixed;
+    -webkit-user-drag: element;
+    margin-top: auto;
+    margin-left:80em ;
+    margin-bottom: auto;
+    opacity: 100%;
+    align-content: flex-end;
+    /*to make the height and width responsive*/
+    height:100px;
+    width:100px;
+    float: right;
+    border-radius: 50%;
+    background-size: 100%;
+    border:5px solid #feb0ac;
+    
+    /*setting our background image*/ 
+    box-shadow:3px 3px 5px #000000; 
+}
+
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+  
+#hour {
+    width: 2%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+    background: rgb(255, 51, 51);
+}
+  
+#minute {
+    width: 1.8%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+    background: rgb(0, 26, 255);
+}
+  
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+    background: rgb(0, 0, 0);
+    
+}
+
+h1{
+    
+     font-family:sans-serif;
+     color: rgb(0, 0, 0); 
+     text-align:center;
+}
+.toTop{
+    float: right;
+    vertical-align: bottom;
+
+}
+.Team{
+    display:flexbox;
+    margin:2em;
+    border-radius: 2vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding:0.5em;
+    text-align: center;
+    background-color: rgba(251, 221, 177, 0.434);
+}
+.card img{
+    
+    border-radius: 30px;
+    width:100%;
+    height:100%;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.693);
+
+}
+.teamMemb{
+    display:flexbox;
+    
+}
+.column {
+
+    display: flex;
+    width: 98%;
+    border-radius: 4vw;
+    margin-bottom: 16px;
+    padding:1%; 
+    background-color: #F2F4FF;
+}
+.column:hover{
+    
+}
+.card {
+    padding:2em;
+    width: 30%;
+    vertical-align: middle;
+    border-radius: 80px;
+    border: 2px solid blue;
+    border-radius:  4vw 0 0 4vw ;
+    text-align: center;
+}
+.container {
+    padding:16px;
+    width: 70%;
+    border: 2px solid blue;
+    border-radius: 0px 4vw 4vw 0;
+    word-wrap: break-word;
+}
+.ham{
+    display: none;
+}
+.ham{
+    margin:0.5vw;
+    text-align: center;
+    width:3em;
+    height:4em;
+    padding: 0.3em;
+    font-size: 12px;
+    transition: height 20ms widht 20ms;
+    background-color: rgb(122, 193, 255);
+    border-radius:2em ;  
+}
+
+
+
+@media screen and (max-width:770px) {
+    .clock{
+        display: none;
+    }
+    .ham{
+        display: block;
+        border-radius: 50% 50% 10px 10px;
+    }
+    .navButtons{
+        display: none;
+        flex-direction: column;
+        width: 20vw;
+        height: fit-content;
+        transition: display 2s;
+        margin-left: -5.5vw;
+        
+    }
+    .ham:hover + .navButtons{
+        display:inline-block;
+        transition: height 20ms widht 20ms;
+    }
+
+    .navButtons:hover{
+        display: block;
+        background-color: rgba(240, 248, 255, 0.842);
+        
+        text-align:center;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 5;
+    }
+    .navButtons button{
+        height:10vw;
+        width: 100%;
+        font-size: 10px;
+        word-wrap: break-word;
+        
+        
+    }
+    .navButtons button:hover{
+        
+        width: 100%;
+        height:10vw;
+        font-size: 12px;
+        word-wrap: break-word;
+    }
+    .HomeBody{
+        margin-top: 2em;
+    }
+    .project{
+        margin-top: 0.4em;
+    }
+    .socialButtons{
+        width: 15vw;
+        font-size: 14px;
+        padding: 0.5em;
+        margin-left: -1vw;
+    }
+    .socialButtons:hover{
+        width: 15vw;
+        font-size: 14px;
+        padding: 0.5em;
+        margin-left: -1vw;
+    }
+    .socialButtons button{
+        width:100%;
+        height: 6vw;
+        margin: 0.3em;
+        box-shadow: none;
+        text-align: center;
+        
+    }
+    
+}
+@media screen and (max-width:980px) {
+    .clock{
+        display:none;
+    }
+    .card {
+    
+        width: fit-content;
+        height:fit-content;
+        margin-bottom: 16px;
+        padding: 0 8px; 
+        
+    }
+    .column {
+       
+        width: fit-content;
+        height:fit-content;
+        margin-bottom: 16px;
+        padding: 0 8px; 
+        font-size: 8px;
+        word-wrap: break-word;
+        
+    }
+    .card img{
+    
+        border-radius: 10px;
+        width:80%;
+        height:60%;
+        box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.693);
+    
+    }
+    .teamMemb{
+        display:flexbox;
+        width:fit-content;
+        height: fit-content;
+        
+    }
+
+    
+}
+
+
+
+
