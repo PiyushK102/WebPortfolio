@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://colorhunt.co/palette/b1b2ffaac4ffd2daffeef1ff');
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    background-image: radial-gradient(rgb(40, 40, 40),rgb(66, 66, 66), rgb(100, 100, 100));
+    background-image: url(images/VideoPlay\ BG.png);
+    
+}
+hr{
+    height:0.2em;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+.VZ{
+    margin:0.25% 25% 0.25% 25% ;
+    width:50%;
+}
+.ham{
+    margin:0.5vw;
+    display: relative;
+    text-align: center;
+    width:3em;
+    height:4em;
+    padding: 0.3em;
+    transition: height 20ms widht 20ms;
+    background-color: aliceblue;
+    border-radius:2em ;
+    
+}
+
+.navigation {
+    display: none;
+    position: absolute;
+    background-color: rgba(240, 255, 255, 0.766);
+    min-width: 160px;
+    margin-left: 3vw;
+    padding: 0.1em;
+    text-align:center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px 20px 20px 20px;
+}
+.videoPreview1{
+    text-align: center;
+    width:87vw;
+    height:80vh;
+    vertical-align: middle;
+    margin-left:1.5vw;
+    align-content: center; 
+}
+.topstrip{
+    
+    display:flex; 
+}
+
+
+#screen{
+    
+    border-radius:5px;
+    width:80vw;
+    height:80vh;
+    border:solid 1mm blanchedalmond ;
+    
+}
+.navigation img,.ham img{
+    height:1.5em;
+    width:1.5em;
+    vertical-align: middle;
+    border-radius: 50%; 
+    border:2px solid black;
+    transition: height 20ms widht 20ms;
+}
+.VZ img{
+    height:1.5em;
+    width:1.5em;
+    vertical-align: middle;
+    border-radius: 50%; 
+    border:2px solid black;
+    transition: height 20ms widht 20ms;
+}
+.ham:hover+.navigation{
+    display:inline-block;
+    transition: height 20ms widht 20ms;
+}
+.navigation:hover{
+    display: block;
+    background-color: rgba(240, 255, 255, 0.766);
+    min-width: 160px;
+    margin-left: 3vw;
+    padding: 0.1em;
+    text-align:center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px 20px 20px 20px;
+
+}
+.navButtons button{
+    
+    width:8.9em;
+    height:5em;
+    overflow: hidden; 
+    padding: 0.01em;
+    border-radius: 20px 20px 20px 20px;
+    word-wrap:break-word;
+    font-family: 'DynaPuff', cursive;
+    font-size:12px;
+    border-color: rgb(255, 43, 43);
+    background-color: rgb(255, 255, 255);
+    transition: width 1ms, height 1ms, background-color 1ms,border-color 1ms ;
+    color: blue;
+}
+.navButtons button:hover{
+    background-color: rgb(255, 139, 139);
+    border-color: aqua;
+    border-width: 0.8mm;
+    color: black;
+}
+.navButtons button:active{
+    transform: translateY(2px);
+}
+.navigation a,.Social a{
+    color: black;
+    padding:3px 0 3px 0;
+    text-decoration: none;
+    display: block;
+}
+
+
+li{
+    list-style-type: none;
+    margin-top:0.08vw;
+    padding: 0;
+
+}
+embed{
+    border-radius:5px;
+    width:80vw;
+    height:80vh;
+    border:solid 1mm blanchedalmond ;
+}
+
+.Social{
+    display: relative;
+    text-align: center;  
+}
+
+.socialButtons {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.818);
+    padding:0 0.1em 0.1em 0;
+    text-align:center;
+    border: 2px black solid;
+    border-radius: 20px;
+}
+.Social:hover .socialButtons{
+    display:inline-block;
+    transition: display 20ms;
+}
+.socialButtons:hover{
+    display: inline-flex;
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.818);
+    padding: 0.1em;
+    text-align:center;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+    
+}
+.socialButtons img{
+    border-width: 1px;
+    border-color: aliceblue;
+}
+.socialButtons button{
+    width:5vw;
+    height:3vw;
+    padding: 0.01em;
+    border-radius: 20px 20px 20px 20px;
+    word-wrap:break-word;
+    font-family: 'DynaPuff', cursive;
+    font-size:10px;
+    border-color: rgb(255, 43, 43);
+    background-color: rgb(255, 255, 255); 
+    color: blue;
+}
+.socialButtons button:hover{
+    background-color: rgb(255, 237, 237);
+    border-color: aqua;
+    border-width: 0.8mm;
+    color: black;
+}
+@media screen and (max-width:770px) {
+    body{
+        text-align: center;
+    }
+   
+    .navigation{
+        margin-left: 6vw;
+        padding: 0.05vw;
+    }
+    .navigation:hover{
+        margin-left: 6vw;
+        padding: 0.05vw;
+    }
+    .Social{
+        width:20vw;
+        height:fit-content;
+        margin-left:6vw;
+    }
+    .socialButtons{
+        width:18vw;
+        margin-left:1vw;
+        height:fit-content;
+        
+    }
+    .socialButtons button{
+        width:15vw;
+        height:fit-content;
+        padding: 0.3vw;
+
+    }
+    .socialButtons button:hover{
+        width:15vw;
+        height:fit-content;
+        padding: 0.3vw;
+
+    }
+    .socialButtons:hover{
+        width:18vw;
+        height:fit-content;
+    }
+}
+
+
