@@ -68,6 +68,7 @@
     .socialButtons{
         width:18vw;
         height:fit-content;
+        margin-left:6vw;
     }
     .socialButtons button{
         width:15vw;
