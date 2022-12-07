@@ -72,6 +72,7 @@
     .socialButtons button{
         width:15vw;
         height:fit-content;
+        overflow: hidden;
         padding: 0.3vw;
 
     }
