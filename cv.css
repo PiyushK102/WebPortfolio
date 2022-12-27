@@ -455,7 +455,7 @@ h1{
     
     .card {
         padding:2em;
-        width: 100%;
+        width: 96%;
         height: 100%;
         overflow: hidden;
         vertical-align: middle;
@@ -473,7 +473,7 @@ h1{
     
     .container {
         padding:16px;
-        width: 100%;
+        width: 96%;
         height: 100%;
         vertical-align: middle;
         border: 2px solid blue;
