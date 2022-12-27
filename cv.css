@@ -444,6 +444,7 @@ h1{
     .column {
 
         display: flex;
+        flex-direction:column ;
         width: 98%;
         border-radius: 4vw;
         margin-bottom: 16px;
@@ -481,48 +482,7 @@ h1{
     }
     
 }
-@media screen and (max-width:980px) {
-    .column {
 
-        display: flex;
-        width: 98%;
-        height:fit-content;
-        border-radius: 4vw;
-        margin-bottom: 16px;
-        padding:1%;
-        vertical-align: middle; 
-        background-color: #F2F4FF;
-    }
-    
-    .card {
-        padding:2em;
-        width: 35%;
-        height: 100%;
-        vertical-align: middle;
-        border-radius: 80px;
-        border: 2px solid blue;
-        border-radius:  4vw 0 0 4vw ;
-        text-align: center;
-        overflow: hidden;
-    }
-    .card img{
-    
-        border-radius: 20px;
-        width:100%;
-        height:100%;
-    }
-    .container {
-        padding:16px;
-        width: 65%;
-        height: 100%;
-        vertical-align: middle;
-        border: 2px solid blue;
-        border-radius: 0px 4vw 4vw 0;
-        word-wrap: break-word;
-    }
-
-    
-}
 
 
 
