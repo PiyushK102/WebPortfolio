@@ -92,7 +92,7 @@ li{
     padding: 0.5em;
     margin-left: 1px;
     font-family: 'DynaPuff', cursive;
-    font-size:12px;
+    font-size:10px;
     width:auto;
     height:auto;
     box-shadow: 0px 0px 2px 0px rgb(90, 90, 90);
@@ -100,7 +100,7 @@ li{
     text-decoration: blue;
     border:solid 0.5mm blue;
     background-color: #3195ff;
-    transition: width 1ms, height 1ms, background-color 1ms,border-color 1ms ;
+    transition:  background-color 1ms,border-color 1ms ;
     
 }
 .Intro button,.footer button,.Team button,.socialButtons button{
@@ -119,14 +119,12 @@ li{
     transition: width 1ms, height 1ms, background-color 1ms,border-color 1ms ;
 }
 .navigation button:hover{
-    width: auto;
-    height:auto ;
     padding: 0.5em;
     color:black;
     box-shadow: 0px 4px 0px rgb(194, 194, 194);
     background-color: rgb(255, 255, 255);
     font-family: 'DynaPuff', cursive;
-    font-size:16px;
+    font-size:14px;
     border-color: rgb(43, 0, 199);
     cursor: pointer;
 }
@@ -403,7 +401,7 @@ h1{
         z-index: 5;
     }
     .navButtons button{
-        height:10vw;
+        height:10%;
         width: 100%;
         font-size: 10px;
         word-wrap: break-word;
@@ -413,7 +411,7 @@ h1{
     .navButtons button:hover{
         
         width: 100%;
-        height:10vw;
+        height:10%;
         font-size: 12px;
         word-wrap: break-word;
     }
