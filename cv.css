@@ -192,6 +192,8 @@ li{
     margin-top:10em;
     border-radius: 80px;
     background-color: #A9D3FF;
+    align-items: center;
+    align-content: center;
     
 }
 .Intro{
