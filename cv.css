@@ -366,7 +366,7 @@ h1{
 
 
 #Logo{
-    filter: drop-shadow(10px 10px 10px rgb(255, 0, 8));
+    filter: drop-shadow(10px 10px 10px rgb(51, 255, 0));
 }
 @media screen and (max-width:770px) {
     .clock{
