@@ -353,7 +353,7 @@ h1{
 .ham{
     display: none;
     position: sticky;
-    margin:0.5vw;
+    margin:0.1%;
     text-align: center;
     width:3em;
     height:4em;
@@ -365,7 +365,9 @@ h1{
 }
 
 
-
+#Logo{
+    filter: drop-shadow(10px 10px 10px rgb(255, 0, 8));
+}
 @media screen and (max-width:770px) {
     .clock{
         display: none;
