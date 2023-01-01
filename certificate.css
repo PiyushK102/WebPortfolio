@@ -27,12 +27,11 @@ p{
 .certificate1,.certificate2,.certificate3,.certificate4,.certificate5,.certificate6,.certificate7{
     align-self: center;
     background-color: #c4e0ff;
-    padding: 5px;
-
+    padding: 1.5%;
     text-align: center;
-    margin: 20px;
+    margin: 2%;
     border-radius: 30px;
-    width: 43vw;
+    width: 43%;
     box-shadow: 3px 3px 5px grey;
     word-wrap: break-word;
 }
@@ -93,7 +92,29 @@ embed{
         height:fit-content;
     }
     .certificates{
-        margin-top:5vw ;
+        align-items: center;
+        align-content:center ;
+        text-align: center;
+        width: 80%;
+        margin: 10%;
+        margin-top: 0.5%;
+    }
+  
+    .certificate{
+       
+        align-items: center;
+        align-content:center ;
+        text-align: center;
+        width: 80%;
+        margin: 10%;
+        margin-top: 0.5%;
+    }
+    .certificate1,.certificate2,.certificate3,.certificate4,.certificate5,.certificate6,.certificate7{
+        border-radius: 30px;
+        width: 100%;
+        box-shadow: 3px 3px 5px grey;
+        word-wrap: break-word;
+        align-self: center;
     }
 }
 
