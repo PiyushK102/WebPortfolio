@@ -38,7 +38,7 @@ hr{
     transition: height 20ms widht 20ms;
 }
 .ham{
-    margin:0.5vw;
+    margin:0.1%;
     display: relative;
     text-align: center;
     width:3em;
@@ -55,7 +55,7 @@ hr{
     position: absolute;
     background-color: rgba(249, 252, 255, 0.766);
     min-width: 160px;
-    margin-left: 3vw;
+    margin: 3%;
     padding: 0.1em;
     text-align:center;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -69,8 +69,8 @@ hr{
     display: block;
     background-color: rgba(215, 234, 255, 0.766);
     min-width: 160px;
-    margin-left: 3vw;
-    padding: 0.1em;
+    margin: 3%;
+    padding: 0.1%;
     text-align:center;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 20px 20px 20px 20px;
@@ -78,10 +78,10 @@ hr{
 }
 .navigation button{
     
-    width:8.9em;
-    height:5em;
+    width:70%;
+    height:23%;
     overflow: hidden; 
-    padding: 0.01em;
+    padding: 0.1%;
     border-radius: 20px 20px 20px 20px;
     word-wrap:break-word;
     font-family: 'DynaPuff', cursive;
@@ -112,21 +112,25 @@ button:active,.equlizer button:active{
 }
 
 .equlizer{
-    width:36.1vw;
-    height:78vh;
-    padding-top:1.5vh;
-    padding-left: 1.5vw;
+    width:40.5%;
+    height:100%;
+    padding-top:1.5%;
+    padding-left: 1.5%;
     background-color: rgba(53, 154, 255, 0.811);
     border-radius:1em ; 
-    margin-left: 2vw;
+    margin-left: 5%;
+    align-items: center;
+    align-content: center;
 }
 .MusicList{
-    width: 55vw;
-    height:80vh;
+    width: 40%;
+    height:100%;
     background-color: rgba(0, 191, 255, 0.942);
-    margin-left: 2vw;
+    margin-left: 4%;
     border-radius: 1em;
     overflow: hidden;
+    align-items: center;
+    align-content: center;
 }
 .equlizer img{
     border-radius: 1em;
@@ -213,6 +217,14 @@ li{
     border-width: 0.8mm;
     color: black;
 }
+.musicbox{
+    display: flex;
+    margin-left: 7%;
+}
+iframe{
+    width: 100%;
+    height:100%;
+}
 @media screen and (max-width:770px) {
     body{
         text-align: center;
@@ -230,6 +242,7 @@ li{
         width:20vw;
         height:fit-content;
         margin-left:6vw;
+        display: block;
     }
     .socialButtons{
         width:18vw;
@@ -252,5 +265,9 @@ li{
     .socialButtons:hover{
         width:18vw;
         height:fit-content;
+    }
+    .musicbox{
+        display:flex;
+        flex-direction: column;
     }
 }

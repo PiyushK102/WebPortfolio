@@ -221,7 +221,7 @@ embed{
     .socialButtons button{
         width:15vw;
         height:fit-content;
-        padding: 0.3vw;
+        padding: 0.1vw;
 
     }
     .socialButtons button:hover{

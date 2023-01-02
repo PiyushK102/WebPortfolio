@@ -10,9 +10,8 @@ body{
     text-justify: auto; 
 }
 
-a{
+a,a:hover,button:hover{
     text-decoration: none;
-    font-family:'Times New Roman', Times, serif;
     color: black;
     cursor: pointer;
 }
@@ -78,10 +77,11 @@ li{
  .navButtons{
     display:flex;
     margin-top: 0.5em;
-    background-color: #A9D3FF;
+    background-color: #71c4ff;
     padding: 0.5em;
     border-radius: 1em;
     position:sticky;
+    
  }
  .navigation button{
     
@@ -158,6 +158,10 @@ li{
     transition: height 20ms width 20ms;
     
 }
+.socialButtons button:hover{
+    width: fit-content;
+    height: fit-content;
+}
 .socialButtons:hover{
     display: inline-block;
     position:absolute;
@@ -166,10 +170,6 @@ li{
     text-align:center;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 5;
-}
-.socialButtons button:hover{
-    width:fit-content;
-    height:fit-content;
 }
 
 .footer button:hover,.Team button:hover{
@@ -233,7 +233,7 @@ li{
     box-shadow: 3px 3px 5px grey;
 }
 .header{
-    background-image: radial-gradient(rgba(255, 255, 0, 0.866),rgba(255, 166, 0, 0.91),rgba(255, 0, 0, 0.811));
+    background-image:radial-gradient(orange,rgba(255, 166, 0, 0.788),red);
     border-radius: 80px;
     box-shadow: none;
     height:auto;
@@ -241,8 +241,8 @@ li{
 }
 .header img{
     
-    width:70vw;
-    height:25vh;
+    width:70%;
+    height:25%;
 }
 ::-webkit-scrollbar{
     width: 2px;
@@ -332,6 +332,7 @@ h1{
     align-items: center;
     overflow: hidden;
     background-color: #F2F4FF;
+    
 }
 
 .card {
@@ -342,6 +343,7 @@ h1{
     align-items: center;
     border: 2px solid blue;
     border-radius:  4vw 0 0 4vw ;
+    
 }
 .container {
  
@@ -353,6 +355,7 @@ h1{
     border-radius: 0px 4vw 4vw 0;
     word-wrap: break-word;
     background-color:#26c2ffad;
+    
 }
 .ham{
     display: none;
@@ -367,11 +370,12 @@ h1{
     background-color: rgb(122, 193, 255);
     border-radius:2em ;  
 }
-
-
 #Logo{
-    filter: drop-shadow(10px 10px 10px rgb(51, 255, 0));
+    filter: drop-shadow(10px 10px 10px rgb(255, 251, 0));
 }
+
+
+
 @media screen and (max-width:770px) {
     .clock{
         display: none;

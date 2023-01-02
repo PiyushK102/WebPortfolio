@@ -64,17 +64,17 @@
     .Social{
         width:20vw;
         height:fit-content;
+        margin-left:6vw;
     }
     .socialButtons{
         width:18vw;
         height:fit-content;
-        margin-left:6vw;
     }
     .socialButtons button{
         width:15vw;
         height:fit-content;
-        overflow: hidden;
         padding: 0.3vw;
+        overflow: hidden;
 
     }
     .socialButtons button:hover{
