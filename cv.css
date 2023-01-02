@@ -167,6 +167,10 @@ li{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 5;
 }
+.socialButton button:hover{
+    width:fit-content;
+    height:fit-content;
+}
 
 .footer button:hover,.Team button:hover{
     width: auto;
