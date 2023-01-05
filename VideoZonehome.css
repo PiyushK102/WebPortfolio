@@ -61,31 +61,17 @@
         text-align: center;
         font-size: 8px;
     }
-    .Social{
-        width:20vw;
-        height:fit-content;
-        margin-left:6vw;
-    }
-    .socialButtons{
-        width:18vw;
-        height:fit-content;
-    }
+  
     .socialButtons button{
-        width:15vw;
-        height:fit-content;
         padding: 0.3vw;
         overflow: hidden;
 
     }
     .socialButtons button:hover{
-        width:15vw;
-        height:fit-content;
+        
         padding: 0.3vw;
 
     }
-    .socialButtons:hover{
-        width:18vw;
-        height:fit-content;
-    }
+    
 }
 
