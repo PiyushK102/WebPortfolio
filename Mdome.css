@@ -115,16 +115,6 @@ iframe{
     body{
         text-align: center;
     }
-   
-    .navigation{
-        margin-left: 6vw;
-        padding: 0.05vw;
-    }
-    .navigation:hover{
-        margin-left: 6vw;
-        padding: 0.05vw;
-    }
-   
     .musicbox{
         display:flex;
         flex-direction: column;
