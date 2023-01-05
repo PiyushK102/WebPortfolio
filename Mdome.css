@@ -16,19 +16,7 @@ hr{
     margin:0.25% 25% 0.25% 25% ;
     width:50%;
 }
-.topstrip{
-    margin:0.5vw;
-    display:flex; 
-    
-}
-.navigation img,.ham img{
-    height:1.5em;
-    width:1.5em;
-    vertical-align: middle;
-    border-radius: 50%; 
-    border:2px solid black;
-    transition: height 20ms widht 20ms;
-}
+
 .VZ img{
     height:1.5em;
     width:1.5em;
@@ -50,17 +38,7 @@ hr{
     
 }
 
-.navigation {
-    display: none;
-    position: absolute;
-    background-color: rgba(249, 252, 255, 0.766);
-    min-width: 160px;
-    margin: 3%;
-    padding: 0.1em;
-    text-align:center;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 20px 20px 20px 20px;
-}
+
 .ham:hover+.navigation{
     display:inline-block;
     transition: height 20ms widht 20ms;
@@ -76,21 +54,7 @@ hr{
     border-radius: 20px 20px 20px 20px;
 
 }
-.navigation button{
-    
-    width:70%;
-    height:23%;
-    overflow: hidden; 
-    padding: 0.1%;
-    border-radius: 20px 20px 20px 20px;
-    word-wrap:break-word;
-    font-family: 'DynaPuff', cursive;
-    font-size:12px;
-    border-color: rgb(43, 43, 255);
-    background-color: rgb(75, 222, 255);
-    transition: width 1ms, height 1ms, background-color 1ms,border-color 1ms ;
-    color: blue;
-}
+
 .navigation button:hover{
     background-color: rgb(240, 253, 255);
     border-color: aqua;
