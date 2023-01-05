@@ -106,6 +106,7 @@ li{
 .musicbox{
     display: flex;
     margin-left: 7%;
+    margin-top:20%;
 }
 iframe{
     width: 100%;
@@ -117,6 +118,7 @@ iframe{
     }
     .musicbox{
         display:flex;
+        margin-top: 20%;
         flex-direction: column;
     }
     .equlizer img{
