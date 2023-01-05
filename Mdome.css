@@ -194,4 +194,11 @@ iframe{
         display:flex;
         flex-direction: column;
     }
+    .equlizer img{
+        border-radius: 1em;
+        margin-top: 0.8em;
+        width:70%;
+        height:20%;
+        opacity: 90%;
+    }
 }
