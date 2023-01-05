@@ -25,35 +25,6 @@ hr{
     border:2px solid black;
     transition: height 20ms widht 20ms;
 }
-.ham{
-    margin:0.1%;
-    display: relative;
-    text-align: center;
-    width:3em;
-    height:4em;
-    padding: 0.3em;
-    transition: height 20ms widht 20ms;
-    background-color: rgb(164, 249, 255);
-    border-radius:2em ;
-    
-}
-
-
-.ham:hover+.navigation{
-    display:inline-block;
-    transition: height 20ms widht 20ms;
-}
-.navigation:hover{
-    display: block;
-    background-color: rgba(215, 234, 255, 0.766);
-    min-width: 160px;
-    margin: 3%;
-    padding: 0.1%;
-    text-align:center;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 20px 20px 20px 20px;
-
-}
 
 .navigation button:hover{
     background-color: rgb(240, 253, 255);
