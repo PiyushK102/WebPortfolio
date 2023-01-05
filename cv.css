@@ -154,9 +154,7 @@ li{
 }
 .Social:hover .socialButtons{
     display:block;
-    
-    transition: height 20ms width 20ms;
-    
+    transition: height 20ms width 20ms;  
 }
 .socialButtons button:hover{
     width: fit-content;
