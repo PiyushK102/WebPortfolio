@@ -238,34 +238,7 @@ iframe{
         margin-left: 6vw;
         padding: 0.05vw;
     }
-    .Social{
-        width:20vw;
-        height:fit-content;
-        margin-left:6vw;
-        display: block;
-    }
-    .socialButtons{
-        width:18vw;
-        margin-left:1vw;
-        height:fit-content;
-        
-    }
-    .socialButtons button{
-        width:15vw;
-        height:fit-content;
-        padding: 0.3vw;
-
-    }
-    .socialButtons button:hover{
-        width:15vw;
-        height:fit-content;
-        padding: 0.3vw;
-
-    }
-    .socialButtons:hover{
-        width:18vw;
-        height:fit-content;
-    }
+   
     .musicbox{
         display:flex;
         flex-direction: column;
