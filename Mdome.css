@@ -74,6 +74,7 @@ button:active,.equlizer button:active{
     width:60vw;
     height:45vw;
     opacity: 90%;
+    position: relative;
 }
 .equlizer button{
     width:2vw;
