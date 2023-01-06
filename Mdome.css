@@ -51,6 +51,7 @@ button:active,.equlizer button:active{
     height:60%;
     padding-top:1.5%;
     padding-left: 1.5%;
+    overflow: hidden;
     background-color: rgba(53, 154, 255, 0.811);
     border-radius:1em ; 
     margin-left: 5%;
@@ -70,8 +71,8 @@ button:active,.equlizer button:active{
 .equlizer img{
     border-radius: 1em;
     margin-top: 0.8em;
-    width:95rem;
-    height:60rem;
+    width:95%;
+    height:60%;
     opacity: 90%;
 }
 .equlizer button{
