@@ -71,8 +71,8 @@ button:active,.equlizer button:active{
 .equlizer img{
     border-radius: 1em;
     margin-top: 0.8em;
-    width:95%;
-    height:60%;
+    width:40%;
+    height:20%;
     opacity: 90%;
 }
 .equlizer button{
