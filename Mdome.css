@@ -47,7 +47,7 @@ button:active,.equlizer button:active{
 }
 
 .equlizer{
-    width:40.5%;
+    width:50%;
     height:100%;
     padding-top:1.5%;
     padding-left: 1.5%;
@@ -70,8 +70,8 @@ button:active,.equlizer button:active{
 .equlizer img{
     border-radius: 1em;
     margin-top: 0.8em;
-    width:34.1vw;
-    height:60vh;
+    width:100%;
+    height:60vw;
     opacity: 90%;
 }
 .equlizer button{
@@ -105,8 +105,8 @@ li{
 
 .musicbox{
     display: flex;
-    margin-left: 7%;
-    margin-top:20%;
+    margin-left: 5%;
+    margin-top:10%;
 }
 iframe{
     width: 100%;
