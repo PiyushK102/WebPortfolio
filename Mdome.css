@@ -1,0 +1,323 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    background-image:url(images/musicDbg.jfif);  
+}
+hr{
+    height:0.2em;
+    background-color: rgb(51, 51, 51);
+    border-radius: 20px;
+}
+.VZ{
+    margin:0.25% 25% 0.25% 25% ;
+    width:50%;
+    position: sticky;
+}
+.VZ img{
+    height:1.5em;
+    width:1.5em;
+    vertical-align: middle;
+    border-radius: 50%; 
+    border:2px solid black;
+    transition: height 20ms widht 20ms;
+}
+.navigation button:hover{
+    background-color: rgb(240, 253, 255);
+    border-color: aqua;
+    border-width: 0.8mm;
+    color: black;
+}
+.navigation button:active{
+    transform: translateY(2px);
+}
+.navigation a,.Social a{
+    color: black;
+    padding:3px 0 3px 0;
+    text-decoration: none;
+    display: block;
+}
+
+button:active,.equlizer button:active{
+    transform: translateY(2px);
+}
+#musicbox{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+    width:99.8%;
+    border-radius: 10px;
+    border:2px solid rgb(127, 214, 255);
+    margin:1.5% 0 0 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+#playlistbox{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 183, 255, 0.5);
+    width:50%;
+    height:20vw;
+    border-radius: 10px;
+    padding:1.5% 1% 1.5% 1%;
+    margin:1%;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width:10px;
+    border-radius: 0 10px 10px 0;
+}
+::-webkit-scrollbar-thumb{
+    background-color: blue;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 183, 255, 0.5);
+    border-radius: 0 10px 10px 0;
+}
+#playlistbutton{
+    display: none;
+    background-color: deepskyblue;
+    width:40px;
+    height:40px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    align-content: center;
+    border-radius: 0 0 0 10px;
+}
+#music{
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin:3px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    padding:2%;
+}
+#music:hover{
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin:3px;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    font-weight: bolder;
+}
+#equilizer{
+    width:50%;
+    height:fit-content;
+    align-self: center;
+    background-color: rgba(0, 183, 255, 0.5);
+    padding:1.5% 1% 1.5% 1%;
+    align-self:center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 20px;
+    justify-self: center;
+    overflow: hidden;
+    margin:1%;
+}
+#equilizer img{
+    border-radius: 20px;
+    width:40vw;
+    height:20vw;
+}
+#musicdiv,#controlscontainer{
+    display:flex;
+    margin:0.25%;
+    flex-direction: column;
+    align-self: center;
+    padding: 0.5%;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+   
+}
+#controls,#volumectrl,#timer{
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+#controls{
+    width:80%;
+    margin:0.25%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 10px 10px 10px 10px;
+}
+#controlscontainer{
+    width:80%;
+    margin:0.25%;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color: rgba(84, 175, 255, 0.827);
+    position: sticky;
+    bottom:5px;
+    float: center;
+    
+}
+
+#play,#pause,#back,#forward,#voln,#mute,#volval{
+    float: left;
+    margin:0.3%;
+    padding:0.25%;
+    cursor: pointer;
+    background-color: rgb(45, 168, 255);
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content:center;
+    font-weight: bold;
+    width:25px;
+    height:25px;
+}
+#volumectrl{
+    float: right;
+    right:0;
+    padding:0.5%;
+    border-radius: 0 10px 10px 0;
+}
+#progress{
+    width:80%;
+    height:3px;
+    margin: 15px;
+    
+    position: static;
+}
+#progress :hover{
+
+    height:8px;
+    cursor: pointer;
+}
+#volslider{
+    width:100px;
+    transition: width 150ms ease-in-out;
+    cursor: pointer;
+}
+#musicname{
+    width:40vw;
+    padding:0.5vw;
+}
+
+#marqueediv{
+    float: left;
+    margin:0.1vw;
+    padding:0.25vw;
+    cursor: pointer;
+    background-color: rgb(45, 168, 255);
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content:center;
+    font-weight: bold;
+    height:25px;
+}
+#timer{
+    float: left;
+    margin:0.1vw;
+    padding:0.25vw;
+    cursor: pointer;
+    background-color: rgb(45, 168, 255);
+    padding: 7px;
+    border-radius: 12.5px 5px 5px 12.5px;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content:center;
+    font-weight: bold;
+    width:fit-content;
+    height:25px;
+}
+#audioname,#Logo,#emoji{
+    margin:3px 5px 3px 5px ;
+}
+
+ 
+
+@media screen and (max-width:770px) {
+    body{
+        text-align: center;
+    }
+    .musicbox{
+        display:flex;
+        flex-direction: column;
+    }
+    #playlistbox{
+        display:none;
+        position: absolute;
+        width:70%;
+        height:40vh;
+        left:15%;
+        background-color: rgb(246, 253, 255);
+
+    }
+    #playlistbutton{
+        display:block;
+        position: fixed;
+        top:0;
+        right:0;
+        cursor: pointer;
+    }
+    #music{
+        background-color:rgb(45, 168, 255) ;
+    }
+    
+    .VZ{
+        position:sticky;
+        top:0;
+        margin-top:4%;
+    }
+    #volslider{
+        display: none;
+        width:50px;
+        transition: width 250ms ease-in-out;
+    }
+    #volumectrl:hover  #volslider{
+        display:block;
+    }
+    #equilizer{
+        width:99%;
+        height:fit-content;
+        align-self: center;
+        padding:0.5%;
+        overflow: hidden;
+        margin:1% 0.5% 1% 0.5% ;
+    }
+    #equilizer img{
+        border-radius: 20px;
+        width:96vw;
+        height:40vh;
+    }
+    #progress{
+        width:99%;
+    }
+    #controls{
+        width:99%;
+        border-radius: 5px;
+    }
+    #controlscontainer{
+        width:100%;
+        padding:0.5%;
+    }
+}

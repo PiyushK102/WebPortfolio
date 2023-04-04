@@ -1,0 +1,151 @@
+.project{
+    display:flexbox;
+    flex-wrap: wrap;
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin:1%;
+    border-radius: 15px;
+    border: 3px gradient; 
+    align-items: center;
+    align-content:center ;  
+}
+.project h1
+{
+    margin:0.25% 25% 0.25% 25% ;
+    width:50%;
+    position: sticky;
+    top:3%;
+    background-color:rgb(105, 215, 255);
+    color:rgb(0, 0, 0);
+    text-align:center;
+    border-radius: 30px;
+    padding:3px;
+    font-size:large;
+    border: 0.1em solid;
+    border-color: navy;
+}
+.projects{
+    align-self: center;
+    display:flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+    margin: 1%;
+    padding: 1%;
+    border: 3px gradient; 
+    text-align: center;  
+    align-items: center;
+    align-content:center ;  
+}
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    background: rgb(80, 85, 255);
+    
+}
+::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 11px;
+
+}
+.project1,.project2,.project3,.project4,.project5,.project6{
+    align-self: center;
+    background-color: #c4e0ff;
+    padding: 1.5%;
+    text-align: center;
+    margin: 2%;
+    border-radius: 30px;
+    width: 43%;
+    box-shadow: 3px 3px 5px grey;
+    word-wrap: break-word;
+}
+.project img{
+    margin:1%;
+    border-radius: 15px;
+    border-width: 3px;
+    width:35vw;
+    height:20vw;
+    border: 1.5mm solid;
+    border-color: rgb(121, 60, 121);
+    
+}
+.project figcaption{
+    
+    color: rgb(0, 16, 194);
+    font-family: cursive;
+    
+}
+
+.videoPreview{
+    text-align: center;
+    display: flexbox;
+    flex-direction: column;
+    vertical-align: middle;
+    background-color:#b8daff;
+    border-radius: 20px;
+    margin-top:5%;
+    margin-left:1%;
+    padding:1em;
+    box-shadow: 3px 3px 5px grey;
+    
+}
+
+#projectVideo{
+    margin:10px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 8px rgb(111, 111, 111);
+    width: 44.6vw;
+    height:25vw;
+}
+.videoPreview H1{
+    border-radius: 20px;
+    box-shadow:grey 2px 2px 2px 2px;
+    padding:1.5%;
+}
+@media screen and (max-width:770px){
+    .project{
+       
+        align-items: center;
+        align-content:center ;
+        text-align: center;
+        width: 90%;
+        margin: 5%;
+        margin-top: 0.5%;
+    }
+    .projects{
+       
+        align-items: center;
+        align-content:center ;
+        text-align: center;
+        width: 100%;
+        margin: 0%;
+        margin-top: 0.5%;
+    }
+    .project1,.project2,.project3,.project4,.project5,.project6{
+        border-radius: 30px;
+        width: 100%;
+        box-shadow: 3px 3px 5px grey;
+        word-wrap: break-word;
+        align-self: center;
+    }
+    .project img{
+        margin:1%;
+        width:70vw;
+        height:40vw;
+        
+    }
+    #projectVideo{
+        border-radius: 10px;
+        box-shadow: 5px 5px 8px rgb(111, 111, 111);
+        width: 70vw;
+        height:40vw;
+    }
+    .videoPreview{
+        border-radius: 20px;
+    }
+}

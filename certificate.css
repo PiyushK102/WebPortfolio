@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+.certificates
+{
+    margin:1% ;
+    display: flexbox;
+    flex-wrap: wrap;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px;
+      
+}
+.certificates h1
+{
+    margin:0.25% 25% 0.25% 25% ;
+    width:50%;
+    position: sticky;
+    top:3%;
+    background-color:rgb(105, 215, 255);
+    color:rgb(0, 0, 0);
+    text-align:center;
+    border-radius: 30px;
+    padding:3px;
+    font-size:large;
+    border: 0.1em solid;
+    border-color: navy;
+}
+
+.certificate
+{
+   display: flex;
+   flex-wrap: wrap; 
+   margin-left: 1.4em;   
+}
+
+p{
+    padding:10px;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center; 
+}
+
+.certificate1,.certificate2,.certificate3,.certificate4,.certificate5,.certificate6,.certificate7{
+    align-self: center;
+    background-color: #c4e0ff;
+    padding: 1.5%;
+    text-align: center;
+    margin: 2%;
+    border-radius: 30px;
+    width: 43%;
+    box-shadow: 3px 3px 5px grey;
+    word-wrap: break-word;
+}
+embed{
+    margin:1em;
+    border-radius: 15px;
+    border-width: 3px;
+    width:33vw;
+    height:25vw;
+    border: 1.5mm solid;
+    border-color: rgb(121, 60, 121);
+}
+::-webkit-scrollbar{
+    width: 4px;
+    height:5px;
+}
+::-webkit-scrollbar-track
+{
+    border-radius: 4px;
+    background: rgb(80, 179, 255);
+    
+}
+::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 11px;
+
+}
+
+@media screen and (max-width:770px) {
+    .certificates{
+        align-items: center;
+        align-content:center ;
+        text-align: center;
+        width: 90%;
+        margin: 5%;
+        margin-top: 0.5%;
+    }
+    .certificate{
+       
+        align-items: center;
+        align-content:center ;
+        text-align: center;
+        width: 100%;
+        margin: 0%;
+        margin-top: 0.5%;
+    }
+    .certificate1,.certificate2,.certificate3,.certificate4,.certificate5,.certificate6,.certificate7{
+        border-radius: 30px;
+        width: 100%;
+        box-shadow: 3px 3px 5px grey;
+        word-wrap: break-word;
+        align-self: center;
+    }
+    embed{
+        width:70vw;
+        height:fit-content;
+    }
+}
