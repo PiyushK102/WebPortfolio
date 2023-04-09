@@ -93,12 +93,6 @@ hr{
     border-radius: 10px;
     padding:2%;
 }
-.navButtons button:hover  .navButtons img{
-    background-color: rgb(0, 44, 165);
-    border-color: rgb(255, 255, 255);
-    border-width: 0.8mm;
-    color: rgb(255, 255, 255);
-}
 .navButtons button:hover{
     background-color: rgb(0, 44, 165);
     border-color: rgb(255, 255, 255);
