@@ -52,7 +52,7 @@ hr{
     width:1.5em;
     vertical-align: middle;
     border-radius: 50%; 
-    border:2px solid black;
+    border:2px solid rgb(117, 117, 117);
     transition: height 20ms widht 20ms;
 }
 .VZ img{
