@@ -94,10 +94,10 @@ hr{
     padding:2%;
 }
 .navButtons button:hover{
-    background-color: rgba(0, 53, 199, 0.527);
+    background-color: rgb(0, 44, 165);
     border-color: aqua;
     border-width: 0.8mm;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .navButtons button:active{
     transform: translateY(2px);
