@@ -98,6 +98,7 @@ hr{
     border-color: rgb(255, 255, 255);
     border-width: 0.8mm;
     color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 .navButtons button:active{
     transform: translateY(2px);
