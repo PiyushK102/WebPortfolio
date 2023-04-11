@@ -95,6 +95,9 @@ button:active,.equlizer button:active{
     align-items: center;
     align-content: center;
     border-radius: 0 0 0 10px;
+    justify-content:center;
+    justify-items:center;
+    padding:2%;
 }
 #music{
     border: 1px solid blue;
