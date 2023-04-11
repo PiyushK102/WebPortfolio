@@ -10,6 +10,13 @@ hr{
     background-color: rgb(51, 51, 51);
     border-radius: 20px;
 }
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 24
+}
 .VZ{
     margin:0.25% 25% 0.25% 25% ;
     width:50%;
