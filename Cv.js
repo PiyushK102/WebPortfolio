@@ -28,10 +28,10 @@ ham.addEventListener("mouseover",()=>{
 })
 ham.addEventListener("click",()=>{
     if(nav.style.display="block"){
-        hamsym.innerHTML="menu"
+        hamsym.innerHTML="close"
     }
     else{
-        hamsym.innerHTML="close"
+        hamsym.innerHTML="menu"
     }
 })
 window.addEventListener("resize",()=>{
