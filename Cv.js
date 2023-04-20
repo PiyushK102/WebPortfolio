@@ -1,6 +1,7 @@
 const toTop=document.querySelector(".toTop")
 const ham=document.querySelector(".ham")
 const nav=document.querySelector(".navButtons")
+const hamsym=document.querySelector("#hamsym")
 
 document.addEventListener("loaded",()=>{
     if(window.innerWidth<=770){
@@ -23,6 +24,14 @@ ham.addEventListener("mouseover",()=>{
     else{
         ham.style.display="none"
         nav.style.display="flex"
+    }
+})
+ham.addEventListener("click",()=>{
+    if(nav.style.display="block"){
+        hamsym.innerHTML="menu"
+    }
+    else{
+        hamsym.innerHTML="close"
     }
 })
 window.addEventListener("resize",()=>{

@@ -54,9 +54,8 @@ li{
     'FILL' 1,
     'wght' 700,
     'GRAD' 0,
-    'opsz' 2.5vw;
+    'opsz' 35;
     border-radius:50%;
-    border:2px solid blue;
   }
 .leftSide{
     margin:10px;
@@ -443,6 +442,14 @@ h1{
         border-radius: 10px;
         padding:1% 2% 2% 2%;
     }
+    .material-symbols-rounded {
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 24;
+        border-radius:50%;
+      }
   
     .navButtons:hover{
         display: block;
