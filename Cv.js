@@ -27,7 +27,7 @@ ham.addEventListener("mouseover",()=>{
     }
 })
 function symchange(){
-    if(hamsym.innerHTML=="menu"){
+    if(nav.style.display=="block"){
         hamsym.innerHTML="close"
     }
     else{
