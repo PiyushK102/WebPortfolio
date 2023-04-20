@@ -26,14 +26,14 @@ ham.addEventListener("mouseover",()=>{
         nav.style.display="flex"
     }
 })
-ham.addEventListener("click",()=>{
-    if(nav.style.display="block"){
+function symchange(){
+    if(nav.style.display="none" && hamsym.innerHTML=="menu"){
         hamsym.innerHTML="close"
     }
     else{
         hamsym.innerHTML="menu"
     }
-})
+}
 window.addEventListener("resize",()=>{
     if(window.innerWidth<=770){
         ham.style.display="block"
