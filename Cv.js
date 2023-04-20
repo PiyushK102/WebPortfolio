@@ -27,11 +27,11 @@ ham.addEventListener("mouseover",()=>{
     }
 })
 function symchange(){
-    if(nav.style.display=="block"){
-        hamsym.innerHTML="close"
+    if(nav.style.display=="none"){
+        hamsym.innerHTML="menu"
     }
     else{
-        hamsym.innerHTML="menu"
+        hamsym.innerHTML="close"
     }
 }
 window.addEventListener("resize",()=>{
