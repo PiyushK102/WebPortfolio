@@ -1,7 +1,7 @@
 const toTop=document.querySelector(".toTop")
 const ham=document.querySelector(".ham")
 const nav=document.querySelector(".navButtons")
-const hamsym=document.querySelector("#hamsym")
+const hamsym=document.querySelector("hamsym")
 
 document.addEventListener("loaded",()=>{
     if(window.innerWidth<=770){
@@ -27,11 +27,11 @@ ham.addEventListener("mouseover",()=>{
     }
 })
 function symchange(){
-    if(nav.style.display=="none"){
-        hamsym.innerHTML="menu"
+    if(nav.style.display=="block"){
+        hamsym.innerHTML="close"
     }
     else{
-        hamsym.innerHTML="close"
+        hamsym.innerHTML="menu"
     }
 }
 window.addEventListener("resize",()=>{
