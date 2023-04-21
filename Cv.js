@@ -2,6 +2,7 @@ const toTop=document.querySelector(".toTop")
 const ham=document.querySelector(".ham")
 const nav=document.querySelector(".navButtons")
 const hamsym=document.querySelector("hamsym")
+const closebtn=document.querySelector("close")
 
 document.addEventListener("loaded",()=>{
     if(window.innerWidth<=770){
@@ -26,14 +27,19 @@ ham.addEventListener("mouseover",()=>{
         nav.style.display="flex"
     }
 })
-function symchange(){
-    if(nav.style.display=="block"){
-        hamsym.innerHTML="close"
+nav.addEventListener("change",()=>{
+    function symchange(){
+        if(nav.style.display=="block"){
+            hamsym.style.display="none"
+            closebtn.styledisplay="block"
+        }
+        else{
+            hamsym.style.display="block"
+            closebtn.styledisplay="none"
+        }
     }
-    else{
-        hamsym.innerHTML="menu"
-    }
-}
+})
+
 window.addEventListener("resize",()=>{
     if(window.innerWidth<=770){
         ham.style.display="block"
