@@ -27,7 +27,7 @@ ham.addEventListener("mouseover",()=>{
         nav.style.display="flex"
     }
 })
-nav.addEventListener("change",()=>{
+ham.addEventListener("click",()=>{
     function symchange(){
         if(nav.style.display=="block"){
             hamsym.style.display="none"
