@@ -40,6 +40,11 @@ let winheight=window.innerHeight
         console.log(winheight);
         console.log(winwidth);
     })
+    window.addEventListener("orientationchange",()=>{
+        document.querySelector("#screensizebox").innerHTML="Width:"+winwidth+" X "+"Height"+winheight;
+        console.log(winheight);
+        console.log(winwidth);
+    })
     
     
     
