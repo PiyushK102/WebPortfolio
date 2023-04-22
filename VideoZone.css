@@ -48,6 +48,7 @@ hr{
     border-radius:50% ; 
     cursor: pointer;
     border:2px solid rgb(177, 177, 177) ;
+    font-weight:700;
 }
 .navigation img,.ham img{
     height:1.5em;
