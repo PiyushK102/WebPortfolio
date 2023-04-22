@@ -1,4 +1,6 @@
-
+body{
+    background-image:radial-gradient(white,rgb(157, 240, 255),rgb(236, 243, 255),rgb(149, 149, 149),rgb(236, 243, 255)); 
+}
 .videos{
     margin:1%;
     background-color: rgba(103, 209, 254, 0.799);

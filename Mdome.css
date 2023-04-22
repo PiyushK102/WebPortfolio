@@ -3,7 +3,8 @@
     padding:0px;
 }
 body{
-    background-image:url(images/musicDbg.jfif);  
+    background-image:radial-gradient(white,rgb(157, 240, 255),rgb(236, 243, 255),rgb(0, 229, 255),rgb(236, 243, 255),rgb(157, 240, 255),rgb(236, 243, 255),rgb(157, 240, 255),rgb(236, 243, 255)); 
+    overflow: hidden; 
 }
 hr{
     height:0.2em;
@@ -15,7 +16,7 @@ hr{
   'FILL' 1,
   'wght' 700,
   'GRAD' 0,
-  'opsz' 24
+  'opsz' 35
 }
 .VZ{
     margin:0.25% 25% 0.25% 25% ;
@@ -49,6 +50,12 @@ hr{
 button:active,.equlizer button:active{
     transform: translateY(2px);
 }
+#audioplayer{
+    background-image:url(images/musicDbg.jfif);
+    display:flex;
+    flex-direction: column; 
+    border-radius: 20px;
+}
 #musicbox{
     display:flex;
     flex-direction: row;
@@ -61,7 +68,6 @@ button:active,.equlizer button:active{
     border:2px solid rgb(127, 214, 255);
     margin:1.5% 0 0 0;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.425);
 }
 #playlistbox{
     display: flex;
@@ -82,7 +88,7 @@ button:active,.equlizer button:active{
     background-color: blue;
 }
 ::-webkit-scrollbar-track{
-    background-color: rgba(0, 183, 255, 0.5);
+    background-color: rgba(110, 214, 255, 0.5);
     border-radius: 0 10px 10px 0;
 }
 #playlistbutton{
@@ -206,7 +212,7 @@ button:active,.equlizer button:active{
     width:80%;
     height:3px;
     margin: 15px;
-    
+    cursor: pointer;
     position: static;
 }
 #progress :hover{
@@ -276,10 +282,12 @@ button:active,.equlizer button:active{
     #playlistbox{
         display:none;
         position: absolute;
+        margin:1%;
         width:70%;
         height:40vh;
         left:15%;
-        background-color: rgb(246, 253, 255);
+        background-color: rgb(161, 235, 255);
+        z-index: 5;
 
     }
     #playlistbutton{
@@ -288,6 +296,10 @@ button:active,.equlizer button:active{
         top:0;
         right:0;
         cursor: pointer;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: rgb(161, 235, 255);
+        border-radius: 0 10px 10px 0;
     }
     #music{
         background-color:rgb(45, 168, 255) ;
@@ -325,9 +337,11 @@ button:active,.equlizer button:active{
     #controls{
         width:99%;
         border-radius: 5px;
+        
     }
     #controlscontainer{
         width:100%;
         padding:0.5%;
+        z-index: 2;
     }
 }

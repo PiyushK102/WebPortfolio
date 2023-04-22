@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@35,400,1,0" />
     <script src="Cv.js" defer></script>
 </head>
-<body style="background-image: url(images/VideoPlay\ BG.png);">
+<body>
     <div class="navigation"> 
-        <div class="ham" onclick="display('navButtons')" onclick="symchange()"><span class="material-symbols-rounded" id="hamsym" style="display: block;">menu</span><span class="material-symbols-rounded" id="close" style="display: none;">close</span><span>Menu</span></div>
+        <div class="ham" onclick="display('navButtons')" onclick="symchange()"><span class="material-symbols-rounded" id="hamsym" style="display: flex;">menu</span>Menu<span class="material-symbols-rounded" id="close" style="display: none;">close</span></div>
 
         <div class="navButtons"id="navButtons">
         <div><a href="Cv.html" title="Click here to Go to HomePage" ><button  ><span class="material-symbols-rounded">home</span><strong> Home</strong></button></a></div>
@@ -23,7 +23,7 @@
         <div><a href="certificate.html" title="Click here to view Certificates"><button style="border-radius: 5px 5px 5px 5px;"><img src="images/certificate.ico" alt="Certificate" ><strong> Certificates</strong></button></a></div>
       
         <div class="Social">
-            <button style="border-radius: 5px 5px 5px 5px;" onclick="display('socialButtons')"><img src="images/SocialMedia.png" alt="Social Media and Contact" ><strong> Social Media & Contact ▾</strong></button>          
+            <button onclick="display('socialButtons')"><img src="images/SocialMedia.png" alt="Social Media and Contact" ><span><strong> Social Media & Contact ▼</span></strong></button>        
             <div class="socialButtons" id="socialButtons" style="display:none;">
             <li><a href="https://www.linkedin.com/in/piyushkachhwal" title="Click here to see LinkedIn Profile"><button style="background-color: rgba(25, 122, 219, 0.74);color: aliceblue;"  ><img src="images/LinkedInLogo.ico" alt="LinkedIn" ><b> LinkedIn</b></button></a></li> 
       

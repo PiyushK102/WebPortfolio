@@ -14,7 +14,7 @@
 <body>
    
             <div class="navigation"> 
-                <div class="ham" onclick="display('navButtons')" onclick="symchange()"><span class="material-symbols-rounded" id="hamsym" style="display: block;">menu</span><span class="material-symbols-rounded" id="close" style="display: none;">close</span><span>Menu</span></div>
+                <div class="ham" onclick="display('navButtons')" onclick="symchange()"><span class="material-symbols-rounded" id="hamsym" style="display: flex;">menu</span>Menu<span class="material-symbols-rounded" id="close" style="display: none;">close</span></div>
 
                 <div class="navButtons"id="navButtons">
                 <div><a href="Cv.html" title="Click here to Go to HomePage" ><button  ><span class="material-symbols-rounded">home</span><strong> Home</strong></button></a></div>
@@ -24,8 +24,8 @@
                 <div><a href="certificate.html" title="Click here to view Certificates"><button style="border-radius: 5px 5px 5px 5px;"><img src="images/certificate.ico" alt="Certificate" ><strong> Certificates</strong></button></a></div>
               
                 <div class="Social">
-                  <button style="border-radius: 5px 5px 5px 5px;" onclick="display('socialButtons')"><img src="images/SocialMedia.png" alt="Social Media and Contact" ><strong> Social Media & Contact ▾</strong></button>
-                  <div class="socialButtons" id="socialButtons" style="display:none;">
+                    <button onclick="display('socialButtons')"><img src="images/SocialMedia.png" alt="Social Media and Contact" ><span><strong> Social Media & Contact ▼</span></strong></button>        
+                    <div class="socialButtons" id="socialButtons" style="display:none;">
                     <li><a href="https://www.linkedin.com/in/piyushkachhwal" title="Click here to see LinkedIn Profile"><button style="background-color: rgba(25, 122, 219, 0.74);color: aliceblue;"  ><img src="images/LinkedInLogo.ico" alt="LinkedIn" ><b> LinkedIn</b></button></a></li> 
               
                     <li><a href="https://github.com/PiyushK102" title="Click here to see GitHub Profile"><button style="background-color: rgba(0, 0, 0); color: aliceblue;"><img src="images/GithubLogo.ico" alt="GitHub" > <b> Github</b></button></a></li>
@@ -89,24 +89,18 @@
    <br>
     <div class="projects">
         <div class="project1">
-       
-        
             <a href="https://www.tinkercad.com/things/25zGW1UjH5k?sharecode=jdhdgwFIkwV_3TD7leAKjHEydlrHFz84mBjt4H82jg4" ><img title="Suraksha Ghera" src="images/projectImages/suraksha ghera1.png">
                 <figcaption><b>Suraksha Ghera</b></figcaption>
             </a>
             <p>............................................................</p>
         </div>
         <div class="project2">
-       
-        
             <a href="https://www.tinkercad.com/things/bRH52LmukMK?sharecode=kLJ6ZKg_pHL4FlbjuxA2A0feFOQAb5m1bIwoMl2MVTs" ><img title="Automatic Door" src="images/projectImages/AutomaticDoor.PNG">
                 <figcaption><b>Automatic Door</b></figcaption>
             </a>
             <p>............................................................</p>
         </div>
         <div class="project3">
-       
-        
             <a href="https://github.com/PiyushK102/Home-Automation-using-Bluetooth-and-Arduino" ><img src="images/projectImages/HomeAutomation.PNG" title="Home Automation">
                 <figcaption><b>Home Automation</b></figcaption>
             </a>
@@ -114,19 +108,13 @@
         
         </div>
         <div class="project4">
-       
-        
             <a href="https://github.com/PiyushK102/Basic-Calculator" ><img title="Basic Calculator" src="images/projectImages/BasicCalculator.PNG">
                 <figcaption><b>Basic Calculator</b></figcaption>
             </a>
             <p>............................................................</p>
             
-
-        
         </div>
         <div class="project5">
-       
-        
             <a href="https://github.com/PiyushK102/Pin-Password-Door-lock" ><img title="Basic Calculator" src="images/projectImages/Passcode Door lock.PNG">
 
                 <figcaption><b>Pin Passcode Door Lock</b></figcaption>
@@ -135,8 +123,6 @@
         
         </div>
         <div class="project6">
-       
-        
             <a href="https://github.com/PiyushK102/Rain-Detector-Circuit" ><img title="Basic Calculator" src="images/projectImages/Rain Water Detector and Rain water collector.PNG">
 
                 <figcaption><b>Rain Water Detector and Harvestor</b></figcaption>
@@ -156,6 +142,6 @@
     </div>
         
     </div> 
-    <div class="toTop" onclick="topFunction()" title="Go to Top" style="display: none;">⇑</div>
+    <div class="toTop" onclick="topFunction()" title="Go to Top" style="display: none;"><span class="material-symbols-rounded">expand_less</span></div>
 </body>
 </html>

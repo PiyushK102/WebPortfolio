@@ -2,7 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://colorhunt.co/palette/b1b2ffaac4ffd2daffeef1ff');
-
+*{
+    transition: all ease-in-out 1sec;
+}
 body{
     background-color: #F2F4FF;
     max-width: 100%;
@@ -27,15 +29,15 @@ li{
     vertical-align: middle;
     width:100%;
     height:fit-content;  
-    border-radius: 20px;  
-    opacity: 90%;
+    border-radius: 0 0 20px 20px ;  
     font-weight: 800; 
     font-family:'Times New Roman', Times, serif;
     font-size: 30px; 
     scroll-behavior: smooth;
     transition: width 50ms, height 50ms; 
     z-index: 49;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    
 }
 
 .navigation img{
@@ -45,8 +47,8 @@ li{
     border-color: rgb(92, 92, 92);
     vertical-align: middle;
     border-radius: 50%;
-    width:2vw;
-    height:2vw;
+    width:1.5vw;
+    height:1.5vw;
     background-color: white;
 }
 .material-symbols-rounded {
@@ -55,7 +57,7 @@ li{
     'wght' 700,
     'GRAD' 0,
     'opsz' 35;
-    border-radius:50%;
+    text-shadow: 2px 2px 2px #838383d0;    
   }
 .leftSide{
     margin:10px;
@@ -86,18 +88,18 @@ li{
 }
 .navButtons{
     display:flex;
-    backdrop-filter: blur(10px);
     padding: 1.5%;
     position:sticky;
     top:0;
-    z-index: 50;
+    z-index: 100;
     width: 100%;
     align-items: center;
     align-content: center;
     text-align: center;
     vertical-align: middle;
-    border-radius: 0 0 10px 10px ;
+    border-radius: 0 0 20px 20px ;
     box-shadow: rgb(34, 34, 34,0.5) 2px 2px 2px 2px;
+    
 }
 .navigation button,.socialButtons button{
     
@@ -266,7 +268,7 @@ li{
     height:25%;
 }
 ::-webkit-scrollbar{
-    width: 2px;
+    width: 5px;
 }
 ::-webkit-scrollbar-track
 {
@@ -332,7 +334,7 @@ h1{
     text-align: center;
     font-weight: bolder;
     border:2px rgb(0, 0, 0) solid;
-    box-shadow: #838383  2px 2px 2px 2px inset;
+    box-shadow: #838383  2px 2px 2px 2px;
 }
 .toTop:hover{
     cursor: pointer;
@@ -397,16 +399,20 @@ h1{
 .ham{
     display: none;
     position: sticky;
-    margin:0%;
     text-align: center;
-    width:4em;
-    height:4em;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width:40px;
+    height:40px;
     padding: 1%;
     font-size: 12px;
     transition: height 20ms widht 20ms;
-    background-color: rgb(122, 193, 255);
-    border-radius:2em ; 
-    cursor: pointer; 
+    background-color: #ebebebb1;
+    border-radius:50% ; 
+    cursor: pointer;
+    border:2px solid rgb(177, 177, 177) ;
 }
 #Logo{
     filter: drop-shadow(10px 10px 10px rgb(255, 251, 0));
@@ -425,12 +431,15 @@ h1{
     }
     .ham{
         display: block;
-        border-radius: 0 0px 20px 0 ;
+        border-radius:50% ;
         position: fixed;
         left:0%;
         top:0%;
-        margin-bottom: 0.2%;
+        padding: 1%;
         
+    }
+    .navigation{
+        backdrop-filter: blur(15px);
     }
     .navButtons{
         display: none;
@@ -451,7 +460,6 @@ h1{
         'wght' 700,
         'GRAD' 0,
         'opsz' 35;
-        border-radius:50%;
       }
   
     .navButtons:hover{

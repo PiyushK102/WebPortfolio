@@ -3,8 +3,7 @@ const ham=document.querySelector(".ham")
 const nav=document.querySelector(".navButtons")
 const hamsym=document.querySelector("#hamsym")
 const closebtn=document.querySelector("#close")
-let winwidth=window.innerWidth
-let winheight=window.innerHeight
+
 
 document.addEventListener("loaded",()=>{
     if(window.innerWidth<=770){
@@ -19,27 +18,19 @@ document.addEventListener("loaded",()=>{
 })
 window.onscroll=function(){scrollF()};
 ham.addEventListener("click",()=>{
-
-        if(nav.style.display=="block"){
-            hamsym.style.display="none"
-            closebtn.style.display="block"
-        }
-        else{
-            hamsym.style.display="block"
-            closebtn.style.display="none"
-        }
-})
-
-ham.addEventListener("mouseover",()=>{
-    if(window.innerWidth<=770)
-    {
-        ham.style.display="block"
-        nav.style.display="none"   
+    if(nav.style.display=="block"){
+        hamsym.style.display="none"
+        closebtn.style.display="block"
     }
     else{
-        ham.style.display="none"
-        nav.style.display="flex"
+        hamsym.style.display="block"
+        closebtn.style.display="none"
     }
+})
+
+ham.addEventListener("hover",()=>{
+        ham.style.display="block"
+        nav.style.display="none"   
 })
 window.addEventListener("resize",()=>{
     if(window.innerWidth<=770){
@@ -50,8 +41,6 @@ window.addEventListener("resize",()=>{
         ham.style.display="none"
         nav.style.display="flex"
     }
-    console.log=winheight;
-    console.log=winwidth;
 })
 function scrollF(){
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
