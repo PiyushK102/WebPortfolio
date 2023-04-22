@@ -125,7 +125,7 @@ li{
 
 .socialButtons {
     display: none;
-    width: fit-content;
+    width: inherit;
     height: fit-content;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.818);
@@ -152,7 +152,7 @@ li{
     border-color: aliceblue;
 }
 .socialButtons button{
-    width:5vw;
+    width:100%;
     height:3vw;
     padding: 0.05%;
     border-radius: 20px 20px 20px 20px;
@@ -191,19 +191,19 @@ li{
         margin-left:0.05vw;
     }
     .socialButtons{
-        width:18vw;
+        width:inherit;
         margin-left:1vw;
         height:fit-content;
         
     }
     .socialButtons button{
-        width:15vw;
+        width:inherit;
         height:fit-content;
         padding: 0.1vw;
 
     }
     .socialButtons button:hover{
-        width:15vw;
+        width:inherit;
         height:fit-content;
         padding: 0.3vw;
 
