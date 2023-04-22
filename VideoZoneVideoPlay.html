@@ -8,12 +8,12 @@
     <link rel="icon" type="image/x-icon" href="images/Vz.jpg">
     <link rel="stylesheet" href="VideoZone.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@35,400,1,0" />
-    <script src="Cv.js"></script>
+    <script src="Cv.js" defer></script>
     <script src="vp.js" defer></script>
 </head>
 <body>
   <div class="navigation"> 
-    <div class="ham" onclick="display('navButtons')" style="display: block;"><span class="material-symbols-rounded">menu</span><br>Menu</div>
+      <div class="ham" onclick="display('navButtons')" onclick="symchange()"><span class="material-symbols-rounded" id="hamsym" style="display: block;">menu</span><span class="material-symbols-rounded" id="close" style="display: none;">close</span><span>Menu</span></div>
 
     
       <div class="navButtons"style="display: none;"id="navButtons">

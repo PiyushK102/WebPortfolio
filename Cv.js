@@ -1,8 +1,10 @@
 const toTop=document.querySelector(".toTop")
 const ham=document.querySelector(".ham")
 const nav=document.querySelector(".navButtons")
-const hamsym=document.querySelector("hamsym")
-const closebtn=document.querySelector("close")
+const hamsym=document.querySelector("#hamsym")
+const closebtn=document.querySelector("#close")
+let winwidth=window.innerWidth
+let winheight=window.innerHeight
 
 document.addEventListener("loaded",()=>{
     if(window.innerWidth<=770){
@@ -13,8 +15,20 @@ document.addEventListener("loaded",()=>{
         ham.style.display="none"
         nav.style.display="flex"
     }
+
 })
 window.onscroll=function(){scrollF()};
+ham.addEventListener("click",()=>{
+
+        if(nav.style.display=="block"){
+            hamsym.style.display="none"
+            closebtn.style.display="block"
+        }
+        else{
+            hamsym.style.display="block"
+            closebtn.style.display="none"
+        }
+})
 
 ham.addEventListener("mouseover",()=>{
     if(window.innerWidth<=770)
@@ -27,19 +41,6 @@ ham.addEventListener("mouseover",()=>{
         nav.style.display="flex"
     }
 })
-ham.addEventListener("click",()=>{
-    function symchange(){
-        if(nav.style.display=="block"){
-            hamsym.style.display="none"
-            closebtn.styledisplay="block"
-        }
-        else{
-            hamsym.style.display="block"
-            closebtn.styledisplay="none"
-        }
-    }
-})
-
 window.addEventListener("resize",()=>{
     if(window.innerWidth<=770){
         ham.style.display="block"
@@ -49,6 +50,8 @@ window.addEventListener("resize",()=>{
         ham.style.display="none"
         nav.style.display="flex"
     }
+    console.log=winheight;
+    console.log=winwidth;
 })
 function scrollF(){
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
