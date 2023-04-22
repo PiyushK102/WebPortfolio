@@ -430,7 +430,8 @@ h1{
         margin: 0;
     }
     .ham{
-        display: block;
+        display: flex;
+        flex-direction: column;
         border-radius:50% ;
         position: fixed;
         left:0%;

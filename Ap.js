@@ -185,7 +185,7 @@ function skip(duration){
 }
 ///////////////////////////////////////////////////////////////////
 ////////////////////////// Playlist Display block none///////////////////
-playlistbutton.addEventListener("mouseover",()=>{
+playlistbutton.addEventListener("hover",()=>{
     if(window.innerWidth<=770)
     {
         playlistbutton.style.display="block"
