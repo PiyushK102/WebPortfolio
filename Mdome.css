@@ -4,7 +4,7 @@
 }
 body{
     background-image:radial-gradient(white,rgb(157, 240, 255),rgb(236, 243, 255),rgb(0, 229, 255),rgb(236, 243, 255),rgb(157, 240, 255),rgb(236, 243, 255),rgb(157, 240, 255),rgb(236, 243, 255)); 
-    overflow: hidden; 
+    overflow-x: hidden; 
 }
 hr{
     height:0.2em;
