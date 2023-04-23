@@ -10,6 +10,10 @@
 *,li{padding:0}#divscreen,.navigation,.socialButtons{height:fit-content}
 #video:hover,hr{background-color:#f0f8ff}#screen,#volval{align-self:center}
 #videoname,#volumectrl,#volval,.VZ img{vertical-align:middle}
+#videoname img{
+    width:2em;
+    height:2em;
+}
 #timer,#volval,.ham{font-weight:700}
 #timer:hover,#volumectrl:hover{background-color:#fff;box-shadow:2px 2px 3px 3px rgba(128,128,128,.699)}
 hr{height:.2em;border-radius:20px}.VZ{margin:.25% 25%;width:50%}
