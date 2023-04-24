@@ -28,7 +28,7 @@ ham.addEventListener("click",()=>{
     }
 })
 
-ham.addEventListener("hover",()=>{
+ham.addEventListener("mouseenter",()=>{
         ham.style.display="block"
         nav.style.display="none"   
 })
