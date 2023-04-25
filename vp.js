@@ -21,8 +21,7 @@ const ham=document.querySelector(".ham")
 const nav=document.querySelector(".navButtons")
 const hamsym=document.querySelector("#hamsym")
 const closebtn=document.querySelector("#close")
-let winwidth=window.innerWidth
-let winheight=window.innerHeight
+
 
 
 ///////////////////////////////////-----Video Name Function-------////////////////////////////////////
@@ -31,16 +30,22 @@ let winheight=window.innerHeight
     }
     
     document.addEventListener("loaded",()=>{
+        var winwidth=window.innerWidth
+        var winheight=window.innerHeight
         document.querySelector("#screensizebox").innerHTML="Width:"+winwidth+" X "+"Height"+winheight;
         console.log(winheight);
         console.log(winwidth);
     })
     window.addEventListener("resize",()=>{
+        var winwidth=window.innerWidth
+        var winheight=window.innerHeight
         document.querySelector("#screensizebox").innerHTML="Width:"+winwidth+" X "+"Height"+winheight;
         console.log(winheight);
         console.log(winwidth);
     })
     window.addEventListener("orientationchange",()=>{
+        var winwidth=window.innerWidth
+        var winheight=window.innerHeight
         document.querySelector("#screensizebox").innerHTML="Width:"+winwidth+" X "+"Height"+winheight;
         console.log(winheight);
         console.log(winwidth);
