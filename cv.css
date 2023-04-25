@@ -58,7 +58,10 @@ li{
     'GRAD' 0,
     'opsz' 35;
     text-shadow: 2px 2px 2px #838383d0;    
-  }
+}
+::selection{
+    background-color: transparent;
+}
 .leftSide{
     margin:10px;
     box-shadow: 2px 2px 5px rgb(53, 53, 53);
