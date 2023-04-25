@@ -60,7 +60,8 @@ li{
     text-shadow: 2px 2px 2px #838383d0;    
 }
 ::selection{
-    background-color: transparent;
+    background-color: rgb(93, 93, 94);
+    color: crimson;
 }
 .leftSide{
     margin:10px;
