@@ -58,6 +58,7 @@ li{
     'GRAD' 0,
     'opsz' 35;
     text-shadow: 2px 2px 2px #838383d0;    
+    transition: all ease-in-out 2s;
 }
 ::selection{
     background-color: rgb(93, 93, 94);
