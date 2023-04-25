@@ -461,6 +461,10 @@ h1{
         padding:1% 2% 2% 2%;
         background-color: #A9D3FF;
     }
+    .navButtons button img{
+        width:35px;
+        height:35px;
+    }
     .material-symbols-rounded {
         font-variation-settings:
         'FILL' 1,
