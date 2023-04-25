@@ -61,7 +61,7 @@ body{background-color:rgba(51,51,51,.87)
 #header{background-color:#d3d3d3;width:100%;height:6.5vh;top:0;font-size:28px}
 #screendiv{display:flex;flex-direction:row;width:100%;height:85vh;z-index:100;padding:.01%}
 #divscreen{width:64%;background-color:#444;overflow:hidden}
-.material-symbols-rounded{font-variation-settings:'FILL' 1,'wght' 700,'GRAD' 0,'opsz' 35;text-shadow:2px 2px 2px #838383d0}
+.material-symbols-rounded{font-variation-settings:'FILL' 1,'wght' 700,'GRAD' 0,'opsz' 35;text-shadow:2px 2px 2px #838383d0;transition: all ease-in-out 2s;}
 #videonamediv{width:100%;height:6.5vh;padding:.5%;color:#f0f8ff;background-color:rgba(0,0,0,.455)}
 #screen{width:95%;height:60vh;margin:.5%}
 #playlistbox{flex-direction:column;width:34%;height:80vh;background-color:#8a8a8a;padding:.5%;overflow-y:scroll}
