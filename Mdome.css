@@ -267,6 +267,12 @@ button:active,.equlizer button:active{
 }
 #audioname,#Logo,#emoji{
     margin:3px 5px 3px 5px ;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0));
+}
+#Logo img{
+    width:2em;
+    height:2em;
+    
 }
 
  
