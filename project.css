@@ -20,10 +20,17 @@
     color:rgb(0, 0, 0);
     text-align:center;
     border-radius: 30px;
-    padding:3px;
+    padding:1px;
     font-size:large;
-    border: 0.1em solid;
-    border-color: navy;
+    border: 0.1em solid navy;
+}
+#headimg img{
+    width:35px;
+    height:35px;
+    border:3px solid grey;
+    border-radius: 50%;
+    text-align: justify;
+    vertical-align: middle;
 }
 .projects{
     align-self: center;
@@ -101,11 +108,6 @@
     box-shadow: 5px 5px 8px rgb(111, 111, 111);
     width: 44.6vw;
     height:25vw;
-}
-.videoPreview H1{
-    border-radius: 20px;
-    box-shadow:grey 2px 2px 2px 2px;
-    padding:1.5%;
 }
 @media screen and (max-width:770px){
     .project{
