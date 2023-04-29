@@ -40,8 +40,6 @@ li{
 }
 
 .navigation img{
-    border-radius: 50%; 
-    vertical-align: top;
     border:2px solid;
     border-color: rgb(92, 92, 92);
     vertical-align: middle;
@@ -110,7 +108,6 @@ li{
     font-size:10px;
     width:auto;
     height:auto;
-    box-shadow: 0px 0px 2px 0px rgb(90, 90, 90);
     color:rgb(14, 0, 166);
     text-decoration: blue;
     border:solid 0.5mm blue;
@@ -276,32 +273,30 @@ li{
 
 }
 .clock {
-    margin: 0.5% 1% 0.5% 1%;
+    margin: auto;
     padding:0.5% 0.5% 0.5% 0.5%;
     width: auto;
     height: auto;
     border:#060000 2px solid;
     align-self:center;
+    align-content: space-between;
     vertical-align: middle;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     background-color: #00d0c2;
     z-index: 49;
     box-shadow: rgb(34, 34, 34,0.5) 2px 2px 2px 2px;
-  }
+}
 
-.time {
+.time,.date-time {
     font-size: 14px;
     font-weight: bold;
     color: rgb(0, 0, 0);
+    margin: 0.1%;
 }
 
-.date-time {
-    font-size: 14px;
-    color: rgb(0, 0, 0);
-}
 
 @media screen and (max-width: 768px) {
     .time {
@@ -536,7 +531,6 @@ h1{
         object-fit: fill;
         overflow: hidden;
         vertical-align: middle;
-        border-radius: 80px;
         border: 2px solid blue;
         border-radius:  4vw 4vw 0 0 ;
         align-content: center;
