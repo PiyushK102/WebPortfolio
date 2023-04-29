@@ -484,6 +484,9 @@ h1{
     }
     .navButtons button:hover,.Social button:hover{
         font-size: 12px;
+        height:fit-content;
+        width: 35vw;
+        font-size: 10px;
         word-wrap: break-word;
     }
     .Social{
