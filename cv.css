@@ -39,7 +39,7 @@ li{
     
 }
 
-.navigation img{
+.navigation img,#homebtn{
     border:2px solid;
     border-color: rgb(92, 92, 92);
     vertical-align: middle;
@@ -431,9 +431,12 @@ h1{
     .navigation{
         backdrop-filter: blur(15px);
     }
-    .navButtons img{
+    .navButtons img,#homebtn{
         width:35px;
         height:35px;
+        vertical-align: middle;
+        text-align: center;
+        text-align: justify;
     }
     .navButtons{
         display: none;

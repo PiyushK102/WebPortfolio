@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=DynaPuff&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap);
 @import url(https://colorhunt.co/palette/b1b2ffaac4ffd2daffeef1ff);
-.VZ img,.ham img,.navigation img{
+.VZ img,.ham img,.navigation img,#homebtn{
     height:1.5em;
     width:1.5em;
     vertical-align:middle
@@ -22,7 +22,7 @@ hr{height:.2em;border-radius:20px}
 #timer,#volumectrl,.navigation{align-content:center;width:fit-content}
 .navigation{position:fixed;display:flex;flex-direction:column;align-items:center;top:0;left:0;z-index:200}
 #divscreen,.ham{flex-direction:column}
-.ham img,.navigation img{border-radius:50%;border:2px solid #757575}
+.ham img,.navigation img,#homebtn{border-radius:50%;border:2px solid #757575}
 .VZ img{border-radius:50%;border:2px solid #000}
 .ham:hover+.navButtons{display:inline-block}
 .navigation:hover{text-align:center;box-shadow:0 8px 16px 0 rgba(0,0,0,.2);border-radius:20px}
