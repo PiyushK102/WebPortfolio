@@ -39,6 +39,8 @@ window.addEventListener("resize",()=>{
     if(window.innerWidth<=770){
         ham.style.display="block"
         nav.style.display="none"
+        hamsym.style.display="block"
+        closebtn.style.display="none"
     }
     else{
         ham.style.display="none"

@@ -474,7 +474,7 @@ h1{
     }
     .navButtons button,.Social button{
         height:fit-content;
-        width: inherit;
+        width: 35vw;
         font-size: 10px;
         word-wrap: break-word;
     }
