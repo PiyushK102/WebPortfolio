@@ -29,8 +29,11 @@ ham.addEventListener("click",()=>{
 })
 
 ham.addEventListener("mouseenter",()=>{
-        ham.style.display="block"
-        nav.style.display="none"   
+    ham.style.display="block"
+    nav.style.display="none" 
+    hamsym.style.display="block"
+    closebtn.style.display="none"
+
 })
 window.addEventListener("resize",()=>{
     if(window.innerWidth<=770){

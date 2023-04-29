@@ -21,6 +21,7 @@ const ham=document.querySelector(".ham")
 const nav=document.querySelector(".navButtons")
 const hamsym=document.querySelector("#hamsym")
 const closebtn=document.querySelector("#close")
+const ssize=document.querySelector("#screensizebox")
 
 
 
@@ -30,25 +31,16 @@ const closebtn=document.querySelector("#close")
     }
     
     document.addEventListener("loaded",()=>{
-        var winwidth=window.innerWidth
-        var winheight=window.innerHeight
-        document.querySelector("#screensizebox").innerHTML="Width:"+winwidth+" X "+"Height"+winheight;
+        ssize.innerHTML="Width:"+winwidth+" X "+"Height"+winheight;
         console.log(winheight);
         console.log(winwidth);
     })
     window.addEventListener("resize",()=>{
         var winwidth=window.innerWidth
         var winheight=window.innerHeight
-        document.querySelector("#screensizebox").innerHTML="Width:"+winwidth+" X "+"Height"+winheight;
-        console.log(winheight);
-        console.log(winwidth);
-    })
-    window.addEventListener("orientationchange",()=>{
-        var winwidth=window.innerWidth
-        var winheight=window.innerHeight
-        document.querySelector("#screensizebox").innerHTML="Width:"+winwidth+" X "+"Height"+winheight;
-        console.log(winheight);
-        console.log(winwidth);
+        ssize.innerHTML="Width:"+winwidth+"   X   "+"Height"+winheight;
+        console.log("Height"+winheight);
+        console.log("Width"+winwidth);
     })
     
     
