@@ -47,7 +47,7 @@ li{
     width:1.5vw;
     height:1.5vw;
     background-color: white;
-    font-size:35px;
+    font-size:2rem;
 }
 .material-symbols-rounded {
     font-variation-settings:
@@ -442,6 +442,7 @@ h1{
         vertical-align: middle;
         text-align: center;
         text-align: justify;
+        font-size:35px;
     }
     .navButtons{
         display: none;
