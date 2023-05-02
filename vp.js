@@ -32,21 +32,21 @@ const closebtn=document.querySelector("#close")
     document.addEventListener("loaded",()=>{
         var winwidth=window.innerWidth
         var winheight=window.innerHeight
-        document.querySelector("#screensizebox").innerHTML="Width:"+winwidth+" X "+"Height"+winheight;
+        document.querySelector("#screensizebox").innerHTML=" Screen Size → W:"+winwidth+"Px X "+"H"+winheight+"Px";
         console.log(winheight);
         console.log(winwidth);
     })
     window.addEventListener("resize",()=>{
         var winwidth=window.innerWidth
         var winheight=window.innerHeight
-        document.querySelector("#screensizebox").innerHTML=" Screen Size → Width:"+winwidth+"Px X "+"Height"+winheight+"Px";
+        document.querySelector("#screensizebox").innerHTML=" Screen Size → W:"+winwidth+"Px X "+"H"+winheight+"Px";
         console.log(winheight);
         console.log(winwidth);
     })
     window.addEventListener("orientationchange",()=>{
         var winwidth=window.innerWidth
         var winheight=window.innerHeight
-        document.querySelector("#screensizebox").innerHTML=" Screen Size → Width:"+winwidth+" X "+"Height"+winheight;
+        document.querySelector("#screensizebox").innerHTML=" Screen Size → W:"+winwidth+"Px X "+"H"+winheight+"Px";
         console.log(winheight);
         console.log(winwidth);
     })
