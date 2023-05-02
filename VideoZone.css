@@ -4,7 +4,8 @@
 .VZ img,.ham img,.navigation img,#homebtn{
     height:1.5em;
     width:1.5em;
-    vertical-align:middle
+    vertical-align:middle;
+    font-size:1.5em;
 }
 .navButtons button,.socialButtons button{word-wrap:break-word;font-family:DynaPuff,cursive}
 *,li{padding:0}
