@@ -39,14 +39,14 @@ const closebtn=document.querySelector("#close")
     window.addEventListener("resize",()=>{
         var winwidth=window.innerWidth
         var winheight=window.innerHeight
-        document.querySelector("#screensizebox").innerHTML="Width:"+winwidth+" X "+"Height"+winheight;
+        document.querySelector("#screensizebox").innerHTML=" Screen Size → Width:"+winwidth+"Px X "+"Height"+winheight+"Px";
         console.log(winheight);
         console.log(winwidth);
     })
     window.addEventListener("orientationchange",()=>{
         var winwidth=window.innerWidth
         var winheight=window.innerHeight
-        document.querySelector("#screensizebox").innerHTML="Width:"+winwidth+" X "+"Height"+winheight;
+        document.querySelector("#screensizebox").innerHTML=" Screen Size → Width:"+winwidth+" X "+"Height"+winheight;
         console.log(winheight);
         console.log(winwidth);
     })
