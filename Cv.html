@@ -54,13 +54,14 @@
         var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   
         // format date and time
+        var period = hours < 12 ? 'AM' : 'PM';
         hours = hours % 12 || 12;
         minutes = minutes < 10 ? '0' + minutes : minutes;
         seconds = seconds < 10 ? '0' + seconds : seconds;
         date = date < 10 ? '0' + date : date;
   
         // display date and time
-        var period = hours < 12 ? 'AM' : 'PM';
+        
         time.innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + period;
         dateTime.innerHTML = dayNames[day] + ', ' + monthNames[month] + ' ' + date + ', ' + year;
       }
