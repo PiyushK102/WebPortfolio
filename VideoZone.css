@@ -7,7 +7,9 @@
     vertical-align:middle
 }
 .navButtons button,.socialButtons button{word-wrap:break-word;font-family:DynaPuff,cursive}
-*,li{padding:0}
+*,li{padding:0; user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;}
 #divscreen,.navigation,.socialButtons{height:fit-content}
 #video:hover,hr{background-color:#f0f8ff}#screen,#volval{align-self:center}
 #videoname,#volumectrl,#volval,.VZ img{vertical-align:middle}
