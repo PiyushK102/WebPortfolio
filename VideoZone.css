@@ -28,7 +28,7 @@ hr{height:.2em;border-radius:20px}
 .VZ img{border-radius:50%;border:2px solid #000}
 .ham:hover+.navButtons{display:inline-block}
 .navigation:hover{text-align:center;box-shadow:0 8px 16px 0 rgba(0,0,0,.2);border-radius:20px}
-.navButtons button{width:8.9em;height:5em;overflow:hidden;padding:.01em;border-radius:20px;font-size:12px;border-color:#848484;background-color:#fff;transition:width .1s,height .1s,background-color .5s,border-color .1s;color:#00f}
+.navButtons button{width:8.9em;height:5em;overflow:hidden;padding:1em;border-radius:20px;font-size:12px;border-color:#848484;background-color:#fff;transition:width .1s,height .1s,background-color .5s,border-color .1s;color:#00f}
 .navButtons{background-color:rgba(39,39,39,.87);border-radius:10px;padding:2%}
 .socialButtons,.socialButtons:hover{position:absolute;background-color:rgba(255,255,255,.818);text-align:center}
 .navButtons button:hover{background-color:#002ca5;border-color:#fff;border-width:.8mm;color:#fff;cursor:pointer}
