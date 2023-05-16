@@ -59,16 +59,16 @@ body{background-color:rgb(236, 236, 236)
 .ham{display:flex;justify-content:center;justify-items:center;align-items:center;align-content:center;font-size:12px;background-color:#ebebebb1;border-radius:50%;cursor:pointer;border:2px solid #b1b1b1}
 #divscreen,#playlistbox,#video{display:flex}
 #header{background-color:#d3d3d3;width:100%;height:6.5vh;top:0;font-size:28px}
-#screendiv{display:flex;flex-direction:row;width:99%;height:80vh;z-index:100;padding:.5%;align-items: center;}
-#divscreen{width:65%;background-color:#000000;overflow:hidden;height:80vh;padding:0.5%;border-radius: 10px 0 0 10px;}
+#screendiv{display:flex;flex-direction:row;width:99%;height:85vh;z-index:100;padding:.5%;align-items: center;}
+#divscreen{width:65%;background-color:#000000;overflow:hidden;height:85vh;padding:0.5%;border-radius: 10px 0 0 10px;}
 .material-symbols-rounded{font-variation-settings:'FILL' 1,'wght' 700,'GRAD' 0,'opsz' 35;text-shadow:2px 2px 2px #838383d0;transition: all ease-in-out 2s;}
 #screen{width:95%;height:60vh;margin:.5%}
-#playlistbox{flex-direction:column;width:33%;height:80vh;background-color:#000000;padding:.5%;overflow-y:scroll;border-radius: 0 10px 10px 0;}
+#playlistbox{flex-direction:column;width:33%;height:85vh;background-color:#000000;padding:.5%;overflow-y:scroll;border-radius: 0 10px 10px 0;}
 #video{flex-direction:row;border:1px solid #000;border-radius:10px;padding:.5%;align-items:center;align-content:center;justify-content:space-around;cursor:pointer;background-color:azure;margin:10px 5px}
 #video:hover{font-weight:bolder}
 #Logo img{width:250px;height:200px;border-radius:10px;flex-shrink:inherit}
 #videoname{flex-shrink:inherit}
-#controlscontainer{display:flex;flex-direction:column;background-color:#a9a9a9;padding:1%;position:sticky;bottom:0}
+#controlscontainer{display:flex;flex-direction:column;background-color:#a9a9a9;padding:1%;position:sticky;position:-webkit-sticky;bottom:0px;}
 #controls{display:flex;flex-direction:row;background-color:#e3e3e3;border-radius:20px;justify-content:space-around}
 ::-webkit-scrollbar{width:10px;border-radius:0 10px 10px 0}
 ::-webkit-scrollbar-thumb{background-color:#00f;border-radius:10px}

@@ -50,8 +50,6 @@ li{
     width:1.5vw;
     height:1.5vw;
     background-color: white;
-    text-align:center;
-    font-size:1.5vw;
 }
 .material-symbols-rounded {
     font-variation-settings:
@@ -86,8 +84,8 @@ li{
 .Intro img,.footer img,.socialButtons img{
     vertical-align: middle;
     border-radius: 50%;
-    width:1.5vw;
-    height:1.5vw;
+    width:2em;
+    height:2em;
 
 }
 .navButtons{
@@ -256,12 +254,14 @@ li{
     box-shadow: 3px 3px 5px grey;
 }
 .header{
-    background-image:radial-gradient(orange,rgba(255, 166, 0, 0.788),red);
+    background:url(images/PBG\ IMG.PNG)  no-repeat;
+    
     border-radius: 80px;
     box-shadow: none;
     height:auto;
     
 }
+.header h1{color:white;}
 .header img{
     
     width:70%;
@@ -446,7 +446,6 @@ h1{
         vertical-align: middle;
         text-align: center;
         text-align: justify;
-        font-size:30px;
     }
     .navButtons{
         display: none;
