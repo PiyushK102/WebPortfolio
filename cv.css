@@ -180,18 +180,21 @@ li{
 .socialButtons button:hover{
     width: fit-content;
     height: fit-content;
+    border-radius: 5px;
     
 }
 .socialButtons button{
     border-radius: 80px;
 }
-.socialButtons:hover{
+.socialButtons:hover,.socialButtons:after{
     display: inline-block;
     position:absolute;
+    border-radius: 5px;
     background-color: rgba(240, 248, 255, 0.842);
     padding: 0.2em;
     text-align:center;
     border-image: linear-gradient( red,yellow,orange,green,purple,blue)2;
+    border-image-width: 3px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 5;
 }
