@@ -282,10 +282,25 @@ button:active,.equlizer button:active{
     width:2em;
     height:2em;  
 }
-
- 
-
-@media screen and (max-width:770px) {
+@media screen and (max-width:350px){
+    #timer{
+        border-radius: 5px;
+    }
+    #marqueediv{
+        width:75%;
+        height:25px;
+    }
+    .material-symbols-rounded {
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 10;
+        text-align: center;
+      }
+    *{
+        font-size: 12px;
+    }
     body{
         text-align: center;
     }
@@ -297,9 +312,9 @@ button:active,.equlizer button:active{
         display:none;
         position: absolute;
         margin:1%;
-        width:70%;
+        width:90%;
         height:40vh;
-        left:15%;
+        left:5%;
         background-color: rgb(161, 235, 255);
         z-index: 5;
 
@@ -310,6 +325,114 @@ button:active,.equlizer button:active{
         top:0;
         right:0;
         cursor: pointer;
+    }
+
+    ::-webkit-scrollbar-track{
+        background-color: rgb(161, 235, 255);
+        border-radius: 0 10px 10px 0;
+    }
+    #music{
+        background-color:transparent ;
+    }
+    
+    .VZ{
+        position:sticky;
+        top:0;
+        margin-top:4%;
+    }
+    #volslider{
+        display: none;
+        width:100px;
+        transition: width 250ms ease-in-out;
+    }
+    #volumectrl:hover  #volslider{
+        display:block;
+    }
+    #equilizer{
+        width:98%;
+        height:fit-content;
+        align-self: center;
+        padding:0.5%;
+        overflow: hidden;
+        margin:1% 0.5% 1% 0.5% ;
+    }
+    #equilizer img{
+        border-radius: 20px;
+        width:96vw;
+        height:40vh;
+    }
+    #progress{
+        width:95%;
+    }
+    #controls{
+        width:98%;
+        border-radius: 5px;
+        flex-wrap: wrap;
+
+    }
+   ::-webkit-scrollbar{
+        width:5px;
+        height:3px;
+        border-radius: 0 2.5px 2.5px 0;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: blue;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: rgba(110, 214, 255, 0.5);
+        border-radius: 0 3px 3px 0;
+    }
+    #controlscontainer{
+        width:99%;
+        padding:0.5%;
+        z-index: 2;
+    }
+}
+ 
+
+@media screen and (min-width:350px) and (max-width:770px) {
+    body{
+        text-align: center;
+    }
+    .musicbox{
+        display:flex;
+        flex-direction: column;
+    }
+    #playlistbox{
+        display:none;
+        position: absolute;
+        margin:1%;
+        width:90%;
+        height:40vh;
+        left:5%;
+        background-color: rgb(161, 235, 255);
+        z-index: 5;
+
+    }
+    #playlistbutton{
+        display:block;
+        position: fixed;
+        top:0;
+        right:0;
+        cursor: pointer;
+    }
+    #play,#pause,#back,#forward,#voln,#mute,#volval{
+        float: left;
+        margin:0.3%;
+        padding:0.25%;
+        cursor: pointer;
+        background-color: rgb(45, 168, 255);
+        padding: 7px;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content:center;
+        font-weight: bold;
+        width:25px;
+        height:25px;
     }
     ::-webkit-scrollbar-track{
         background-color: rgb(161, 235, 255);
