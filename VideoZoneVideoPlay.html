@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@35,400,1,0" />
     <!-- <script src="Cv.js" defer></script> -->
     <script src="vp.js" defer></script>
+    <!-- <script src="Videoplay.js" defer></script> -->
 </head>
 <body>
   <div class="navigation"> 
@@ -24,15 +25,15 @@
       <div class="Social">
         <button onclick="display('socialButtons')"><img src="images/SocialMedia.png" alt="Social Media and Contact" ><span><strong> Social Media & Contact ▼</span></strong></button>        
         <div class="socialButtons" id="socialButtons" style="display:none;">
-          <li><a href="https://www.linkedin.com/in/piyushkachhwal" title="Click here to see LinkedIn Profile"><button style="background-color: rgba(25, 122, 219, 0.74);color: aliceblue;"  ><img src="images/LinkedInLogo.ico" alt="LinkedIn" ><b> LinkedIn</b></button></a></li> 
+          <div><a href="https://www.linkedin.com/in/piyushkachhwal" title="Click here to see LinkedIn Profile"><button style="background-color: rgba(25, 122, 219, 0.74);color: aliceblue;"  ><img src="images/LinkedInLogo.ico" alt="LinkedIn" ><b> LinkedIn</b></button></a></div> 
     
-          <li><a href="https://github.com/PiyushK102" title="Click here to see GitHub Profile"><button style="background-color: rgba(0, 0, 0); color: aliceblue;"><img src="images/GithubLogo.ico" alt="GitHub" > <b> Github</b></button></a></li>
+          <div><a href="https://github.com/PiyushK102" title="Click here to see GitHub Profile"><button style="background-color: rgba(0, 0, 0); color: aliceblue;"><img src="images/GithubLogo.ico" alt="GitHub" > <b> Github</b></button></a></div>
     
-          <li><a href="https://www.instagram.com/piyush__kachhwal/" title="Click here to see Instagram Profile"><button style="background-color: rgb(255, 255, 255); color: rgb(216, 0, 191);"><img src="images/InstaGramLogo.ico" alt="Instagram" ><b> Instagram</b></button></a></li>
+          <div><a href="https://www.instagram.com/piyush__kachhwal/" title="Click here to see Instagram Profile"><button style="background-color: rgb(255, 255, 255); color: rgb(216, 0, 191);"><img src="images/InstaGramLogo.ico" alt="Instagram" ><b> Instagram</b></button></a></div>
     
-          <li><a href="https://telegram.me/PiyushK102"  title="Click here to message on Telegram" ><button style="background-color: rgba(91, 187, 255, 0.889);color: aliceblue;" ><img src="images/telegram.jpg"  alt="Telegram" > <b> Telegram</b></button></a>
+          <div><a href="https://telegram.me/PiyushK102"  title="Click here to message on Telegram" ><button style="background-color: rgba(91, 187, 255, 0.889);color: aliceblue;" ><img src="images/telegram.jpg"  alt="Telegram" > <b> Telegram</b></button></a>
               
-          <li><a href="mailto:piyushkachhwal1812@gmail.com"  title="Click here to Mail"><button style="background-color: rgba(255, 12, 4, 0.77);color: white;"><img src="images/email.ico" alt="Email" ><b>Email</b></button></a></li>
+          <div><a href="mailto:piyushkachhwal1812@gmail.com"  title="Click here to Mail"><button style="background-color: rgba(255, 12, 4, 0.77);color: white;"><img src="images/email.ico" alt="Email" ><b>Email</b></button></a></div>
         </div>
       </div>
     
@@ -43,25 +44,25 @@
       <div><a href="docs/Piyush's Resume.pdf" download="Piyush's Resume.pdf" title="Click here to View Resume" target="_blank"><button><img src="images/resumeIcon.ico"alt="Resume"><b> View/Download Resume</b></button></a></div>
 
       <div><a href="MusicD.html"  title="Click here to go to MusicDome"><button><img src="images/musicDome.jpg"alt="Music Dome"><b> Music Dome </b></button></a></div>
-      </li>
       </div>
     </div>
+  </div>
   <div class="VZ">
     <h1 style="background-image:linear-gradient(to right,rgb(237, 174, 174),rgb(255, 104, 104),rgb(255, 32, 32),rgb(255, 104, 104),rgb(237, 174, 174));color:aliceblue;text-align:center;border-radius: 30px;padding:3px;font-size:large;"><img src="images/Vz.jpg">Video Zone</h1> 
-   
   </div>
   <hr><br>
   <div id="screendiv">    
     <div id="divscreen">
       <div id="topline">
-        <span id="videonamediv">Series Name </span><span id="screensizebox"></span>
+        <span id="videonamediv">Series Name </span><span id="screensizebox"> Screen Size → W:-Px X H:-Px</span><button><span class="material-symbols-rounded" id="controloff" title="Lock Controls" onclick="controldisplay('controlscontainer')"style="display:block;">lock_open_right</span>
+        <span id="controlon" title=" Unlock Controls"style="display:none;"onclick="controldisplay('controlscontainer')" class="material-symbols-rounded">lock</span>
       </div>
       <video id="screen">
             <!-- https://drive.google.com/uc?id=1QAkCKZUvfy12yubtrx40oQKccVCICEAN -->
           <source id="videosource"src="https://drive.google.com/uc?id=17fX93QQMP7njPQOnDocSz2VIwqGGJq8P" type="video/mp4">
       </video>
 
-        <div id="controlscontainer">
+        <div id="controlscontainer" style="display: flex;">
             <input id="progress" min="0" max="100" title="Seek" type="range" steps="any" value="0">
             <div id="controls">
                 <div id="timer">
@@ -74,7 +75,7 @@
                 <div id="pause" style="display:none;" title="Pause"><span class="material-symbols-rounded">pause</span></div>
                 <div id="forward" title="Seek Forward"><span class="material-symbols-rounded">fast_forward</span></div>    
                 <div id="minip" style="display:block;" title="Click to go in Picture in Picture Mode"><span class="material-symbols-rounded">pip</span></div>
-                <div id="fullscr" style="display:block;"title="Click for Fullscreen Mode"><span class="material-symbols-rounded">fullscreen</span></div>
+                <div  style="display:block;"title="Click for Fullscreen Mode"><span id="fullscr"class="material-symbols-rounded">fullscreen</span></div>
                 <div id="voln" style="display:block" title="Click to Mute"><span class="material-symbols-rounded">volume_up</span></div>
                 <div id="mute" style="display:none" title="Click to Unmute"><span class="material-symbols-rounded">volume_off</span></div>
                 <div id="volumectrl">
@@ -85,7 +86,7 @@
         </div>
     </div>
     <div id="playlistbox">
-    <div id="video"onclick="changevideo('https://drive.google.com/uc?id=17fX93QQMP7njPQOnDocSz2VIwqGGJq8P')" onclick="changename('videoname')"><div id="Logo"><img id ="emoji"src="images/IdatenJumpthumb.jpg"></div><div id="videoname"> Idaten Jump Ep. 01 <img src="images/Vz.jpg" alt=""></div></div>
+    <div id="video"onclick="changevideo('https://drive.google.com/uc?id=17fX93QQMP7njPQOnDocSz2VIwqGGJq8P')"><div id="Logo"><img id ="emoji"src="images/IdatenJumpthumb.jpg"></div><div id="videoname"> Idaten Jump Ep. 01 <img src="images/Vz.jpg" alt=""></div></div>
     <div id="video"onclick="changevideo('https://drive.google.com/uc?id=1LpdgyJtOFF5Zq3sFD_Yh4rYKMyDdZ2xb')"><div id="Logo"><img id ="emoji"src="images/IdatenJumpthumb.jpg"></div><div id="videoname"> Idaten Jump Ep. 02 <img src="images/Vz.jpg" alt=""></div></div>
     <div id="video"onclick="changevideo('https://drive.google.com/uc?id=1TwIGcS3vvm5MdcJZX16FSysqMiQM6kZU')"><div id="Logo"><img id ="emoji"src="images/IdatenJumpthumb.jpg"></div><div id="videoname"> Idaten Jump Ep. 03 <img src="images/Vz.jpg" alt=""></div></div>
     <div id="video"onclick="changevideo('https://drive.google.com/uc?id=1SN4HrGyn4Rx7WLSH6e83dNX7ka7Sp0pX)"><div id="Logo"><img id ="emoji"src="images/IdatenJumpthumb.jpg"></div><div id="videoname"> Idaten Jump Ep. 04 <img src="images/Vz.jpg" alt=""></div></div>
@@ -137,6 +138,10 @@
     <div id="video"onclick="changevideo('https://drive.google.com/uc?id=1kHnAfwTFt_P5tzF9evaD78GBT0_7xwZ6')"><div id="Logo"><img id ="emoji"src="images/IdatenJumpthumb.jpg"></div><div id="videoname"> Idaten Jump Ep. 50 <img src="images/Vz.jpg" alt=""></div></div>
     <div id="video"onclick="changevideo('https://drive.google.com/uc?id=1IVk9gOaiMWZZ8czUKcYofw7kp5Rz9UxV')"><div id="Logo"><img id ="emoji"src="images/IdatenJumpthumb.jpg"></div><div id="videoname"> Idaten Jump Ep. 51 <img src="images/Vz.jpg" alt=""></div></div>
     <div id="video"onclick="changevideo('https://drive.google.com/uc?id=18u2LAx40rUVEBUuUGUJAf6fN_ZT3YTbR')"><div id="Logo"><img id ="emoji"src="images/IdatenJumpthumb.jpg"></div><div id="videoname"> Idaten Jump Ep. 52 <img src="images/Vz.jpg" alt=""></div></div>
+    <div id="video"onclick="changevideo('images/Genius_2018_Hindi_Full_Movie_Proper_HDRip_(FilmyZilla.cc).mp4')"><div id="Logo"><img id ="emoji"src="images/IdatenJumpthumb.jpg"></div><div id="videoname"> Genius <img src="images/Vz.jpg" alt=""></div></div>
+    <div id="video"onclick="changevideo('VideoZoneImages/Avatar.mp4')"><div id="Logo"><img id ="emoji"src="images/IdatenJumpthumb.jpg"></div><div id="videoname"> Genius <img src="images/Vz.jpg" alt=""></div></div>
+
+
 
 </div> 
 </div>

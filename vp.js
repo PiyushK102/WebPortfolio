@@ -66,6 +66,9 @@ ham.addEventListener("click",()=>{
     }
 })
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////-----Change Video Source---------//////////////////////////////////
 function changevideo(e){
     togglePlayPause();
@@ -88,7 +91,7 @@ document.addEventListener("loaded",()=>{
 playbtn.addEventListener("click" , togglePlayPause)
 Video.addEventListener("click",togglePlayPause) 
 pausebtn.addEventListener("click",togglePlayPause)
-controls.addEventListener("hover",display)
+
 
 function togglePlayPause(){
     if(Video.paused==true)
@@ -96,13 +99,31 @@ function togglePlayPause(){
         Video.play()
         pausebtn.style.display="block"
         playbtn.style.display="none"
+
     }
     else{
         Video.pause()
         playbtn.style.display="block"
         pausebtn.style.display="none"
-        
     }   
+}
+function controldisplay(btn){
+    if (document.getElementById(btn).style.display == "none") {
+        document.getElementById(btn).style.display = "block";
+        document.getElementById("controloff").style.display="block"
+        document.getElementById("controlon").style.display="none"
+        Video.style.height="65vh"
+        
+
+        
+        } 
+    else {
+        document.getElementById(btn).style.display = "none";
+        document.getElementById("controlon").style.display="block"
+        document.getElementById("controloff").style.display="none"
+        Video.style.height="75vh"
+        
+    } 
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////-------PlaylistBox Display-------/////////////////////////////////
@@ -160,6 +181,12 @@ vol.addEventListener("input",e =>{
         volval.innerHTML=Math.round((Video.volume)*100);
    }
 })
+function volpm(vvalue){
+    
+    Video.volume+=vvalue/100
+    vol.value=(audio.volume)*100
+    volval.innerHTML=(vol.value)
+}
 function toggleMute()
 {
    Video.muted=!Video.muted
@@ -270,6 +297,15 @@ document.addEventListener("keydown", e =>{
         case "o":
             pipmode()
             break
+        case "arrowup":
+            case "u":
+                volpm(-2)
+                break
+        
+        case "arrowdown":
+            case "d":
+                volpm(+2)
+                break
     }   
 })
 
