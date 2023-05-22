@@ -21,6 +21,7 @@ const ham=document.querySelector(".ham")
 const nav=document.querySelector(".navButtons")
 const hamsym=document.querySelector("#hamsym")
 const closebtn=document.querySelector("#close")
+const closefscreen=document.querySelector("#exitfscreen")
 
 
 
@@ -139,15 +140,22 @@ function display(element) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////----Screen Modes----/////////////////////////////////////////////////////////////
 fullscrbtn.addEventListener("click",fullscreen)
+// closefscreen.addEventListener("click",fullscreen)
 Video.addEventListener("dblclick",fullscreen)
 function fullscreen(){
    if(fullscrbtn.requestFullscreen ||Video.requestFullscreen)
    {
         Video.requestFullscreen();
+        Video.style.zIndex="0"
+        controls.style.zIndex="2147483647";
+        // fullscrbtn.style.display="none"
+        // closefscreen.style.display="block"
    }
-   else if(Video.requestFullscreen==true)
+   else if(Video.requestFullscreen==true )
    {
         Video.exitFullscreen();
+        // closefscreen.style.display="none"
+        // fullscrbtn.style.display="block"
    }
   
 }
@@ -181,12 +189,6 @@ vol.addEventListener("input",e =>{
         volval.innerHTML=Math.round((Video.volume)*100);
    }
 })
-function volpm(vvalue){
-    
-    Video.volume+=vvalue/100
-    vol.value=(audio.volume)*100
-    volval.innerHTML=(vol.value)
-}
 function toggleMute()
 {
    Video.muted=!Video.muted
@@ -200,12 +202,16 @@ function toggleMute()
    else{
         mute.style.display="none"
         volvalue.style.display="block"
-        volval.innerHTML=Math.ceil((Video.volume)*100)
-        vol.value=Math.floor((Video.volume)*100)
+        volval.innerHTML=Math.round((Video.volume)*100)
+        vol.value=Math.round((Video.volume)*100)
    }
 }
-
-
+function volpm(vvalue){
+    
+    Video.volume+=vvalue/100
+    vol.value=(Video.volume)*100
+    volval.innerHTML=(vol.value)
+}
 /////////////////////////////////////////////////////////////////
 /////////////////--------ProgressBar-----------////////////////////
 
@@ -298,14 +304,14 @@ document.addEventListener("keydown", e =>{
             pipmode()
             break
         case "arrowup":
-            case "u":
-                volpm(-2)
+            case "AudioVolumeUp":
+                volpm(1)
                 break
-        
         case "arrowdown":
-            case "d":
-                volpm(+2)
-                break
+            case "AudioVolumeDown":
+            case "DOM_VK_VOLUME_DOWN":
+                volpm(-1)
+                break 
     }   
 })
 
