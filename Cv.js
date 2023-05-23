@@ -3,6 +3,19 @@ const ham=document.querySelector(".ham")
 const nav=document.querySelector(".navButtons")
 const hamsym=document.querySelector("#hamsym")
 const closebtn=document.querySelector("#close")
+const Social=document.querySelector(".Social")
+Social.addEventListener("click",()=>{
+    if(document.querySelector("#socialButtons").style.display=="none"){
+        document.querySelector("#socialButtons").style.display="block"
+        document.querySelector("#uparrow").style.display="block"
+        document.querySelector("#downarrow").style.display="none" 
+    }
+    else{
+        document.querySelector("#socialButtons").style.display="none"
+        document.querySelector("#uparrow").style.display="none"
+        document.querySelector("#downarrow").style.display="block" 
+    }
+})
 
 
 document.addEventListener("loaded",()=>{
