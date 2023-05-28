@@ -1,10 +1,6 @@
-*{
-    margin: 0px;
-    padding:0px;
-}
 body{
     background-image:radial-gradient(white,rgb(157, 240, 255),rgb(236, 243, 255),rgb(0, 229, 255),rgb(236, 243, 255),rgb(157, 240, 255),rgb(236, 243, 255),rgb(157, 240, 255),rgb(236, 243, 255)); 
-    overflow-x: hidden; 
+    overflow-x: hidden; overflow-y: hidden;
 }
 hr{
     height:0.2em;
@@ -31,13 +27,13 @@ hr{
     border:2px solid black;
     transition: height 20ms widht 20ms;
 }
-.navigation button:hover{
+#navbtn:hover{
     background-color: rgb(240, 253, 255);
     border-color: aqua;
     border-width: 0.8mm;
     color: black;
 }
-.navigation button:active{
+#navbtn:active{
     transform: translateY(2px);
 }
 .navigation a,.Social a{
@@ -47,7 +43,7 @@ hr{
     display: block;
 }
 
-button:active,.equlizer button:active{
+.equlizer button:active{
     transform: translateY(2px);
 }
 #audioplayer{
