@@ -1,6 +1,6 @@
 body{
     background-image:radial-gradient(white,rgb(157, 240, 255),rgb(236, 243, 255),rgb(0, 229, 255),rgb(236, 243, 255),rgb(157, 240, 255),rgb(236, 243, 255),rgb(157, 240, 255),rgb(236, 243, 255)); 
-    overflow-x: hidden; overflow-y: hidden;
+    overflow-x: hidden; overflow-y: scroll;
 }
 hr{
     height:0.2em;
