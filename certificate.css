@@ -49,7 +49,7 @@ p{
     justify-content: center; 
 }
 
-.certificate1,.certificate2,.certificate3,.certificate4,.certificate5,.certificate6,.certificate7{
+.certificaten{
     align-self: center;
     background-color: #c4e0ff;
     padding: 1.5%;
@@ -103,7 +103,7 @@ embed{
         margin: 0%;
         margin-top: 0.5%;
     }
-    .certificate1,.certificate2,.certificate3,.certificate4,.certificate5,.certificate6,.certificate7{
+    .certificaten{
         border-radius: 30px;
         width: 100%;
         box-shadow: 3px 3px 5px grey;
