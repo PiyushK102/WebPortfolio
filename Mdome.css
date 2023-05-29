@@ -28,7 +28,6 @@ hr{
     transition: height 20ms widht 20ms;
 }
 #navbtn:hover{
-    background-color: rgb(240, 253, 255);
     border-color: aqua;
     border-width: 0.8mm;
     color: black;
