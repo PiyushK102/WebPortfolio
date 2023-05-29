@@ -61,7 +61,7 @@ hr{
     width:99.8%;
     border-radius: 10px;
     border:2px solid rgb(127, 214, 255);
-    margin:1.5% 0 0 0;
+    margin:1% 0 0 0;
     overflow: hidden;
 }
 #playlistbox{
@@ -99,7 +99,6 @@ hr{
     justify-content:center;
     justify-items:center;
     padding:2%;
-    -webkit-user-drag: element;
 }
 #music{
     display: flex;
