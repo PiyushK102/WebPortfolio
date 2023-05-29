@@ -60,7 +60,7 @@
     border-radius: 11px;
 
 }
-.project1,.project2,.project3,.project4,.project5,.project6{
+.projectn{
     align-self: center;
     background-color: #c4e0ff;
     padding: 1.5%;
@@ -128,7 +128,7 @@
         margin: 0%;
         margin-top: 0.5%;
     }
-    .project1,.project2,.project3,.project4,.project5,.project6{
+    .projectn{
         border-radius: 30px;
         width: 100%;
         box-shadow: 3px 3px 5px grey;
