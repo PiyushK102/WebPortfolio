@@ -78,11 +78,11 @@ body{background-color:rgb(236, 236, 236)
 #back:hover,#forward:hover,#fullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play:hover,#voln:hover{padding:3px;border-radius:50%;background-color:tra;box-shadow:2px 2px 3px 3px rgba(128,128,128,.699)}
 #back:active,#forward:active,#fullscr:active,#minip:active,#mute:active,#pause:active,#play:active,#voln:active{border:2px solid #faffff;background-color:#fff}
 #volumectrl{display:flex;align-items:center;justify-content:center;justify-items:center;height:25px;padding:3px 0}
-#volslider{display:none;width:100px;transition:450ms ease-in-out;z-index:2;height:10px}
+#volslider{display:none;width:100px;transition:450ms ease-in-out;z-index:2;height:10px;accent-color:rgb(0, 0, 0) ;}
 #volval{font-size:"12px";color:#000;padding:3px;width:50px;height:25px;text-align:center;vertical-align: middle;}
 #volslider:focus-within,#volumectrl:hover #volslider{display:block;cursor:pointer;background-color:#fff}
 #volumectrl:hover{border-radius:25px}
-#progress{width:98%;height:3px;margin:10px;background-color:#21ff8c;border-radius:50%;position:static}
+#progress{width:98%;height:3px;margin:10px;background-color:#21ff8c;border-radius:50%;position:static;accent-color:rgb(229, 0, 0);}
 #progress:hover{height:5px;cursor:pointer}
 #timer{display:flex;align-items:center;border-radius:25px;z-index:150;color:#000;height:25px;padding:3px 5px}
 #video:fullscreen{z-index:3}

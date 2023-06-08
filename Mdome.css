@@ -168,15 +168,14 @@ hr{
     align-items: center;
     align-content: center;
     justify-content: center;
-    background-color: aliceblue;
     border-radius: 10px 10px 10px 10px;
 }
 #controlscontainer{
     width:80%;
     margin:0.25%;
-    border:2px solid black;
+    border:2px solid rgb(0, 191, 255);
     border-radius: 10px;
-    background-color: rgba(84, 175, 255, 0.827);
+    background-color: rgba(255, 255, 255, 0.827);
     position: sticky;
     bottom:5px;
     float: center;
@@ -217,6 +216,7 @@ hr{
     margin: 15px;
     cursor: pointer;
     position: static;
+    accent-color: rgb(0, 170, 243);
 }
 #progress :hover{
 
@@ -227,6 +227,8 @@ hr{
     width:100px;
     transition: width 150ms ease-in-out;
     cursor: pointer;
+    accent-color: rgb(0, 170, 243);
+
 }
 #musicname{
     width:40vw;
