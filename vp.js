@@ -143,37 +143,34 @@ function controldisplay(btn){
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////-------PlaylistBox Display-------/////////////////////////////////
-function display(element) {
-    if (document.getElementById(element).style.display == "none") {
-        document.getElementById(element).style.display = "block";
+// function display(element) {
+//     if (document.getElementById(element).style.display == "none") {
+//         document.getElementById(element).style.display = "block";
         
-        } 
-    else {
-        document.getElementById(element).style.display = "none";
-    }
-}
+//         } 
+//     else {
+//         document.getElementById(element).style.display = "none";
+//     }
+// }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////----Screen Modes----/////////////////////////////////////////////////////////////
 fullscrbtn.addEventListener("click",fullscreen)
 // closefscreen.addEventListener("click",fullscreen)
 Video.addEventListener("dblclick",fullscreen)
 function fullscreen(){
-   if(fullscrbtn.requestFullscreen ||Video.requestFullscreen)
+   if(document.fullscreenElement==null)
    {
-        Video.requestFullscreen();
-        Video.style.zIndex="0"
-        controls.style.zIndex="2147483647";
-        // fullscrbtn.style.display="none"
-        // closefscreen.style.display="block"
+        Videocontainer.requestFullscreen();
    }
-   else if(Video.requestFullscreen==true )
+   else if(document.fullscreenElement!=null)
    {
-        Video.exitFullscreen();
-        // closefscreen.style.display="none"
-        // fullscrbtn.style.display="block"
+        Videocontainer.exitFullscreen();
    }
   
 }
+// document.addEventListener("fullscreenchange",()=>{
+
+// })
 mpbtn.addEventListener("click",pipmode)
 function pipmode() {
     if (mpbtn.pictureInPictureElement) {
