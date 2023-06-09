@@ -42,7 +42,7 @@ li{
     
 }
 
-.navigation img,#homebtn{
+.navigation img{
     border:2px solid;
     border-color: rgb(92, 92, 92);
     vertical-align: middle;
