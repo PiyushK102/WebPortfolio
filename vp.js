@@ -143,15 +143,15 @@ function controldisplay(btn){
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////-------PlaylistBox Display-------/////////////////////////////////
-// function display(element) {
-//     if (document.getElementById(element).style.display == "none") {
-//         document.getElementById(element).style.display = "block";
+ function display(element) {
+     if (document.getElementById(element).style.display == "none") {
+         document.getElementById(element).style.display = "block";
         
-//         } 
-//     else {
-//         document.getElementById(element).style.display = "none";
-//     }
-// }
+         } 
+     else {
+         document.getElementById(element).style.display = "none";
+     }
+ }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////----Screen Modes----/////////////////////////////////////////////////////////////
 fullscrbtn.addEventListener("click",fullscreen)
