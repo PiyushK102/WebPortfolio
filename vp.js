@@ -23,6 +23,9 @@ const hamsym=document.querySelector("#hamsym")
 const closebtn=document.querySelector("#close")
 const closefscreen=document.querySelector("#exitfscreen")
 const Social=document.querySelector(".Social")
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Social.addEventListener("click",()=>{
     if(document.querySelector("#socialButtons").style.display=="none"){
         document.querySelector("#socialButtons").style.display="block"
@@ -35,12 +38,19 @@ Social.addEventListener("click",()=>{
         document.querySelector("#downarrow").style.display="block" 
     }
 })
-
-
-
-
-
-///////////////////////////////////-----Video Name Function-------////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////-------PlaylistBox Display-------/////////////////////////////////
+function display(element) {
+    if (document.getElementById(element).style.display == "none") {
+        document.getElementById(element).style.display = "block";
+        
+        } 
+    else {
+        document.getElementById(element).style.display = "none";
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////-----Video Name Function-------///////////////////////////////////////////////////////////////
     function changename(element){
         videoname.innerHTML=element.innerHTML
     }
@@ -94,7 +104,7 @@ function changevideo(e){
    
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////-----Document Load Time Script-----/////////////////////////////////
 document.addEventListener("loaded",()=>{
     screen.style.width===(7/9)*window.innerWidth;
@@ -125,34 +135,20 @@ function togglePlayPause(){
 }
 function controldisplay(btn){
     if (document.getElementById(btn).style.display == "none") {
-        document.getElementById(btn).style.display = "block";
+        document.getElementById(btn).style.display = "flex";
         document.getElementById("controloff").style.display="block"
         document.getElementById("controlon").style.display="none"
         Video.style.height="65vh"
-        
-
-        
         } 
     else {
         document.getElementById(btn).style.display = "none";
         document.getElementById("controlon").style.display="block"
         document.getElementById("controloff").style.display="none"
-        Video.style.height="75vh"
-        
+        Video.style.height="75vh" 
     } 
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////-------PlaylistBox Display-------/////////////////////////////////
- function display(element) {
-     if (document.getElementById(element).style.display == "none") {
-         document.getElementById(element).style.display = "block";
-        
-         } 
-     else {
-         document.getElementById(element).style.display = "none";
-     }
- }
-////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 ///////////////////////----Screen Modes----/////////////////////////////////////////////////////////////
 fullscrbtn.addEventListener("click",fullscreen)
 // closefscreen.addEventListener("click",fullscreen)
@@ -162,7 +158,7 @@ function fullscreen(){
    {
         Videocontainer.requestFullscreen();
    }
-   else if(document.fullscreenElement!=null)
+   else
    {
         Videocontainer.exitFullscreen();
    }
@@ -224,8 +220,8 @@ function volpm(vvalue){
     vol.value=(Video.volume)*100
     volval.innerHTML=(vol.value)
 }
-/////////////////////////////////////////////////////////////////
-/////////////////--------ProgressBar-----------////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+/////////////////--------ProgressBar-----------///////////////////////////////////
 
 Video.addEventListener("loadeddata",()=>{
     seekbar.setAttribute("max",(Video.duration));
@@ -243,8 +239,8 @@ seekbar.addEventListener("input",e => {
     Video.currentTime=(e.target.value);
     
 })
-///////////////////////////////////////////////////////////////////
-/////////////////--------Duration-----------////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////--------Duration-----------/////////////////////////
 
 Video.addEventListener("loadeddata",()=>{
     totalTimeElement.textContent=formatDuration(Video.duration)
@@ -271,25 +267,14 @@ function formatDuration(time){
         }:${leadingZeroFormatter.format(sec)}`
     }
 }
-
+forward.addEventListener("click",skip(10))
+back.addEventListener("click",skip(-5))
 function skip(duration){
     
     Video.currentTime+=duration
 }
-forward.addEventListener("click",skipf)
-function skipf(duration)
-{
-    duration=10;
-    Video.currentTime+=duration
 
-}
-function skipb(duration)
-{
-    duration=5;
-    Video.currentTime-=duration
-}
-back.addEventListener("click",skipb)
-///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
 document.addEventListener("keydown", e =>{
     switch(e.key.toLowerCase()){
         case " ":
@@ -323,7 +308,10 @@ document.addEventListener("keydown", e =>{
             case "AudioVolumeDown":
             case "DOM_VK_VOLUME_DOWN":
                 volpm(-1)
-                break 
+                break
+        case "c":
+            controldisplay('controlscontainer')
+            break;         
     }   
 })
 
