@@ -21,7 +21,7 @@ const ham=document.querySelector(".ham")
 const nav=document.querySelector(".navButtons")
 const hamsym=document.querySelector("#hamsym")
 const closebtn=document.querySelector("#close")
-const closefscreen=document.querySelector("#exitfscreen")
+const closefscreen=document.querySelector("#exitfullscr")
 const Social=document.querySelector(".Social")
 
 
@@ -52,7 +52,7 @@ function display(element) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////-----Video Name Function-------///////////////////////////////////////////////////////////////
     function changename(element){
-        videoname.innerHTML=element.innerHTML
+        videoname.innerHTML=element
     }
     
     document.addEventListener("loaded",()=>{
@@ -151,22 +151,25 @@ function controldisplay(btn){
 
 ///////////////////////----Screen Modes----/////////////////////////////////////////////////////////////
 fullscrbtn.addEventListener("click",fullscreen)
-// closefscreen.addEventListener("click",fullscreen)
+closefscreen.addEventListener("click",fullscreen)
 Video.addEventListener("dblclick",fullscreen)
 function fullscreen(){
-   if(document.fullscreenElement==null)
+   if(document.fullscreenElement!=null)
    {
-        Videocontainer.requestFullscreen();
+        document.exitFullscreen()
+        closefscreen.style.display="none"
+        fullscrbtn.style.display="block"
    }
    else
    {
-        Videocontainer.exitFullscreen();
+        Videocontainer.requestFullscreen()
+        closefscreen.style.display="block"
+        fullscrbtn.style.display="none"
    }
   
 }
-// document.addEventListener("fullscreenchange",()=>{
 
-// })
+///////////////////////////////////------MiniPlayer Button--------/////////////////////////////////////
 mpbtn.addEventListener("click",pipmode)
 function pipmode() {
     if (mpbtn.pictureInPictureElement) {
