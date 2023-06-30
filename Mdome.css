@@ -120,6 +120,7 @@ hr{
     font-weight: bolder;
     border-left: 10px solid;
     border-image: linear-gradient(rgb(0, 157, 255),rgb(23, 108, 255),blue)10;
+    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.382);
 }
 #equilizer{
     width:50%;
@@ -141,6 +142,7 @@ hr{
     border-radius: 20px;
     width:40vw;
     height:20vw;
+    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.622);
 }
 #musicdiv,#controlscontainer{
     display:flex;
@@ -199,16 +201,19 @@ hr{
     font-weight: bold;
     width:25px;
     height:25px;
+    
 }
 #play:hover,#pause:hover,#back:hover,#forward:hover,#voln:hover,#mute:hover{
     
     border-radius: 50%;
+    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.622);
 }
 #volumectrl{
     float: right;
     right:0;
     padding:0.5%;
     border-radius: 0 10px 10px 0;
+
 }
 #progress{
     width:80%;
@@ -222,6 +227,7 @@ hr{
 
     height:8px;
     cursor: pointer;
+    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.622);
 }
 #volslider{
     width:100px;

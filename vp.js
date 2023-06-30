@@ -297,6 +297,9 @@ document.addEventListener("keydown", e =>{
         case "f":
             fullscreen()
             break
+        case "e":
+            Videocontainer.exitFullscreen()
+            break
         case "o":
             pipmode()
             break
