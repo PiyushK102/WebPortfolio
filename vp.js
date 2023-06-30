@@ -62,6 +62,13 @@ function display(element) {
         console.log(winheight);
         console.log(winwidth);
     })
+    document.addEventListener("onchange",()=>{
+        var winwidth=window.innerWidth
+        var winheight=window.innerHeight
+        document.querySelector("#screensizebox").innerHTML=" Screen Size → W:"+winwidth+"Px X "+"H:"+winheight+"Px";
+        console.log(winheight);
+        console.log(winwidth);
+    })
     window.addEventListener("resize",()=>{
         var winwidth=window.innerWidth
         var winheight=window.innerHeight
@@ -105,13 +112,6 @@ function changevideo(e){
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////-----Document Load Time Script-----/////////////////////////////////
-document.addEventListener("loaded",()=>{
-    screen.style.width===(7/9)*window.innerWidth;
-    screen.style.height===(7/9)*window.innerHeight;
-    
-})
-//////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////----Play Pause operation----///////////////////////////////////////
 
 playbtn.addEventListener("click" , togglePlayPause)
@@ -149,7 +149,9 @@ function controldisplay(btn){
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-///////////////////////----Screen Modes----/////////////////////////////////////////////////////////////
+///////////////////////////////////////----Screen Modes----/////////////////////////////////////////////////////////////
+
+///////////////////////////////////------FullScreen Button--------/////////////////////////////////////
 fullscrbtn.addEventListener("click",fullscreen)
 closefscreen.addEventListener("click",fullscreen)
 Video.addEventListener("dblclick",fullscreen)
@@ -166,16 +168,15 @@ function fullscreen(){
         closefscreen.style.display="block"
         fullscrbtn.style.display="none"
    }
-  
 }
 
 ///////////////////////////////////------MiniPlayer Button--------/////////////////////////////////////
 mpbtn.addEventListener("click",pipmode)
 function pipmode() {
-    if (mpbtn.pictureInPictureElement) {
-            mpbtn.exitPictureInPicture();
+    if (document.pictureInPictureElement) {
+            document.exitPictureInPicture();
         }
-    else if (document.pictureInPictureEnabled) {
+    else {
             Video.requestPictureInPicture();
         }
 }
@@ -299,9 +300,6 @@ document.addEventListener("keydown", e =>{
                 break
         case "f":
             fullscreen()
-            break
-        case "e":
-            Videocontainer.exitFullscreen()
             break
         case "o":
             pipmode()
