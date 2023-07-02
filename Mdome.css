@@ -15,7 +15,7 @@ hr{
   'opsz' 35
 }
 .VZ{
-    margin:0.25% 25% 0.25% 25% ;
+    margin:0.1% 25% 0.1% 25% ;
     width:50%;
     position: sticky;
 }
@@ -50,6 +50,7 @@ hr{
     display:flex;
     flex-direction: column; 
     border-radius: 20px;
+    padding:0.1%;
 }
 #musicbox{
     display:flex;
@@ -61,7 +62,7 @@ hr{
     width:99.8%;
     border-radius: 10px;
     border:2px solid rgb(127, 214, 255);
-    margin:1% 0 0 0;
+    margin:0.5% 0 0 0;
     overflow: hidden;
 }
 #playlistbox{
@@ -223,11 +224,9 @@ hr{
     position: static;
     accent-color: rgb(0, 170, 243);
 }
-#progress :hover{
-
-    height:8px;
+#progress:hover{
+    height:5px;
     cursor: pointer;
-    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.622);
 }
 #volslider{
     width:100px;

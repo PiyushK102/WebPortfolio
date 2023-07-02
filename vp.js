@@ -62,6 +62,11 @@ function display(element) {
         console.log(winheight);
         console.log(winwidth);
     })
+    Video.addEventListener("onchange",()=>{
+        var winwidth=window.innerWidth
+        var winheight=window.innerHeight
+        document.querySelector("#screensizebox").innerHTML=" Screen Size → W:"+winwidth+"Px X "+"H:"+winheight+"Px";
+    })
     document.addEventListener("onchange",()=>{
         var winwidth=window.innerWidth
         var winheight=window.innerHeight
@@ -136,14 +141,14 @@ function togglePlayPause(){
 function controldisplay(btn){
     if (document.getElementById(btn).style.display == "none") {
         document.getElementById(btn).style.display = "flex";
-        document.getElementById("controloff").style.display="block"
+        document.getElementById("topline").style.display="flex"
         document.getElementById("controlon").style.display="none"
         Video.style.height="65vh"
         } 
     else {
         document.getElementById(btn).style.display = "none";
         document.getElementById("controlon").style.display="block"
-        document.getElementById("controloff").style.display="none"
+        document.getElementById("topline").style.display="none"
         Video.style.height="75vh" 
     } 
 }
@@ -156,7 +161,7 @@ fullscrbtn.addEventListener("click",fullscreen)
 closefscreen.addEventListener("click",fullscreen)
 Video.addEventListener("dblclick",fullscreen)
 function fullscreen(){
-   if(document.fullscreenElement!=null)
+   if(document.fullscreenElement!=null || document.fullscreenEnabled==false)
    {
         document.exitFullscreen()
         closefscreen.style.display="none"
@@ -226,7 +231,9 @@ function volpm(vvalue){
 }
 //////////////////////////////////////////////////////////////////////////////////
 /////////////////--------ProgressBar-----------///////////////////////////////////
-
+// Video.addEventListener("oncontextmenu",()=>{
+//     Video.hideCo
+// })
 Video.addEventListener("loadeddata",()=>{
     seekbar.setAttribute("max",(Video.duration));
     
@@ -298,6 +305,11 @@ document.addEventListener("keydown", e =>{
             case "l":
                 skip(+10)
                 break
+        case "escape":
+            document.exitFullscreen()
+            closefscreen.style.display="none"
+            fullscrbtn.style.display="block"
+            break
         case "f":
             fullscreen()
             break
@@ -317,6 +329,15 @@ document.addEventListener("keydown", e =>{
             controldisplay('controlscontainer')
             break;         
     }   
+})
+document.addEventListener("keyup", e =>{
+    switch(e.key.toLowerCase()){
+        case "escape":
+        document.exitFullscreen()
+        closefscreen.style.display="none"
+        fullscrbtn.style.display="block"
+        break
+    }
 })
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////

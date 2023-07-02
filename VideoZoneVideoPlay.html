@@ -12,7 +12,7 @@
     <script src="vp.js" defer></script>
     <!-- <script src="Videoplay.js" defer></script> -->
 </head>
-<body>
+<body  oncontextmenu="return false">
   <div class="navigation"> 
     <div class="ham" onclick="display('navButtons')" onclick="symchange()"><span class="material-symbols-rounded" id="hamsym" style="display: flex;">menu</span>Menu<span class="material-symbols-rounded" id="close" style="display: none;">close</span></div>
    
@@ -54,9 +54,9 @@
   <div id="screendiv">    
     <div id="divscreen">
       <div id="topline">
-        <span id="videonamediv">Idaten Jump Ep01. </span><span id="screensizebox"> Screen Size → W:-Px X H:-Px</span><span class="material-symbols-rounded" id="controloff" title="Lock Controls ?" onclick="controldisplay('controlscontainer')"style="display:block;">lock_open_right</span>
-        <span id="controlon" title=" Unlock Controls ?"style="display:none;"onclick="controldisplay('controlscontainer')" class="material-symbols-rounded">lock</span>
+        <span id="videonamediv">Idaten Jump Ep01. </span><span id="screensizebox"> Screen Size → W:-Px X H:-Px</span><span class="material-symbols-rounded" id="controloff" title="Hide Controls ?" onclick="controldisplay('controlscontainer')"style="display:block;">lock_open_right</span>
       </div>
+      <span id="controlon" title=" Unhide Controls ?"style="display:none;"onclick="controldisplay('controlscontainer')" class="material-symbols-rounded">lock</span>
       <video id="screen" src="https://drive.google.com/uc?id=17fX93QQMP7njPQOnDocSz2VIwqGGJq8P" type="video/mp4">
       </video>
         <div id="controlscontainer" style="display: flex;">
