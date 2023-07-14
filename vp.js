@@ -160,6 +160,16 @@ function controldisplay(btn){
 fullscrbtn.addEventListener("click",fullscreen)
 closefscreen.addEventListener("click",fullscreen)
 Video.addEventListener("dblclick",fullscreen)
+document.addEventListener("fullscreenchange",()=>{
+    if(document.fullscreenElement==null || document.fullscreenEnabled==false){
+        closefscreen.style.display="none"
+        fullscrbtn.style.display="block"
+    }
+    else{
+        closefscreen.style.display="block"
+        fullscrbtn.style.display="none"
+    }
+})
 function fullscreen(){
    if(document.fullscreenElement!=null || document.fullscreenEnabled==false)
    {
@@ -174,7 +184,6 @@ function fullscreen(){
         fullscrbtn.style.display="none"
    }
 }
-
 ///////////////////////////////////------MiniPlayer Button--------/////////////////////////////////////
 mpbtn.addEventListener("click",pipmode)
 function pipmode() {
@@ -231,9 +240,7 @@ function volpm(vvalue){
 }
 //////////////////////////////////////////////////////////////////////////////////
 /////////////////--------ProgressBar-----------///////////////////////////////////
-// Video.addEventListener("oncontextmenu",()=>{
-//     Video.hideCo
-// })
+
 Video.addEventListener("loadeddata",()=>{
     seekbar.setAttribute("max",(Video.duration));
     
@@ -286,6 +293,7 @@ function skip(duration){
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////
+
 document.addEventListener("keydown", e =>{
     switch(e.key.toLowerCase()){
         case " ":
@@ -305,11 +313,6 @@ document.addEventListener("keydown", e =>{
             case "l":
                 skip(+10)
                 break
-        case "escape":
-            document.exitFullscreen()
-            closefscreen.style.display="none"
-            fullscrbtn.style.display="block"
-            break
         case "f":
             fullscreen()
             break
@@ -329,15 +332,6 @@ document.addEventListener("keydown", e =>{
             controldisplay('controlscontainer')
             break;         
     }   
-})
-document.addEventListener("keyup", e =>{
-    switch(e.key.toLowerCase()){
-        case "escape":
-        document.exitFullscreen()
-        closefscreen.style.display="none"
-        fullscrbtn.style.display="block"
-        break
-    }
 })
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
