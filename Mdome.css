@@ -318,6 +318,7 @@ hr{
     .musicbox{
         display:flex;
         flex-direction: column;
+        height: 75vh;
     }
     #playlistbox{
         display:none;
@@ -410,6 +411,7 @@ hr{
         display:flex;
         flex-direction: column;
         background: none;
+        height: 75vh;
     }
     #playlistbox{
         display:none;
