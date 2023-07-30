@@ -292,7 +292,7 @@ hr{
 }
 @media screen and (max-width:350px){
     body{
-        background: url(images/musicDome.jpg);
+        background: url(images/musicDbg.jfif);
     }
     #timer{
         border-radius: 5px;
@@ -405,7 +405,7 @@ hr{
 @media screen and (min-width:350px) and (max-width:1000px) {
     body{
         text-align: center;
-        background: url(images/musicDome.jpg) no-repeat;
+        background: url(images/musicDbg.jfif) no-repeat;
     }
     .musicbox{
         display:flex;

@@ -216,7 +216,7 @@ function skip(duration){
 ///////////////////////////////////////////////////////////////////
 ////////////////////////// Playlist Display block none///////////////////
 playlistbutton.addEventListener("hover",()=>{
-    if(window.innerWidth<=770)
+    if(window.innerWidth<=1000)
     {
         playlistbutton.style.display="block"
         musicList.style.display="none"   
@@ -227,7 +227,7 @@ playlistbutton.addEventListener("hover",()=>{
     }
 })
 window.addEventListener("resize",()=>{
-    if(window.innerWidth<=770){
+    if(window.innerWidth<=1000){
         playlistbutton.style.display="block"
         musicList.style.display="none"
     }
@@ -237,7 +237,7 @@ window.addEventListener("resize",()=>{
     }
 })
 document.addEventListener("loaded",()=>{
-    if(window.innerWidth<=770){
+    if(window.innerWidth<=1000){
         playlistbutton.style.display="block"
         musicList.style.display="none"
     }
