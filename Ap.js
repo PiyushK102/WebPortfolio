@@ -16,7 +16,37 @@ const source=document.querySelector("#audiosource")
 const Eimage=document.querySelector("#EquiImage")
 const playlistbutton=document.querySelector("#playlistbutton")
 const musicList=document.querySelector("#playlistbox")
-var songs=["audio\\Chandragupta bgm.mp3","audio\\Flute music of krishna hai vistaar.mp3","audio\\Shiv Tandav Strotam.mp3","audio\\Yada Yada hi dharmasaya.mp3","audio\\Shri Krishna Govind hare Murari.mp3",'audio\\Kaliya naag dance theme.mp3',"audio\\Mahabali Maharudra (RaagJatt.com).mp3"]
+var songs=["audio\\Chandragupta bgm.mp3","audio\\Flute music of krishna hai vistaar.mp3","audio\\Shiv Tandav Strotam.mp3",
+"audio\\Yada Yada hi dharmasaya.mp3","audio\\Shri Krishna Govind hare Murari.mp3",'audio\\Kaliya naag dance theme.mp3',
+"audio\\Mahabali Maharudra (RaagJatt.com).mp3"]
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+document.addEventListener('loaded',()=>{
+    if(window.innerWidth<=1000){
+        document.getElementById("musicbox").style.width=window.innerWidth;
+        document.getElementById("musicbox").style.height='75vh';
+        console.log(window.innerWidth)
+        console.log(window.innerHeight)
+        
+    }
+})
+window.addEventListener('resize',()=>{
+    if(window.innerWidth<=1000){
+        document.getElementById("musicbox").style.width=window.innerWidth;
+        document.getElementById("musicbox").style.height='75vh';
+        console.log(window.innerWidth)
+        console.log(window.innerHeight)
+    }
+    else{
+        document.getElementById("musicbox").style.width=window.innerWidth;
+        document.getElementById("musicbox").style.height='50vh';
+        console.log(window.innerWidth)
+        console.log(window.innerHeight)
+    }
+})
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////// Change Track ////////////////////////////////////////////////
 
 

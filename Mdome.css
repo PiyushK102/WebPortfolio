@@ -41,16 +41,24 @@ hr{
     text-decoration: none;
     display: block;
 }
+#musicdiv{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    
+}
 
 .equlizer button:active{
     transform: translateY(2px);
 }
 #audioplayer{
-    background-image:url(images/musicDbg.jfif);
     display:flex;
     flex-direction: column; 
     border-radius: 20px;
     padding:0.1%;
+    background-image:url(images/musicDbg.jfif);
 }
 #musicbox{
     display:flex;
@@ -61,7 +69,6 @@ hr{
     vertical-align: middle;
     width:99.8%;
     border-radius: 10px;
-    border:2px solid rgb(127, 214, 255);
     margin:0.5% 0 0 0;
     overflow: hidden;
 }
@@ -145,7 +152,7 @@ hr{
     height:20vw;
     box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.622);
 }
-#musicdiv,#controlscontainer{
+#controlscontainer{
     display:flex;
     margin:0.25%;
     flex-direction: column;
@@ -284,6 +291,9 @@ hr{
     height:2em;  
 }
 @media screen and (max-width:350px){
+    body{
+        background: url(images/musicDome.jpg);
+    }
     #timer{
         border-radius: 5px;
     }
@@ -391,13 +401,15 @@ hr{
 }
  
 
-@media screen and (min-width:350px) and (max-width:770px) {
+@media screen and (min-width:350px) and (max-width:1000px) {
     body{
         text-align: center;
+        background: url(images/musicDome.jpg) no-repeat;
     }
     .musicbox{
         display:flex;
         flex-direction: column;
+        background: none;
     }
     #playlistbox{
         display:none;

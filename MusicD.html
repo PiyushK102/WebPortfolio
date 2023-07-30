@@ -89,6 +89,7 @@
       <h1 style="background-color:rgb(105, 215, 255);color:aliceblue;text-align:center;border-radius: 30px;padding:3px;font-size:large;border: 0.1em solid;
       border-color: darkblue;"><img src="images/musicDome.jpg"> Music Dome</h1>    
     </div>
+    <div id="musicdiv">   
     <div id="musicbox">
       <div id="equilizer">
         <img id="EquiImage" src="images/static music img.jpg" alt="Equilizer">
@@ -117,37 +118,37 @@
         <div id="music"onclick="changetrack('audio\\Yada Yada hi dharmasaya.mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname">Yada Yada Hi Dharmasya</span><span id="emoji">🎵</span> </div>
         <div id="music"onclick="changetrack('audio\\Mahabali Maharudra (RaagJatt.com).mp3')"><span id="LogoM"><img alt="Music Thumb"src="images/musicDome.jpg"></span><span id="audioname">Mahabali Maharudra</span><span id="emoji">🎵</span> </div>
       </div>
+    </div> <div id="controlscontainer">
+      <input id="progress" min="0" max="100" title="Seek" type="range" steps="any" value="0">
+      <div id="controls">
+        <div id="timer">
+          <div class="currtime">00:00</div>
+          <div>&ensp;/&ensp;</div>
+          <div class="totaltime">00:00</div>
+        </div>
+        <div id="back" title="Previous Track"><span class="material-symbols-rounded">skip_previous</span></div>
+        <div id="play" style="display:block;" title="Play"><span class="material-symbols-rounded">play_arrow</span></div>
+        <div id="pause" style="display:none;" title="Pause"><span class="material-symbols-rounded">pause</span></div>
+        <div id="forward" title="Next Track"><span class="material-symbols-rounded">skip_next</span></div>   
+        <div id="marqueediv"><marquee><div id="musicname">..........</div></marquee></div>
+        <div id="voln" style="display:block" title="Click to Mute">
+          <span class="material-symbols-rounded">volume_up</span>
+        </div>
+        <div id="mute" style="display:none" title="Click to Unmute">
+          <span class="material-symbols-rounded">volume_off</span>
+        </div>
+        <div id="volumectrl">
+          <div id="volval" style="width:50px;">100</div>
+          <input type="range" min="0" max="100" steps="any" value="100" id="volslider" title="Volume">  
+        </div>
+      </div>
     </div>
-    <div id="musicdiv">  
+  
       <audio id="audio">
         <source id="audiosource"src="audio\Shri Krishna Govind hare Murari.mp3" type="audio/mp3">
         <!-- <source id="audiosource"src="audio\Shiv Tandav Strotam.mp3" type="audio/mp3"> -->
       </audio>
-      <div id="controlscontainer">
-        <input id="progress" min="0" max="100" title="Seek" type="range" steps="any" value="0">
-        <div id="controls">
-          <div id="timer">
-            <div class="currtime">00:00</div>
-            <div>&ensp;/&ensp;</div>
-            <div class="totaltime">00:00</div>
-          </div>
-          <div id="back" title="Previous Track"><span class="material-symbols-rounded">skip_previous</span></div>
-          <div id="play" style="display:block;" title="Play"><span class="material-symbols-rounded">play_arrow</span></div>
-          <div id="pause" style="display:none;" title="Pause"><span class="material-symbols-rounded">pause</span></div>
-          <div id="forward" title="Next Track"><span class="material-symbols-rounded">skip_next</span></div>   
-          <div id="marqueediv"><marquee><div id="musicname">..........</div></marquee></div>
-          <div id="voln" style="display:block" title="Click to Mute">
-            <span class="material-symbols-rounded">volume_up</span>
-          </div>
-          <div id="mute" style="display:none" title="Click to Unmute">
-            <span class="material-symbols-rounded">volume_off</span>
-          </div>
-          <div id="volumectrl">
-            <div id="volval" style="width:50px;">100</div>
-            <input type="range" min="0" max="100" steps="any" value="100" id="volslider" title="Volume">  
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
   
