@@ -427,7 +427,8 @@ h1{
 
 
 
-@media screen and (max-width:770px) {
+
+@media screen and (max-width:1000px) {
     .clock{
         display: none;
     }
