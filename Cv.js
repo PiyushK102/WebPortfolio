@@ -49,7 +49,7 @@ ham.addEventListener("mouseenter",()=>{
 
 })
 window.addEventListener("resize",()=>{
-    if(window.innerWidth<=770){
+    if(window.innerWidth<=1000){
         ham.style.display="block"
         nav.style.display="none"
         hamsym.style.display="block"
