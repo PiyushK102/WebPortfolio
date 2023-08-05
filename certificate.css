@@ -69,6 +69,10 @@ embed{
     border: 1.5mm solid;
     border-color: rgb(121, 60, 121);
 }
+embed:hover{
+    transform: scale(1.5, 1.5);
+    cursor:zoom-in;
+}
 ::-webkit-scrollbar{
     width: 4px;
     height:5px;
