@@ -143,13 +143,11 @@ function controldisplay(btn){
         document.getElementById(btn).style.display = "flex";
         document.getElementById("topline").style.display="flex"
         document.getElementById("controlon").style.display="none"
-        Video.style.height="65vh"
         } 
     else {
         document.getElementById(btn).style.display = "none";
         document.getElementById("controlon").style.display="block"
         document.getElementById("topline").style.display="none"
-        Video.style.height="75vh" 
     } 
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -333,5 +331,4 @@ document.addEventListener("keydown", e =>{
             break;         
     }   
 })
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////

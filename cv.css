@@ -421,13 +421,9 @@ h1{
     border:2px solid rgb(177, 177, 177) ;
 }
 #Logo{
-    filter: drop-shadow(10px 10px 10px rgb(255, 251, 0));
+    filter: drop-shadow(1px 2px 4px rgb(255, 251, 0));
     z-index: 5;
 }
-
-
-
-
 @media screen and (max-width:1000px) {
     .clock{
         display: none;

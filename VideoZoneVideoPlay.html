@@ -57,31 +57,32 @@
         <span id="videonamediv">Idaten Jump Ep01. </span><span id="screensizebox"> Screen Size → W:-Px X H:-Px</span><span class="material-symbols-rounded" id="controloff" title="Hide Controls ?" onclick="controldisplay('controlscontainer')"style="display:block;">lock_open_right</span>
       </div>
       <span id="controlon" title=" Unhide Controls ?"style="display:none;"onclick="controldisplay('controlscontainer')" class="material-symbols-rounded">lock</span>
+
       <video id="screen" src="https://drive.google.com/uc?id=17fX93QQMP7njPQOnDocSz2VIwqGGJq8P" type="video/mp4">
       </video>
-        <div id="controlscontainer" style="display: flex;">
-            <input id="progress" min="0" max="100" title="Seek" type="range" steps="any" value="0">
-            <div id="controls">
-                <div id="timer">
-                    <div class="currtime">0:00</div>
-                    <div>&ensp;/&ensp;</div>
-                    <div class="totaltime">00:00</div>
-                </div>
-                <div id="back" title="Seek Backward"><span class="material-symbols-rounded">fast_rewind</span></div>
-                <div id="play" style="display:block;" title="Play"><strong><span class="material-symbols-rounded">play_arrow</span></strong></div>
-                <div id="pause" style="display:none;" title="Pause"><span class="material-symbols-rounded">pause</span></div>
-                <div id="forward" title="Seek Forward"><span class="material-symbols-rounded">fast_forward</span></div>    
-                <div id="minip" style="display:block;" title="Click to go in Picture in Picture Mode"><span class="material-symbols-rounded">pip</span></div>
-                <div id="fullscr" style="display:block;"title="Click to enter Fullscreen Mode"><span id="enterfullscr" class="material-symbols-rounded">fullscreen</span></div>
-                <div id="exitfullscr" style="display:none;"title="Click for exiting Fullscreen Mode"><span class="material-symbols-rounded">fullscreen_exit</span></div>
-                <div id="voln" style="display:block" title="Click to Mute"><span class="material-symbols-rounded">volume_up</span></div>
-                <div id="mute" style="display:none" title="Click to Unmute"><span class="material-symbols-rounded">volume_off</span></div>
-                <div id="volumectrl">
-                    <div id="volval">100</div>
-                    <div><input type="range" min="0" max="100" steps="any" value="100" id="volslider" title="Volume"></div>
-                </div>
+      <div id="controlscontainer" style="display: flex;">
+        <input id="progress" min="0" max="100" title="Seek" type="range" steps="any" value="0">
+        <div id="controls">
+            <div id="timer">
+                <div class="currtime">0:00</div>
+                <div>&ensp;/&ensp;</div>
+                <div class="totaltime">00:00</div>
+            </div>
+            <div id="back" title="Seek Backward"><span class="material-symbols-rounded">fast_rewind</span></div>
+            <div id="play" style="display:block;" title="Play"><strong><span class="material-symbols-rounded">play_arrow</span></strong></div>
+            <div id="pause" style="display:none;" title="Pause"><span class="material-symbols-rounded">pause</span></div>
+            <div id="forward" title="Seek Forward"><span class="material-symbols-rounded">fast_forward</span></div>    
+            <div id="minip" style="display:block;" title="Click to go in Picture in Picture Mode"><span class="material-symbols-rounded">pip</span></div>
+            <div id="fullscr" style="display:block;"title="Click to enter Fullscreen Mode"><span id="enterfullscr" class="material-symbols-rounded">fullscreen</span></div>
+            <div id="exitfullscr" style="display:none;"title="Click for exiting Fullscreen Mode"><span class="material-symbols-rounded">fullscreen_exit</span></div>
+            <div id="voln" style="display:block" title="Click to Mute"><span class="material-symbols-rounded">volume_up</span></div>
+            <div id="mute" style="display:none" title="Click to Unmute"><span class="material-symbols-rounded">volume_off</span></div>
+            <div id="volumectrl">
+                <div id="volval">100</div>
+                <div><input type="range" min="0" max="100" steps="any" value="100" id="volslider" title="Volume"></div>
             </div>
         </div>
+    </div>
       </div>
       <div id="playlistbox">
         <div id="video" title=" Click To Play"onmousedown="changevideo('https://drive.google.com/uc?id=17fX93QQMP7njPQOnDocSz2VIwqGGJq8P')" onclick="changename('Idaten Jump Ep01.')"><div id="Logo"><img title=" Click To Play" id ="emoji"src="images/IdatenJumpthumb.jpg" loading="lazy"></div><div id="videoname"> Idaten Jump Ep. 01 <img src="images/Vz.jpg" alt=""loading="lazy"></div></div>
@@ -138,6 +139,7 @@
         <div id="video" title=" Click To Play"onmousedown="changevideo('https://drive.google.com/uc?id=18u2LAx40rUVEBUuUGUJAf6fN_ZT3YTbR')" onclick="changename('Idaten Jump Ep52.')"><div id="Logo"><img title=" Click To Play" id ="emoji"src="images/IdatenJumpthumb.jpg" loading="lazy"></div><div id="videoname"> Idaten Jump Ep. 52 <img src="images/Vz.jpg" alt=""loading="lazy"></div></div>
         <div id="video" title=" Click To Play"onmousedown="changevideo('images/Genius_2018_Hindi_Full_Movie_Proper_HDRip_(FilmyZilla.cc).mp4')" onclick="changename('Genius')"><div id="Logo"><img title=" Click To Play"id ="emoji"src="images/IdatenJumpthumb.jpg" loading="lazy"></div><div id="videoname"> Genius <img src="images/Vz.jpg" alt=""loading="lazy"></div></div>
         <div id="video" title=" Click To Play"onmousedown="changevideo('VideoZoneImages/Avatar.mp4')" onclick="changename('Avtar')"><div id="Logo"><img title=" Click To Play" id ="emoji"src="images/IdatenJumpthumb.jpg"></div><div id="videoname"> Avtar <img title=" Click To Play" loading="lazy" src="images/Vz.jpg" alt=""loading="lazy"></div></div>
+        <div id="video" title=" Click To Play"onmousedown="changevideo('VideoZoneImages/Dhoom Machale.mp4')" onclick="changename('Dhoom Machale')"><div id="Logo"><img title=" Click To Play" id ="emoji"src="images/IdatenJumpthumb.jpg"></div><div id="videoname"> Dhoom Machale <img title=" Click To Play" loading="lazy" src="images/Vz.jpg" alt=""loading="lazy"></div></div>
     </div> 
   </div>
 </body>

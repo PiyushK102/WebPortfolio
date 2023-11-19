@@ -43,6 +43,7 @@ hr{
 }
 #musicdiv{
     display: flex;
+    position: sticky;top:0;
     flex-direction: column;
     width:100%;
     align-items: center;
@@ -171,6 +172,7 @@ hr{
     align-items: center;
     text-align: center;
     vertical-align: middle;
+    
 }
 #controls{
     width:80%;
