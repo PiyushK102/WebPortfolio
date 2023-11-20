@@ -54,7 +54,9 @@ function display(element) {
     function changename(element){
         videoname.innerHTML=element
     }
-    
+    // Videocontainer.addEventListener("onmouseover",()=>{
+    //     document.querySelector("#topline").setAttribute("top",0)
+    // })
     document.addEventListener("loaded",()=>{
         var winwidth=window.innerWidth
         var winheight=window.innerHeight
@@ -139,13 +141,13 @@ function togglePlayPause(){
     }   
 }
 function controldisplay(btn){
-    if (document.getElementById(btn).style.display == "none") {
-        document.getElementById(btn).style.display = "flex";
+    if (document.getElementById(btn).style.opacity ==0) {
+        document.getElementById(btn).style.opacity = 1;
         document.getElementById("topline").style.display="flex"
         document.getElementById("controlon").style.display="none"
         } 
     else {
-        document.getElementById(btn).style.display = "none";
+        document.getElementById(btn).style.opacity = 0;
         document.getElementById("controlon").style.display="block"
         document.getElementById("topline").style.display="none"
     } 

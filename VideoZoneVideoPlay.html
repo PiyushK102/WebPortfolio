@@ -53,11 +53,15 @@
   <hr><br>
   <div id="screendiv">    
     <div id="divscreen">
+      <div id="toplinecontainer">
       <div id="topline">
-        <span id="videonamediv">Idaten Jump Ep01. </span><span id="screensizebox"> Screen Size → W:-Px X H:-Px</span><span class="material-symbols-rounded" id="controloff" title="Hide Controls ?" onclick="controldisplay('controlscontainer')"style="display:block;">lock_open_right</span>
+        <span id="videonamediv">Idaten Jump Ep01. </span><span id="screensizebox"> Screen Size → W:-Px X H:-Px</span>
       </div>
+      <span class="material-symbols-rounded" id="controloff" title="Hide Controls ?" onclick="controldisplay('controlscontainer')"style="display:block;">lock_open_right</span>
       <span id="controlon" title=" Unhide Controls ?"style="display:none;"onclick="controldisplay('controlscontainer')" class="material-symbols-rounded">lock</span>
 
+      </div>
+            
       <video id="screen" src="https://drive.google.com/uc?id=17fX93QQMP7njPQOnDocSz2VIwqGGJq8P" type="video/mp4">
       </video>
       <div id="controlscontainer" style="display: flex;">
