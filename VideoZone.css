@@ -19,7 +19,7 @@ hr{background-color:#ffd0d0}#screen,#volval{align-self:center}
     height:30px;
 }
 #topline{width:80%;height:100%;display:flex;flex-direction: row;align-content: space-around;align-items: center;
-    justify-content: center;position: sticky;top:0;z-index: 1000;}
+    justify-content: center;position: sticky;top:0;z-index: 1000;border-radius: 20px;background-color: rgba(0, 0, 0, 0.615);}
 #videonamediv,#screensizebox{width:50%;height:25px;color:#f0f8ff;text-align: center;}
 #timer,#volval,.ham{font-weight:700}
 hr{height:.2em;border-radius:20px}.VZ{margin:.25% 25%;width:50%}
@@ -90,7 +90,7 @@ body{background-color:rgb(236, 236, 236)
 #toplinecontainer{
     margin:0;
     padding:0 0.5% 0 0.5%;display: flex;width:100%;height:fit-content;
-    background-color: rgba(0, 0, 0, 0.508);
+    background-color: transparent;
     position:sticky;
     top:0;
     align-items: center;
