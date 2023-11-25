@@ -143,13 +143,13 @@ function togglePlayPause(){
 function controldisplay(btn){
     if (document.getElementById(btn).style.opacity ==0) {
         document.getElementById(btn).style.opacity = 1;
-        document.getElementById("topline").style.display="flex"
+        document.getElementById("topline").style.opacity=1
         document.getElementById("controlon").style.display="none"
         } 
     else {
         document.getElementById(btn).style.opacity = 0;
         document.getElementById("controlon").style.display="block"
-        document.getElementById("topline").style.display="none"
+        document.getElementById("topline").style.opacity=0
     } 
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////

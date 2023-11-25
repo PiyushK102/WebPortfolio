@@ -1,16 +1,20 @@
 body{
-    background-image:radial-gradient(white,rgb(157, 240, 255),rgb(236, 243, 255),rgb(149, 149, 149),rgb(236, 243, 255)); 
+    background:url("images/VPBG.gif") ; 
 }
 .videos{
     margin:1%;
-    background-color: rgba(103, 209, 254, 0.799);
+    /* background-color: rgba(103, 209, 254, 0.095); */
     border-radius: 30px;
 }
-
-.videolist{
+.videolist{width:fit-content;height:68vh;overflow: scroll;overflow-y:scroll;overflow-x: hidden;z-index: 10;backdrop-filter: blur(10px);
+    box-shadow:0 0px 1px 1px red,0 0px 2px 2px rgb(0, 72, 255),0 0 4px 4px rgb(13, 255, 0) ;
+}
+.videolist::-webkit-scrollbar-track,.videolist::-webkit-scrollbar,.videolist::-webkit-scrollbar-thumb{background-color: transparent;}
+#videoContainer{
     display:flex;
     margin-top:1%;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+    z-index: 20;
 }
 .VZ img{
     height:1.5em;
@@ -61,7 +65,7 @@ body{
     padding:5px;
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width:1000px) {
     body{
         text-align: center;
         font-size: 8px;
@@ -88,6 +92,7 @@ body{
     .videothumb button{
         font-size: 10px;
     }
+    .videolist{height:85vh;}
     .video img{
         display: flex;
         width:96% ;
