@@ -84,17 +84,6 @@ hr{
     margin:1%;
     overflow-y: scroll;
 }
-::-webkit-scrollbar{
-    width:10px;
-    border-radius: 0 10px 10px 0;
-}
-::-webkit-scrollbar-thumb{
-    background-color: blue;
-}
-::-webkit-scrollbar-track{
-    background-color: rgba(110, 214, 255, 0.5);
-    border-radius: 0 10px 10px 0;
-}
 #playlistbutton{
     display: none;
     background-color: deepskyblue;
@@ -152,6 +141,10 @@ hr{
     width:40vw;
     height:20vw;
     box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.622);
+}
+::-webkit-scrollbar,::-webkit-scrollbar-track{
+    display:none;
+    background-color: transparent;
 }
 #controlscontainer{
     display:flex;
@@ -293,9 +286,6 @@ hr{
     height:2em;  
 }
 @media screen and (max-width:350px){
-    body{
-        background: url(images/musicDbg.jfif);
-    }
     #timer{
         border-radius: 5px;
     }
@@ -317,7 +307,16 @@ hr{
     body{
         text-align: center;
     }
-    .musicbox{
+    #musicdiv{
+        width:98%;
+        height:75vh;
+        background: url(images/musicDbg.jfif);
+    }
+    ::-webkit-scrollbar,::-webkit-scrollbar-track{
+        display:none;
+        background-color: transparent;
+    }
+    #musicbox{
         display:flex;
         flex-direction: column;
         height: 75vh;
@@ -339,11 +338,6 @@ hr{
         top:0;
         right:0;
         cursor: pointer;
-    }
-
-    ::-webkit-scrollbar-track{
-        background-color: rgb(161, 235, 255);
-        border-radius: 0 10px 10px 0;
     }
     #music{
         background-color:transparent ;
@@ -384,15 +378,15 @@ hr{
         flex-wrap: wrap;
 
     }
-   ::-webkit-scrollbar{
+   #playlistbox ::-webkit-scrollbar{
         width:5px;
         height:3px;
         border-radius: 0 2.5px 2.5px 0;
     }
-    ::-webkit-scrollbar-thumb{
+    #playlistbox ::-webkit-scrollbar-thumb{
         background-color: blue;
     }
-    ::-webkit-scrollbar-track{
+    #playlistbox ::-webkit-scrollbar-track{
         background-color: rgba(110, 214, 255, 0.5);
         border-radius: 0 3px 3px 0;
     }
@@ -400,20 +394,32 @@ hr{
         width:99%;
         padding:0.5%;
         z-index: 2;
+        position: sticky;
+        bottom:0;
     }
 }
  
 
 @media screen and (min-width:350px) and (max-width:1000px) {
-    body{
-        text-align: center;
-        background: url(images/musicDbg.jfif) no-repeat;
+    #musicdiv{
+        width:100%;
+        height:80vh;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
     }
-    .musicbox{
+    #musicbox{
         display:flex;
+        width:100%;
         flex-direction: column;
         background: none;
         height: 75vh;
+        background: url(images/musicDbg.jfif) no-repeat;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
     }
     #playlistbox{
         display:none;
@@ -451,10 +457,6 @@ hr{
         width:25px;
         height:25px;
     }
-    ::-webkit-scrollbar-track{
-        background-color: rgb(161, 235, 255);
-        border-radius: 0 10px 10px 0;
-    }
     #music{
         background-color:transparent ;
     }
@@ -475,8 +477,11 @@ hr{
     #equilizer{
         width:99%;
         height:fit-content;
-        align-self: center;
-        padding:0.5%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content:center;
+        padding:1%;
         overflow: hidden;
         margin:1% 0.5% 1% 0.5% ;
     }
@@ -494,8 +499,20 @@ hr{
         
     }
     #controlscontainer{
-        width:100%;
+        width:95%;
         padding:0.5%;
         z-index: 2;
+    }
+    #playlistbox ::-webkit-scrollbar{
+        width:5px;
+        height:3px;
+        border-radius: 0 2.5px 2.5px 0;
+    }
+    #playlistbox ::-webkit-scrollbar-thumb{
+        background-color: blue;
+    }
+    #playlistbox ::-webkit-scrollbar-track{
+        background-color: rgba(110, 214, 255, 0.5);
+        border-radius: 0 3px 3px 0;
     }
 }
