@@ -37,15 +37,25 @@ ham.addEventListener("click",()=>{
         hamsym.style.display="none"
         closebtn.style.display="block"
     }
-    else if(!nav.addEventListner("click",()=>{
-        ham.style.display="block"
-        nav.style.display="none" 
-    }
+
     else{
         hamsym.style.display="block"
         closebtn.style.display="none"
     }
 })
+!nav.addEventListner("click",()=>{
+        ham.style.display="block"
+        nav.style.display="none" 
+    if(nav.style.display=="block"){
+        hamsym.style.display="none"
+        closebtn.style.display="block"
+    }
+
+    else{
+        hamsym.style.display="block"
+        closebtn.style.display="none"
+    }
+    })
 
 ham.addEventListener("mouseenter",()=>{
     ham.style.display="block"
