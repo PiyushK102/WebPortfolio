@@ -10,6 +10,7 @@ Social.addEventListener("click",()=>{
         document.querySelector("#uparrow").style.display="flex"
         document.querySelector("#downarrow").style.display="none" 
     }
+    
     else{
         document.querySelector("#socialButtons").style.display="none"
         document.querySelector("#uparrow").style.display="none"
@@ -23,6 +24,7 @@ document.addEventListener("loaded",()=>{
         ham.style.display="block"
         nav.style.display="none"
     }
+    
     else{
         ham.style.display="none"
         nav.style.display="flex"
@@ -34,6 +36,10 @@ ham.addEventListener("click",()=>{
     if(nav.style.display=="block"){
         hamsym.style.display="none"
         closebtn.style.display="block"
+    }
+    else if(!nav.addEventListner("click",()=>{
+        ham.style.display="block"
+        nav.style.display="none" 
     }
     else{
         hamsym.style.display="block"
