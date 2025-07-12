@@ -59,13 +59,16 @@ p{
     width: 43%;
     box-shadow: 3px 3px 5px grey;
     word-wrap: break-word;
+    display: flex;
+    flex-direction: column-reverse;
 }
+
 embed{
     margin:1em;
     border-radius: 15px;
     border-width: 3px;
     width:33vw;
-    height:25vw;
+    height:fit-content;
     border: 1.5mm solid;
     border-color: rgb(121, 60, 121);
 }
