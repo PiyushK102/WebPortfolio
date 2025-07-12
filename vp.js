@@ -286,7 +286,7 @@ function formatDuration(time){
     }
 }
 forward.addEventListener("click",()=>{skip(10)})
-back.addEventListener("click",()=>{skip(-5)})
+back.addEventListener("click",()=>{skip(-10)})
 function skip(duration){
     
     Video.currentTime+=duration
