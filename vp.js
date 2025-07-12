@@ -308,7 +308,7 @@ document.addEventListener("keydown", e =>{
             break 
         case "arrowleft":
             case "j":
-                skip(-5)
+                skip(-10)
                 break
         
         case "arrowright":
