@@ -145,11 +145,13 @@ function controldisplay(btn){
         document.getElementById(btn).style.opacity = 1;
         document.getElementById("topline").style.opacity=1
         document.getElementById("controlon").style.display="none"
+        document.getElementById("controloff").style.display="flex"
         } 
     else {
         document.getElementById(btn).style.opacity = 0;
         document.getElementById("controlon").style.display="flex"
         document.getElementById("topline").style.opacity=0
+        document.getElementById("controloff").style.display="none"
     } 
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
