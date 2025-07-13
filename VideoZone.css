@@ -37,7 +37,7 @@ hr{height:.2em;border-radius:20px}.VZ{margin:.25% 25%;width:50%}
 .Social a,.navigation a{color:#000;padding:3px 0;text-decoration:none;}
 li{list-style-type:none;margin-top:.08vw}
 .Social{text-align:center}
-.socialButtons{width:fit-content;padding:1% 2%;border:2px solid #000;border-radius:20px}
+.socialButtons{width:fit-content;padding:1% 2%;border:2px solid #000;border-radius:20px;justify-self: center;}
 .Social:hover .socialButtons{display:inline-block;transition:display 20ms}
 .socialButtons:hover{display:inline-flex;box-shadow:0 8px 8px 0 rgba(0,0,0,.2);z-index:5}
 .socialButtons button{width:12em;height:4em;padding:1%;border-radius:20px;font-size:10px;border-color:#383838;background-color:#fff;color:#00f;margin:1%;padding:0.5em;}
@@ -134,7 +134,7 @@ body{background-color:rgb(236, 236, 236)
     ::-webkit-scrollbar-thumb{background-color:#00f}
     ::-webkit-scrollbar-track{background-color:rgba(0,183,255,.5);border-radius:0 0 10px 10px}
     .socialButtons button{width:15em;height:5em;padding:1%;border-radius:20px;font-size:10px;border-color:#383838;background-color:#fff;color:#00f}
-    .socialButtons{width:fit-content;height:fit-content;}
+    .socialButtons{width:fit-content;height:fit-content;justify-self: center;}
     #controlon,#controloff {font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz'20;transition: all ease-in-out 1s;width:25px;height:25px;color: rgb(255, 255, 255);}
     #controloff {font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz'20;}
 }
