@@ -119,6 +119,8 @@ embed:hover{
         box-shadow: 3px 3px 5px grey;
         word-wrap: break-word;
         align-self: center;
+        display: flex;
+        flex-direction: column;
     }
     embed{
         width:70vw;
