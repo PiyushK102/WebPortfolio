@@ -51,16 +51,19 @@ p{
 
 .certificaten{
     align-self: center;
+    justify-self: center;
     background-color: #c4e0ff;
     padding: 1.5%;
     text-align: center;
     margin: 2%;
     border-radius: 30px;
-    width: 43%;
+    width: 91.5%;
     box-shadow: 3px 3px 5px grey;
     word-wrap: break-word;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 embed{
