@@ -199,39 +199,48 @@ function pipmode() {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////----Volume----/////////////////////////////////////////////////////
-mute.addEventListener("click",toggleMute)
+
 volvalue.addEventListener("click",toggleMute)
 vol.addEventListener("input",e =>{
     Video.volume=(e.target.value)/100
     Video.muted=e.target.value===0
     volval.innerHTML=Math.round((Video.volume)*100)
-    if(vol.value==0){
-        mute.style.display="flex"
-        volvalue.style.display="none"
+    if(vol.value==0 || volval==0){
         volval.innerHTML="Muted"
+        volvalue.innerHTML="volume_off"
 
     }
-    else{
-        mute.style.display="none"
-        volvalue.style.display="flex"
+    else if ( vol.value>0 && vol.value<=50){
+
         volval.innerHTML=Math.round((Video.volume)*100);
+        volvalue.innerHTML="volume_down"
+    }
+    else{
+        
+        volval.innerHTML=Math.round((Video.volume)*100);
+        volvalue.innerHTML="volume_up"
    }
 })
+
+
 function toggleMute()
 {
    Video.muted=!Video.muted
    if(Video.muted==true || Video.volume==0)
    {
-        mute.style.display="flex"
-        volvalue.style.display="none"
         vol.value="0"
         volval.innerHTML="Muted"
+        volvalue.innerHTML="volume_off"
    }
+    else if ( (volval>0 && volval<=50)){
+
+        volval.innerHTML=Math.round((Video.volume)*100);
+        volvalue.innerHTML="volume_down"
+    }
    else{
-        mute.style.display="none"
-        volvalue.style.display="flex"
         volval.innerHTML=Math.round((Video.volume)*100)
         vol.value=Math.round((Video.volume)*100)
+        volvalue.innerHTML="volume_up"
    }
 }
 function volpm(vvalue){
@@ -239,6 +248,19 @@ function volpm(vvalue){
     Video.volume+=vvalue/100
     vol.value=(Video.volume)*100
     volval.innerHTML=(vol.value)
+
+    if(volval.innerHTML=="0")
+   {
+        volvalue.innerHTML="volume_off"
+   }
+    else if ( (volval.innerHTML>0 && volval.innerHTML<=50)){
+
+        volvalue.innerHTML="volume_down"
+    }
+   else{
+        volvalue.innerHTML="volume_up"
+   }
+
 }
 //////////////////////////////////////////////////////////////////////////////////
 /////////////////--------ProgressBar-----------///////////////////////////////////
