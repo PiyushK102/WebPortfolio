@@ -73,19 +73,28 @@
           <div class="totaltime">00:00</div>
         </div>
         <div id="controls">
-            
+            <div id="vidctrl">
             <div id="back" title="Seek Backward"><span class="material-symbols-rounded">fast_rewind</span>10</div>
             <div id="play" style="display:flex;" title="Play"><strong><span class="material-symbols-rounded">play_arrow</span></strong></div>
             <div id="pause" style="display:none;" title="Pause"><span class="material-symbols-rounded">pause</span></div>
             <div id="forward" title="Seek Forward">10<span class="material-symbols-rounded">fast_forward</span></div>    
+            </div>
+            
+            <div id="volbtns">
+            <div id="voln" style="display:flex" title="Click to Mute"><span class="material-symbols-rounded">volume_up</span></div>
+            <div id="mute" style="display:none" title="Click to Unmute"><span class="material-symbols-rounded">volume_off</span></div>
+          
+            <div id="volumectrl">   
+                <div> Volume : </div>
+                <div id="volval">100</div>
+                <div><input type="range" min="0" max="100" steps="any" value="100" id="volslider" title="Volume"></div>
+            </div>
+            </div>
+
+            <div id="screenmode">
             <div id="minip" style="display:flex;" title="Click to go in Picture in Picture Mode"><span class="material-symbols-rounded">pip</span></div>
             <div id="fullscr" style="display:flex;"title="Click to enter Fullscreen Mode"><span id="enterfullscr" class="material-symbols-rounded">fullscreen</span></div>
             <div id="exitfullscr" style="display:none;"title="Click for exiting Fullscreen Mode"><span class="material-symbols-rounded">fullscreen_exit</span></div>
-            <div id="voln" style="display:flex" title="Click to Mute"><span class="material-symbols-rounded">volume_up</span></div>
-            <div id="mute" style="display:none" title="Click to Unmute"><span class="material-symbols-rounded">volume_off</span></div>
-            <div id="volumectrl">
-                <div id="volval">100</div>
-                <div><input type="range" min="0" max="100" steps="any" value="100" id="volslider" title="Volume"></div>
             </div>
         </div>
     </div>
