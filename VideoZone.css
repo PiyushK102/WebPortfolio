@@ -95,7 +95,7 @@ body{background-color:rgb(236, 236, 236)
     justify-content: center;
     z-index: 1000;
 }
-#vidctrl,#screenmode,#volbtns{display: flex;flex-direction: row;}
+#vidctrl,#screenmode,#volbtns{display: flex;flex-direction: row;color: #ffffff;align-items: center;}
 
 /* #screendiv:hover #controlscontainer,#screen:hover #controlscontainer{
     bottom:0;

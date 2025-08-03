@@ -58,7 +58,7 @@
         <span id="videonamediv"> </span><span id="screensizebox"> Screen Size → W:-Px X H:-Px</span>
       </div>
       <span class="material-symbols-rounded" id="controloff" title="Hide Controls ?" onclick="controldisplay('controlscontainer')"style="display:flex;">lock_open_right</span>
-      <span id="controlon" title=" Unhide Controls ?"style="display:none;"onclick="controldisplay('controlscontainer')" class="material-symbols-rounded">lock</span>
+      <!-- <span id="controlon" title=" Unhide Controls ?"style="display:none;"onclick="controldisplay('controlscontainer')" class="material-symbols-rounded">lock</span> -->
 
       </div>
             
@@ -81,8 +81,8 @@
             
             <div id="volbtns">
             <div title="Click to Mute / Unmute"><span class="material-symbols-rounded"  id="voln">volume_up</span></div>
+            <div> Volume : </div>
             <div id="volumectrl">   
-                <div> Volume : </div>
                 <div id="volval">100</div>
                 <div><input type="range" min="0" max="100" steps="any" value="100" id="volslider" title="Volume"></div>
             </div>
@@ -91,7 +91,6 @@
             <div id="screenmode">
             <div style="display:flex;" title="Click to go in Picture in Picture Mode"><span id="minip" class="material-symbols-rounded">pip</span></div>
             <div style="display:flex;"title="Click to enter Fullscreen Mode"><span  id="fullscr" class="material-symbols-rounded">fullscreen</span></div>
-            <div id="exitfullscr" style="display:none;"title="Click for exiting Fullscreen Mode"><span class="material-symbols-rounded">fullscreen_exit</span></div>
             </div>
         </div>
     </div>
