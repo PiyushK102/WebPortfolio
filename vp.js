@@ -1,5 +1,4 @@
-const playbtn=document.querySelector("#play");
-const pausebtn=document.querySelector("#pause");
+const playbtn=document.querySelector("#play_pause");
 const forward=document.querySelector("#forward");
 const back=document.querySelector("#back");
 const Video= document.querySelector("#screen");
@@ -21,7 +20,6 @@ const ham=document.querySelector(".ham")
 const nav=document.querySelector(".navButtons")
 const hamsym=document.querySelector("#hamsym")
 const closebtn=document.querySelector("#close")
-const closefscreen=document.querySelector("#exitfullscr")
 const Social=document.querySelector(".Social")
 
 
@@ -123,35 +121,34 @@ function changevideo(e){
 
 playbtn.addEventListener("click" , togglePlayPause)
 Video.addEventListener("click",togglePlayPause) 
-pausebtn.addEventListener("click",togglePlayPause)
 
 
 function togglePlayPause(){
     if(Video.paused==true)
     {
         Video.play()
-        pausebtn.style.display="flex"
-        playbtn.style.display="none"
+        playbtn.innerHTML="pause"
+        playbtn.title="Pause"
 
     }
     else{
         Video.pause()
-        playbtn.style.display="flex"
-        pausebtn.style.display="none"
+        playbtn.innerHTML="play_arrow"
+        playbtn.title="Play"
     }   
 }
 function controldisplay(btn){
     if (document.getElementById(btn).style.opacity ==0) {
         document.getElementById(btn).style.opacity = 1;
         document.getElementById("topline").style.opacity=1
-        document.getElementById("controlon").style.display="none"
-        document.getElementById("controloff").style.display="flex"
+        document.getElementById("controloff").innerHTML="lock_open_right"
+        document.getElementById("controloff").title="Hide Controls?"
         } 
     else {
         document.getElementById(btn).style.opacity = 0;
-        document.getElementById("controlon").style.display="flex"
         document.getElementById("topline").style.opacity=0
-        document.getElementById("controloff").style.display="none"
+        document.getElementById("controloff").innerHTML="lock"
+        document.getElementById("controloff").title="Unhide Controls?"
     } 
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -160,30 +157,26 @@ function controldisplay(btn){
 
 ///////////////////////////////////------FullScreen Button--------/////////////////////////////////////
 fullscrbtn.addEventListener("click",fullscreen)
-closefscreen.addEventListener("click",fullscreen)
 Video.addEventListener("dblclick",fullscreen)
 document.addEventListener("fullscreenchange",()=>{
     if(document.fullscreenElement==null || document.fullscreenEnabled==false){
-        closefscreen.style.display="none"
-        fullscrbtn.style.display="flex"
+        fullscrbtn.innerHTML="fullscreen"
     }
     else{
-        closefscreen.style.display="flex"
-        fullscrbtn.style.display="none"
+        fullscrbtn.innerHTML="fullscreen_exit"
     }
 })
 function fullscreen(){
     if(document.fullscreenElement!=null || document.fullscreenEnabled==false)
     {
-         document.exitFullscreen()
-         closefscreen.style.display="none"
-         fullscrbtn.style.display="flex"
+        document.exitFullscreen()
+        fullscrbtn.innerHTML="fullscreen"
     }
     else
     {
-         Videocontainer.requestFullscreen()
-         closefscreen.style.display="flex"
-         fullscrbtn.style.display="none"
+        Videocontainer.requestFullscreen()
+        fullscrbtn.innerHTML="fullscreen_exit"
+         
     }
  }
 ///////////////////////////////////------MiniPlayer Button--------/////////////////////////////////////
@@ -191,9 +184,11 @@ mpbtn.addEventListener("click",pipmode)
 function pipmode() {
     if (document.pictureInPictureElement) {
             document.exitPictureInPicture();
+            mpbtn.innerHTML="pip"
         }
     else {
             Video.requestPictureInPicture();
+            mpbtn.innerHTML="pip_exit"
         }
 }
 
@@ -314,6 +309,8 @@ back.addEventListener("click",()=>{skip(-10)})
 function skip(duration){
     
     Video.currentTime+=duration
+    if(duration>0){forward.style.Tranform="rotate(270deg)"}
+    else{back.style.Tranform="rotate(-270deg)"}
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -322,7 +319,7 @@ document.addEventListener("keydown", e =>{
     switch(e.key.toLowerCase()){
         case " ":
         case "p":
-        case "f10":
+        case "VK_MEDIA_PLAY_PAUSE":
             togglePlayPause()
             break
         case "m":

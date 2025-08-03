@@ -66,10 +66,11 @@ body{background-color:rgb(236, 236, 236)
 ::-webkit-scrollbar{width:10px;border-radius:0 10px 10px 0}
 ::-webkit-scrollbar-thumb{background-color:#00f;border-radius:10px}
 ::-webkit-scrollbar-track{background-color:#8a8a8a;border-radius:0 10px 10px 0}
-#back,#forward,#fullscr,#exitfullscr,#minip,#mute,#pause,#play,#voln{width:35px;height:25px;cursor:pointer;display: flex;
+#back,#forward,#fullscr,#exitfullscr,#minip,#mute,#pause,#play_pause,#voln{width:35px;height:25px;cursor:pointer;display: flex;
     text-align:center;vertical-align:baseline;overflow:hidden;position:static;padding:3px;color:#ffffff;border-radius: 5px;align-items: center;justify-content: center;
 }
-#back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play:hover,#voln:hover{padding:3px;border-radius:50%;}
+#back:active{rotate:-270deg ;}#forward:active{rotate:270deg ;}
+#back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play_pause:hover,#voln:hover{padding:3px;border-radius:50%;}
 #volumectrl{display:flex;flex-direction: row;align-items:center;justify-content:center;justify-items:center;height:25px;padding:5px 5px;border-radius: 5px;color: #fff;}
 #volslider{display:none;width:100px;transition:450ms ease-in-out;z-index:2;height:10px;accent-color:rgb(255, 255, 255) ; vertical-align: middle;}
 #volval{font-size:"12px";color:#ffffff;padding:3px;width:50px;height:25px;text-align:center;vertical-align: middle;display: flex;align-items: center;justify-content: center;}
@@ -117,8 +118,8 @@ body{background-color:rgb(236, 236, 236)
 }
 @media screen and (min-width:250px) and (max-width:600px) and (min-height:500px){
     .material-symbols-rounded{font-variation-settings:'FILL' 1,'wght' 700,'GRAD' 0,'opsz' 8;font-size:10px ;text-align:center;vertical-align:baseline;}
-    #back,#forward,#fullscr,#exitfullscr,#minip,#mute,#pause,#play,#voln{width:35px;height:25px;cursor:pointer;text-align:center;vertical-align:baseline;overflow:hidden;position:static;padding:3px;color:#ffffff}
-    #back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play:hover,#voln:hover{border-radius:5px;background-color:transparent;box-shadow:none}
+    #back,#forward,#fullscr,#exitfullscr,#minip,#mute,#pause,#play_pause,#voln{width:35px;height:25px;cursor:pointer;text-align:center;vertical-align:baseline;overflow:hidden;position:static;padding:3px;color:#ffffff}
+    #back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play_pause:hover,#voln:hover{border-radius:5px;background-color:transparent;box-shadow:none}
     #volval{font-size:"12px";color:#ffffff;padding:3px;width:50px;height:25px;text-align:center;vertical-align: text-bottom;display: flex;align-items: center;justify-content: center;}
     *{font-size: 10px;text-align: center;vertical-align: middle;}
     #divscreen,#screendiv{flex-direction:column;display:flex;align-content:space-evenly;}
@@ -177,17 +178,17 @@ body{background-color:rgb(236, 236, 236)
     ::-webkit-scrollbar-thumb{background-color:#00f}
     ::-webkit-scrollbar-track{background-color:rgba(0,183,255,.5);border-radius:0 10px 10px 0}
     #controls,#controlscontainer{display:flex;width:100%;opacity:1;border:none;padding:5px 0;align-content:center;text-align:center;vertical-align:middle}
-    #back,#forward,#fullscr,#exitfullscr,#minip,#mute,#pause,#play,#voln{width:fit-content;height:fit-content;cursor:pointer;align-content:center;align-items:center;text-align:center;
+    #back,#forward,#fullscr,#exitfullscr,#minip,#mute,#pause,#play_pause,#voln{width:fit-content;height:fit-content;cursor:pointer;align-content:center;align-items:center;text-align:center;
         vertical-align:middle;background-color:transparent;border-radius:2px;position:relative;margin:0 3px}
-    #back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play:hover,#voln:hover{border-radius:50%;padding:3px}
+    #back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play_pause:hover,#voln:hover{border-radius:50%;padding:3px}
 
     #video{display:flex;flex-direction:row;width:95%}
     #Logo img{width:150px;height:120px}
     #controlscontainer{width:100%;flex-direction: column;z-index:1;height:15%;align-items:center;background-color:rgba(0, 0, 0, 0.601);color:#ffffff}
     #controls{flex-direction:row;height:75%;justify-content:space-evenly;justify-items:center;align-items:center;z-index:100000000;transition:opacity 150ms ease-in-out;border-radius:0;background-color:transparent}
-    #back,#forward,#fullscr,#exitfullscr,#minip,#mute,#pause,#play,#voln{width:30px;height:30px;cursor:pointer;align-content:center;align-items:center;text-align:center;
+    #back,#forward,#fullscr,#exitfullscr,#minip,#mute,#pause,#play_pause,#voln{width:30px;height:30px;cursor:pointer;align-content:center;align-items:center;text-align:center;
         vertical-align:middle;background-color:transparent;border-radius:2px;position:relative;padding:3px;margin:0 3px}
-    #back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play:hover,#voln:hover{border-radius:50%;padding:3px}
+    #back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play_pause:hover,#voln:hover{border-radius:50%;padding:3px}
     #volval{font-size:7;color:#ffffff;border-radius:25px; vertical-align: middle;text-align: center;display: flex;align-items: center;justify-content: center;}
     #video:fullscreen{z-index:3}
     #progress{height:2px;width:95%;margin-left:1%;margin-right:1%}
