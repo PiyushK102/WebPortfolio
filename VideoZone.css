@@ -62,28 +62,37 @@ body{background-color:rgb(236, 236, 236)
 #videoname{flex-shrink:inherit}
 #controlscontainer{display: flex;width:100%;flex-direction:column;background-color:rgba(0, 0, 0, 0.5);padding:0.1%,1%,1%,1%;position:sticky;
     bottom:0;margin:0 0 0 0;align-content: space-around;z-index: 1000;border-radius: 0px 0px 0px 0px;}
-#controls{display:flex;flex-direction:row;background-color:transparent;border-radius:20px;justify-content:space-around;flex-wrap: wrap;}
+#controls{display:flex;flex-direction:row;background-color:transparent;border-radius:20px;justify-content:space-between;flex-wrap:wrap;}
 ::-webkit-scrollbar{width:10px;border-radius:0 10px 10px 0}
 ::-webkit-scrollbar-thumb{background-color:#00f;border-radius:10px}
 ::-webkit-scrollbar-track{background-color:#8a8a8a;border-radius:0 10px 10px 0}
-#back,#forward,#fullscr,#exitfullscr,#minip,#mute,#pause,#play_pause,#voln{width:35px;height:25px;cursor:pointer;display: flex;
+#back,#forward,#fullscr,#minip,#mute,#pause,#play_pause,#voln{width:35px;height:25px;cursor:pointer;display: flex;
     text-align:center;vertical-align:baseline;overflow:hidden;position:static;padding:3px;color:#ffffff;border-radius: 5px;align-items: center;justify-content: center;
 }
-#back:active{rotate:-270deg ;}#forward:active{rotate:270deg ;}
+#back:active{rotate:-90deg ;}#forward:active{rotate:90deg ;}
 #back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play_pause:hover,#voln:hover{padding:3px;border-radius:50%;}
 #volumectrl{display:flex;flex-direction: row;align-items:center;justify-content:center;justify-items:center;height:25px;padding:5px 5px;border-radius: 5px;color: #fff;}
-#volslider{display:none;width:100px;transition:450ms ease-in-out;z-index:2;height:10px;accent-color:rgb(255, 255, 255) ; vertical-align: middle;}
+#volslider{display:none;width:100px;transition:450ms ease-in-out;z-index:2;height:10px;accent-color:rgb(255, 255, 0) ; vertical-align: middle;}
 #volval{font-size:"12px";color:#ffffff;padding:3px;width:50px;height:25px;text-align:center;vertical-align: middle;display: flex;align-items: center;justify-content: center;}
 #volslider:focus-within,#volumectrl:hover #volslider{display:block;cursor:pointer;background-color:#fff}
 #volumectrl:hover{border-radius:25px}
-#progress{width:inherit;height:3px;margin:10px;border-radius:50%;accent-color:rgb(0, 94, 255);align-self: center;}
+#progress{width:inherit;height:3px;margin:10px;border-radius:50%;
+        animation-name:accentColor;
+        animation: infinite;
+        accent-color:rgb(0, 242, 255);
+        animation-duration: 5s;
+        align-self: center;}
 #progress:hover{height:5px;cursor:pointer;accent-color: rgb(255, 0, 0);}
 #timer{background-color: rgba(0, 0, 0, 0);width: 98%;display:flex;justify-self: center;align-self: center;align-items: center;align-content:center;border-radius:10px;z-index:150;color:#ffffff;height:25px;padding:0.5% 1%;}
 #video:fullscreen{z-index:3}
 #videoname img{width:30px;height:30px;vertical-align: middle;}
-#controlon ,#controloff{cursor: pointer;padding:5px;transition: all ease-in-out 1s;width:25px;height:25px;color: rgb(255, 255, 255);align-items: center;align-content: center;
+#controloff{cursor: pointer;padding:5px;transition: all ease-in-out 1s;width:25px;height:25px;color: rgb(255, 255, 255);align-items: center;align-content: center;
     text-align:center;justify-content: center;border-radius: 10px;z-index: 1000;margin:8px;
-    position: sticky;top:calc(2%);right:calc(1%);left:calc(95%);}
+    animation: infinite;
+    animation-duration: 5s;
+    animation-name: border_Animation;
+    position: sticky;top:calc(2%);
+    right:calc(1%);left:calc(95%);}
 #controloff{color: rgb(255, 255, 255);}
 #toplinecontainer{
     margin:0;
@@ -95,8 +104,30 @@ body{background-color:rgb(236, 236, 236)
     justify-content: center;
     z-index: 1000;
 }
-#vidctrl,#screenmode,#volbtns{display: flex;flex-direction: row;color: #ffffff;align-items: center;}
-
+#vidctrl,#screenmode,#volbtns{display: flex;flex-direction: row;color: #ffffff;align-items: center;
+/* animation: infinite;
+animation-duration: 5s;
+animation-name: border_Animation;
+border-radius: 10px;
+border: 5px solid; */
+background-color: #00000075;
+}
+/* @keyframes border_Animation{
+    0%   {border:5px rgb(255, 255, 0) solid;}
+    20%  {border:5px rgb(255, 0, 0) solid;  }
+    40%  {border:5px rgb(43, 255, 0) solid; }
+    60%  {border:5px rgb(0, 47, 255) solid; }
+    80%  {border:5px rgb(255, 0,17) solid;}
+    100% {border:5px rgb(0, 255,195) solid;}
+} */
+/* @keyframes accentColor{
+    0%   {background-color: yellow;}
+    20%  {background-color:red}
+    40%  {background-color:green}
+    60%  {background-color:blue}
+    80%  {background-color:magenta}
+    100% {background-color:white}
+} */
 /* #screendiv:hover #controlscontainer,#screen:hover #controlscontainer{
     bottom:0;
     transition: all ease-in-out 0.5s;

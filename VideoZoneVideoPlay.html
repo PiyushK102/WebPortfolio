@@ -66,25 +66,25 @@
       </video>
       <div id="controlscontainer" style="display: flex;opacity:1;">
         <div id="timer">
-          <div class="currtime">0:00</div>
+          <div id="time"class="currtime">0:00</div>
           <div>&ensp;</div>
           <input id="progress" min="0" max="100" title="Seek" type="range" steps="any" value="0">
           <div>&ensp;</div>
-          <div class="totaltime">00:00</div>
+          <div id="time" class="totaltime">00:00</div>
         </div>
         <div id="controls">
             <div id="vidctrl">
-            <div id="back" title="Seek Backward"><span class="material-symbols-rounded">replay_10</span></div>
+            <div id="back" title="Seek Backward" style="color:rgba(255, 183, 0, 0.973)"><span class="material-symbols-rounded">replay_10</span></div>
             <div title="Play"><strong><span  id="play_pause" class="material-symbols-rounded">play_arrow</span></strong></div>
-            <div id="forward" title="Seek Forward"><span class="material-symbols-rounded">forward_10</span></div>    
+            <div id="forward" title="Seek Forward" style="color:rgba(0, 255, 153, 0.973)"><span class="material-symbols-rounded">forward_10</span></div>    
             </div>
             
             <div id="volbtns">
             <div title="Click to Mute / Unmute"><span class="material-symbols-rounded"  id="voln">volume_up</span></div>
-            <div> Volume : </div>
+            <div style="font-weight: 900;"> Volume : </div>
             <div id="volumectrl">   
                 <div id="volval">100</div>
-                <div><input type="range" min="0" max="100" steps="any" value="100" id="volslider" title="Volume"></div>
+                <div><input type="range" min="0" max="100" steps="1" value="100" id="volslider" title="Volume"></div>
             </div>
             </div>
 

@@ -129,12 +129,14 @@ function togglePlayPause(){
         Video.play()
         playbtn.innerHTML="pause"
         playbtn.title="Pause"
+        playbtn.style.color="red"
 
     }
     else{
         Video.pause()
         playbtn.innerHTML="play_arrow"
         playbtn.title="Play"
+        playbtn.style.color="rgb(43, 255, 0)"
     }   
 }
 function controldisplay(btn){
@@ -143,12 +145,14 @@ function controldisplay(btn){
         document.getElementById("topline").style.opacity=1
         document.getElementById("controloff").innerHTML="lock_open_right"
         document.getElementById("controloff").title="Hide Controls?"
+        document.getElementById("controloff").style.color="red"
         } 
     else {
         document.getElementById(btn).style.opacity = 0;
         document.getElementById("topline").style.opacity=0
         document.getElementById("controloff").innerHTML="lock"
         document.getElementById("controloff").title="Unhide Controls?"
+        document.getElementById("controloff").style.color="rgba(0, 255, 123, 1)"
     } 
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -171,11 +175,13 @@ function fullscreen(){
     {
         document.exitFullscreen()
         fullscrbtn.innerHTML="fullscreen"
+        fullscrbtn.style.color="rgba(0, 255, 191, 1)"
     }
     else
     {
         Videocontainer.requestFullscreen()
         fullscrbtn.innerHTML="fullscreen_exit"
+        fullscrbtn.style.color="rgba(255, 0, 149, 1)"
          
     }
  }
@@ -185,10 +191,12 @@ function pipmode() {
     if (document.pictureInPictureElement) {
             document.exitPictureInPicture();
             mpbtn.innerHTML="pip"
+            mpbtn.style.color="rgba(0, 255, 191, 1)"
         }
     else {
             Video.requestPictureInPicture();
             mpbtn.innerHTML="pip_exit"
+            mpbtn.style.color="rgba(255, 0, 221, 1)"
         }
 }
 
@@ -203,17 +211,29 @@ vol.addEventListener("input",e =>{
     if(vol.value==0 || volval==0){
         volval.innerHTML="Muted"
         volvalue.innerHTML="volume_off"
+        document.getElementById("volbtns").style.color="red"
+        volvalue.style.color="red"
+        volval.style.color="red"
+        vol.style.accentColor="red"
 
     }
-    else if ( vol.value>0 && vol.value<=50){
+    else if ( vol.value>0 && vol.value<=66){
 
         volval.innerHTML=Math.round((Video.volume)*100);
         volvalue.innerHTML="volume_down"
+        document.getElementById("volbtns").style.color="rgba(0, 255, 191, 1)"
+        volvalue.style.color="rgba(0, 255, 191, 1)"
+        volval.style.color="rgba(0, 255, 191, 1)"
+        vol.style.accentColor="rgba(0, 255, 191, 1)"
     }
     else{
         
         volval.innerHTML=Math.round((Video.volume)*100);
         volvalue.innerHTML="volume_up"
+        volvalue.style.color="rgba(48, 190, 247, 1)"
+        document.getElementById("volbtns").style.color="rgba(48, 190, 247, 1)"
+        volval.style.color="rgba(48, 190, 247, 1)"
+        vol.style.accentColor="rgba(48, 190, 247, 1)"
    }
 })
 
@@ -226,16 +246,28 @@ function toggleMute()
         vol.value="0"
         volval.innerHTML="Muted"
         volvalue.innerHTML="volume_off"
+        document.getElementById("volbtns").style.color="red"
+        volvalue.style.color="red"
+        volval.style.color="red"
+        vol.style.accentColor="red"
    }
-    else if ( (volval>0 && volval<=50)){
+    else if ( (volval>0 && volval<=66)){
 
         volval.innerHTML=Math.round((Video.volume)*100);
         volvalue.innerHTML="volume_down"
+        document.getElementById("volbtns").style.color="rgba(0, 255, 191, 1)"
+        volvalue.style.color="rgba(0, 255, 191, 1)"
+        volval.style.color="rgba(0, 255, 191, 1)"
+        vol.style.accentColor="rgba(0, 255, 191, 1)"
     }
    else{
         volval.innerHTML=Math.round((Video.volume)*100)
         vol.value=Math.round((Video.volume)*100)
         volvalue.innerHTML="volume_up"
+        volvalue.style.color="rgba(48, 190, 247, 1)"
+        document.getElementById("volbtns").style.color="rgba(48, 190, 247, 1)"
+        volval.style.color="rgba(48, 190, 247, 1)"
+        vol.style.accentColor="rgba(48, 190, 247, 1)"
    }
 }
 function volpm(vvalue){
@@ -247,13 +279,25 @@ function volpm(vvalue){
     if(volval.innerHTML=="0")
    {
         volvalue.innerHTML="volume_off"
+        document.getElementById("volbtns").style.color="red"
+        volvalue.style.color="red"
+        volval.style.color="red"
+        vol.style.accentColor="red"
    }
-    else if ( (volval.innerHTML>0 && volval.innerHTML<=50)){
+    else if ( (volval.innerHTML>0 && volval.innerHTML<=66)){
 
         volvalue.innerHTML="volume_down"
+        document.getElementById("volbtns").style.color="rgba(0, 255, 191, 1)"
+        volvalue.style.color="rgba(0, 255, 191, 1)"
+        volval.style.color="rgba(0, 255, 191, 1)"
+        vol.style.accentColor="rgba(0, 255, 191, 1)"
     }
    else{
         volvalue.innerHTML="volume_up"
+        volvalue.style.color="rgba(48, 190, 247, 1)"
+        document.getElementById("volbtns").style.color="rgba(48, 190, 247, 1)"
+        volval.style.color="rgba(48, 190, 247, 1)"
+        vol.style.accentColor="rgba(48, 190, 247, 1)"
    }
 
 }
