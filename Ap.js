@@ -1,5 +1,4 @@
 const playbtn=document.querySelector("#play");
-const pausebtn=document.querySelector("#pause");
 const forward=document.querySelector("#forward");
 const back=document.querySelector("#back");
 const audio= document.querySelector("#audio");
@@ -7,7 +6,6 @@ const audiocontainer=document.querySelector("musicdiv");
 const volvalue=document.querySelector("#voln");
 const vol=document.querySelector("#volslider");
 const volval=document.querySelector("#volval")
-const mute=document.querySelector("#mute");
 const currentTimeElement=document.querySelector(".currtime");
 const totalTimeElement=document.querySelector(".totaltime");
 const seekbar=document.querySelector("#progress");
@@ -77,22 +75,21 @@ audio.addEventListener("timeupdate",()=>{
 
 playbtn.addEventListener("click" , togglePlayPause)
 audio.addEventListener("click",togglePlayPause) 
-pausebtn.addEventListener("click",togglePlayPause)
 Eimage.addEventListener("click",togglePlayPause)
 function togglePlayPause(){
     
     if(audio.paused==true)
     {
         audio.play()
-        pausebtn.style.display="block"
-        playbtn.style.display="none"
+        playbtn.innerHTML="pause"
+        playbtn.title="Pause"
         Eimage.setAttribute("src","images/playing.gif");  
         
     }
     else{
         audio.pause()
-        playbtn.style.display="block"
-        pausebtn.style.display="none"
+        playbtn.innerHTML="play_arrow"
+        playbtn.title="Play"
         Eimage.setAttribute("src","images/static music img.jpg");
         
     }   
@@ -101,7 +98,6 @@ function togglePlayPause(){
 /////////////////////////////////////////////////////////////////
 ////////////////////////////// Change Source///////////////
 playbtn.addEventListener("click",changesource)
-pausebtn.addEventListener("click",changesource)
 Eimage.addEventListener("click",changesource)
 
 function changesource(){
@@ -116,39 +112,52 @@ function changesource(){
 }
 /////////////////////////////////////////////////////////////////
 ///////////////////////----Volume----////////////////////////////
-mute.addEventListener("click",toggleMute)
 volvalue.addEventListener("click",toggleMute)
 vol.addEventListener("input",e =>{
     audio.volume=(e.target.value)/100
     audio.muted=e.target.value===0
     volval.innerHTML=Math.round((audio.volume)*100)
-    if(vol.value==0){
-        mute.style.display="block"
-        volvalue.style.display="none"
+    if(vol.value==0 || volval==0){
         volval.innerHTML="Muted"
+        volvalue.innerHTML="volume_off"
+        volvalue.title="Click to Unmute"
+    }
+    else if ( vol.value>0 && vol.value<=66){
 
+        volval.innerHTML=Math.round((audio.volume)*100);
+        volvalue.innerHTML="volume_down"
+        volvalue.title="Click to Mute"
     }
     else{
-        mute.style.display="none"
-        volvalue.style.display="block"
+        
         volval.innerHTML=Math.round((audio.volume)*100);
+        volvalue.innerHTML="volume_up"
+        volvalue.title="Click to Mute"
    }
 })
+
+
 function toggleMute()
 {
    audio.muted=!audio.muted
    if(audio.muted==true || audio.volume==0)
    {
-        mute.style.display="block"
-        volvalue.style.display="none"
         vol.value="0"
         volval.innerHTML="Muted"
+        volvalue.innerHTML="volume_off"
+        volvalue.title="Click to Unmute"
    }
+       else if ( (volval>0 && volval<=66)){
+
+        volval.innerHTML=Math.round((Video.volume)*100);
+        volvalue.innerHTML="volume_down"
+        volvalue.title="Click to Mute"
+    }
    else{
-        mute.style.display="none"
-        volvalue.style.display="block"
         volval.innerHTML=Math.round((audio.volume)*100)
         vol.value=Math.round((audio.volume)*100)
+        volvalue.innerHTML="volume_up"
+        volvalue.title="Click to Mute"
    }
 }
 function volpm(vvalue){
@@ -156,8 +165,25 @@ function volpm(vvalue){
     audio.volume+=vvalue/100
     vol.value=(audio.volume)*100
     volval.innerHTML=(vol.value)
-}
 
+    if(volval.innerHTML=="0")
+   {
+        volvalue.innerHTML="volume_off"
+        volvalue.title="Click to Unmute"
+
+   }
+    else if ( (volval.innerHTML>0 && volval.innerHTML<=66)){
+
+        volvalue.innerHTML="volume_down"
+        volvalue.title="Click to Mute"
+
+    }
+   else{
+        volvalue.innerHTML="volume_up"
+        volvalue.title="Click to Mute"
+   }
+
+}
 /////////////////////////////////////////////////////////////////
 /////////////////--------ProgressBar-----------////////////////////
 

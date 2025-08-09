@@ -187,9 +187,9 @@ hr{
     
 }
 
-#play,#pause,#back,#forward,#voln,#mute,#volval{
+#play,#pause,#back,#forward,#voln,#mute,#volval,#marqueediv{
     float: left;
-    margin:0.3%;
+    margin:2px;
     padding:0.25%;
     cursor: pointer;
     background-color: rgb(45, 168, 255);
@@ -202,7 +202,7 @@ hr{
     align-items: center;
     align-content:center;
     font-weight: bold;
-    width:25px;
+    width:fit-content;
     height:25px;
     
 }
@@ -210,13 +210,6 @@ hr{
     
     border-radius: 50%;
     box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.622);
-}
-#volumectrl{
-    float: right;
-    right:0;
-    padding:0.5%;
-    border-radius: 0 10px 10px 0;
-
 }
 #progress{
     width:80%;
@@ -439,9 +432,9 @@ hr{
         right:0;
         cursor: pointer;
     }
-    #play,#pause,#back,#forward,#voln,#mute,#volval{
+    #play,#pause,#back,#forward,#voln,#volval,#volslider{
         float: left;
-        margin:0.3%;
+        margin:5px;
         padding:0.25%;
         cursor: pointer;
         background-color: rgb(45, 168, 255);
@@ -449,13 +442,19 @@ hr{
         border-radius: 5px;
         text-align: center;
         vertical-align: middle;
-        justify-content: center;
+        justify-content: space-between ;
         justify-items: center;
         align-items: center;
         align-content:center;
         font-weight: bold;
-        width:25px;
+        width:fit-content;
         height:25px;
+    }
+    #volumectrl{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
     }
     #music{
         background-color:transparent ;

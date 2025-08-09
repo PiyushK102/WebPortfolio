@@ -102,21 +102,7 @@
         <div id="music"onclick="changetrack('audio\\Shiv Tandav Strotam.mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname"> Shiv Tandav Strotam</span><span id="emoji">🎵</span></div>
         <div id="music"onclick="changetrack('audio\\Shri Krishna Govind hare Murari.mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname">Shri Krishna Govind Hare Murari</span><span id="emoji">🎵</span> </div>
         <div id="music"onclick="changetrack('audio\\Yada Yada hi dharmasaya.mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname">Yada Yada Hi Dharmasya</span><span id="emoji">🎵</span> </div>
-        <div id="music"onclick="changetrack('audio\\Chandragupta bgm.mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname"> Chandragupta bgm</span><span id="emoji">🎵</span></div>
-        <div id="music"onclick="changetrack('audio\\Flute music of krishna hai vistaar.mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname"> Flute Music of Krishna</span><span id="emoji">🎵</span></div>
-        <div id="music"onclick="changetrack('audio\\Shiv Tandav Strotam.mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname"> Shiv Tandav Strotam</span><span id="emoji">🎵</span></div>
-        <div id="music"onclick="changetrack('audio\\Kaliya naag dance theme.mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname">Kaliya Naag  Dance Theme Song</span><span id="emoji">🎵</span> </div>
         <div id="music"onclick="changetrack('audio\\Mahabali Maharudra (RaagJatt.com).mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname">Mahabali Maharudra</span><span id="emoji">🎵</span> </div>
-        <div id="music"onclick="changetrack('audio\\Shri Krishna Govind hare Murari.mp3')"><span id="LogoM"><img alt="Music Thumb"src="images/musicDome.jpg"></span><span id="audioname">Shri Krishna Govind Hare Murari</span><span id="emoji">🎵</span> </div>
-        <div id="music"onclick="changetrack('audio\\Yada Yada hi dharmasaya.mp3')"><span id="LogoM"><img alt="Music Thumb"src="images/musicDome.jpg"></span><span id="audioname">Yada Yada Hi Dharmasya</span><span id="emoji">🎵</span> </div>
-        <div id="music"onclick="changetrack('audio\\Chandragupta bgm.mp3')"><span id="LogoM"><img alt="Music Thumb"src="images/musicDome.jpg"></span><span id="audioname"> Chandragupta bgm</span><span id="emoji">🎵</span></div>
-        <div id="music"onclick="changetrack('audio\\Flute music of krishna hai vistaar.mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname"> Flute Music of Krishna</span><span id="emoji">🎵</span></div>
-        <div id="music"onclick="changetrack('audio\\Shiv Tandav Strotam.mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname"> Shiv Tandav Strotam</span><span id="emoji">🎵</span></div>
-        <div id="music"onclick="changetrack('audio\\Kaliya naag dance theme.mp3')"><span id="LogoM"><img  alt="Music Thumb"src="images/musicDome.jpg"></span><span id="audioname">Kaliya Naag  Dance Theme Song</span><span id="emoji">🎵</span> </div>
-        <div id="music"onclick="changetrack('audio\\Mahabali Maharudra (RaagJatt.com).mp3')"><span id="LogoM"><img alt="Music Thumb"src="images/musicDome.jpg"></span><span id="audioname">Mahabali Maharudra</span><span id="emoji">🎵</span> </div>
-        <div id="music"onclick="changetrack('audio\\Shri Krishna Govind hare Murari.mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname">Shri Krishna Govind Hare Murari</span><span id="emoji">🎵</span> </div>
-        <div id="music"onclick="changetrack('audio\\Yada Yada hi dharmasaya.mp3')"><span id="LogoM"><img alt="Music Thumb" src="images/musicDome.jpg"></span><span id="audioname">Yada Yada Hi Dharmasya</span><span id="emoji">🎵</span> </div>
-        <div id="music"onclick="changetrack('audio\\Mahabali Maharudra (RaagJatt.com).mp3')"><span id="LogoM"><img alt="Music Thumb"src="images/musicDome.jpg"></span><span id="audioname">Mahabali Maharudra</span><span id="emoji">🎵</span> </div>
       </div>
     </div> <div id="controlscontainer">  
       <input id="progress" min="0" max="100" title="Seek" type="range" steps="any" value="0">
@@ -127,19 +113,13 @@
           <div class="totaltime">00:00</div>
         </div>
         <div id="back" title="Previous Track"><span class="material-symbols-rounded">skip_previous</span></div>
-        <div id="play" style="display:block;" title="Play"><span class="material-symbols-rounded">play_arrow</span></div>
-        <div id="pause" style="display:none;" title="Pause"><span class="material-symbols-rounded">pause</span></div>
+        <div  title="Play"><span id="play" class="material-symbols-rounded">play_arrow</span></div>        
         <div id="forward" title="Next Track"><span class="material-symbols-rounded">skip_next</span></div> 
         <div id="marqueediv"><marquee><div id="musicname">..........</div></marquee></div> 
-        <div id="voln" style="display:block" title="Click to Mute">
-          <span class="material-symbols-rounded">volume_up</span>
-        </div>
-        <div id="mute" style="display:none" title="Click to Unmute">
-          <span class="material-symbols-rounded">volume_off</span>
-        </div>
+        <div title="Click to Mute"><span class="material-symbols-rounded"  id="voln">volume_up</span></div>  
         <div id="volumectrl">
-          <div id="volval" style="width:50px;">100</div>
-          <input type="range" min="0" max="100" steps="any" value="100" id="volslider" title="Volume">  
+          <div id="volval">100</div>
+          <div><input type="range" min="0" max="100" steps="1" value="100" id="volslider" title="Volume"></div>
         </div>
       </div>
     </div>
