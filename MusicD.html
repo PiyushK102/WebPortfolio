@@ -115,13 +115,14 @@
         <div id="back" title="Previous Track"><span class="material-symbols-rounded">skip_previous</span></div>
         <div  title="Play"><span id="play" class="material-symbols-rounded">play_arrow</span></div>        
         <div id="forward" title="Next Track"><span class="material-symbols-rounded">skip_next</span></div> 
-        <div id="marqueediv"><marquee><div id="musicname">..........</div></marquee></div> 
         <div title="Click to Mute"><span class="material-symbols-rounded"  id="voln">volume_up</span></div>  
         <div id="volumectrl">
           <div id="volval">100</div>
-          <div><input type="range" min="0" max="100" steps="1" value="100" id="volslider" title="Volume"></div>
+          <div id="volcontainer"><input type="range" min="0" max="100" steps="1" value="100" id="volslider" title="Volume"></div>
         </div>
       </div>
+      <div id="marqueediv"><marquee><div id="musicname">..........</div></marquee></div> 
+        
     </div>
   
       <audio id="audio">

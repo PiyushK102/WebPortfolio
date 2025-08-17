@@ -80,9 +80,10 @@ hr{
     width:50%;
     height:20vw;
     border-radius: 10px;
-    padding:1.5% 1% 1.5% 1%;
+    padding:1%;
     margin:1%;
     overflow-y: scroll;
+    align-items: center;
 }
 #playlistbutton{
     display: none;
@@ -108,7 +109,8 @@ hr{
     padding:2%;
     align-items: center;
     align-content:space-evenly;
-    width:80%;
+    justify-content: space-between;
+    width:95%;
 }
 #music:hover{
     border-radius: 0px;
@@ -125,22 +127,22 @@ hr{
     height:fit-content;
     align-self: center;
     background-color: rgba(0, 183, 255, 0.5);
-    padding:1.5% 1% 1.5% 1%;
     align-self:center;
     align-items: center;
-    align-content: center;
+    justify-items: center;
     text-align: center;
     vertical-align: middle;
-    border-radius: 20px;
+    border-radius: 10px;
     justify-self: center;
     overflow: hidden;
     margin:1%;
+    padding: 1%;
 }
 #equilizer img{
-    border-radius: 20px;
-    width:40vw;
+    border-radius: 10px;
+    width:100%;
     height:20vw;
-    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.622);
+    aspect-ratio:inherit;
 }
 ::-webkit-scrollbar,::-webkit-scrollbar-track{
     display:none;
@@ -167,12 +169,12 @@ hr{
     vertical-align: middle;
     
 }
-#controls{
-    width:80%;
+#controls,#marqueediv{
+    width:95%;
     margin:0.25%;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 10px 10px 10px 10px;
 }
 #controlscontainer{
@@ -187,7 +189,7 @@ hr{
     
 }
 
-#play,#pause,#back,#forward,#voln,#mute,#volval,#marqueediv{
+#play,#pause,#back,#forward,#voln,#mute,#volval{
     float: left;
     margin:2px;
     padding:0.25%;
@@ -212,7 +214,7 @@ hr{
     box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.622);
 }
 #progress{
-    width:80%;
+    width:70%;
     height:3px;
     margin: 15px;
     cursor: pointer;
@@ -227,7 +229,8 @@ hr{
     width:100px;
     transition: width 150ms ease-in-out;
     cursor: pointer;
-    accent-color: rgb(0, 170, 243);
+    accent-color: rgb(0, 16, 243);
+    background-color: rgb(0, 170, 243);
 
 }
 #musicname{
@@ -270,6 +273,24 @@ hr{
     width:fit-content;
     height:25px;
 }
+#volcontainer{
+    float: right;
+    margin:0.1vw;
+    padding:0.25vw;
+    cursor: pointer;
+    background-color: rgb(45, 168, 255);
+    padding: 7px;
+    border-radius: 5px 10px 10px 5px;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content:center;
+    font-weight: bold;
+    width:fit-content;
+    height:25px;
+}
 #audioname,#LogoM,#emoji{
     margin:3px 5px 3px 5px ;
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0));
@@ -278,12 +299,12 @@ hr{
     width:2em;
     height:2em;  
 }
-@media screen and (max-width:350px){
+@media screen and (max-width:700px){
     #timer{
         border-radius: 5px;
     }
     #marqueediv{
-        width:75%;
+        width:95%;
         height:25px;
     }
     .material-symbols-rounded {
@@ -341,14 +362,7 @@ hr{
         top:0;
         margin-top:4%;
     }
-    #volslider{
-        display: none;
-        width:100px;
-        transition: width 250ms ease-in-out;
-    }
-    #volumectrl:hover  #volslider{
-        display:block;
-    }
+
     #equilizer{
         width:98%;
         height:fit-content;
@@ -392,8 +406,8 @@ hr{
     }
 }
  
-
-@media screen and (min-width:350px) and (max-width:1000px) {
+/* 
+@media screen and (min-width:350px) and (max-width:900px) {
     #musicdiv{
         width:100%;
         height:80vh;
@@ -432,7 +446,7 @@ hr{
         right:0;
         cursor: pointer;
     }
-    #play,#pause,#back,#forward,#voln,#volval,#marqueediv{
+    #play,#pause,#back,#forward,#voln,#volval,#volslider{
         float: left;
         margin:5px;
         padding:0.25%;
@@ -514,5 +528,4 @@ hr{
         background-color: rgba(110, 214, 255, 0.5);
         border-radius: 0 3px 3px 0;
     }
-
-}
+} */
