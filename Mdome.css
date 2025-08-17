@@ -404,6 +404,9 @@ hr{
         position: sticky;
         bottom:0;
     }
+    #volslider{
+        width:50px
+    }
 }
  
 /* 
