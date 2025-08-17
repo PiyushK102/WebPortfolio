@@ -300,6 +300,12 @@ hr{
     height:2em;  
 }
 @media screen and (max-width:700px){
+
+        *{
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+    }
     #timer{
         border-radius: 5px;
     }
@@ -315,15 +321,13 @@ hr{
         'opsz' 10;
         text-align: center;
       }
-    *{
-        font-size: 12px;
-    }
+   
     body{
         text-align: center;
     }
     #musicdiv{
-        width:98%;
-        height:75vh;
+        width:100%;
+        height:90vh;
         background: url(images/musicDbg.jfif);
     }
     ::-webkit-scrollbar,::-webkit-scrollbar-track{
@@ -333,15 +337,14 @@ hr{
     #musicbox{
         display:flex;
         flex-direction: column;
-        height: 75vh;
+        height: 90vh;
     }
     #playlistbox{
         display:none;
         position: absolute;
         margin:1%;
         width:90%;
-        height:40vh;
-        left:5%;
+        height:70vh;
         background-color: rgb(161, 235, 255);
         z-index: 5;
 
@@ -367,14 +370,17 @@ hr{
         width:98%;
         height:fit-content;
         align-self: center;
+        justify-self:flex-end;
         padding:0.5%;
         overflow: hidden;
-        margin:1% 0.5% 1% 0.5% ;
+        margin:5% 1% 5% 1% ;
+        justify-self: center;
+        padding: 0.5%;
     }
     #equilizer img{
         border-radius: 20px;
         width:96vw;
-        height:40vh;
+        height:64.5vh;
     }
     #progress{
         width:95%;
