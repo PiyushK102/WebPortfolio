@@ -251,7 +251,7 @@ function toggleMute()
         volval.style.color="red"
         vol.style.accentColor="red"
    }
-    else if ( (volval>0 && volval<=66)){
+    else if ( (Video.volume>0 && Video.volume<=0.66)){
 
         volval.innerHTML=Math.round((Video.volume)*100);
         volvalue.innerHTML="volume_down"
