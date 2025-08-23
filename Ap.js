@@ -112,7 +112,40 @@ function changesource(){
 }
 /////////////////////////////////////////////////////////////////
 ///////////////////////----Volume----////////////////////////////
+
 volvalue.addEventListener("click",toggleMute)
+
+function toggleMute(){
+
+    audio.muted=!audio.muted
+
+        if(audio.muted==true || audio.volume==0)
+    {
+
+        volvalue.innerHTML="volume_off"
+        volvalue.title="Click to Unmute"
+        volval.innerHTML="0";
+        vol.value="0"
+
+    }
+
+    else if ((audio.volume>0 && audio.volume<=0.66)){
+
+        volval.innerHTML=Math.round((audio.volume)*100);
+        vol.value=Math.round((audio.volume)*100)
+        volvalue.innerHTML="volume_down"
+        volvalue.title="Click to Mute"
+    }
+    else{
+
+        volval.innerHTML=Math.round((audio.volume)*100)
+        vol.value=Math.round((audio.volume)*100)
+        volvalue.innerHTML="volume_up"
+        volvalue.title="Click to Mute" 
+     } 
+    
+    
+}
 vol.addEventListener("input",e =>{
     audio.volume=(e.target.value)/100
     audio.muted=e.target.value===0
@@ -137,29 +170,7 @@ vol.addEventListener("input",e =>{
 })
 
 
-function toggleMute()
-{
-   audio.muted=!audio.muted
-   if(audio.muted==true || audio.volume==0)
-   {
-        vol.value="0"
-        volval.innerHTML="Muted"
-        volvalue.innerHTML="volume_off"
-        volvalue.title="Click to Unmute"
-   }
-       else if ( (volval>0 && volval<=66)){
 
-        volval.innerHTML=Math.round((Video.volume)*100);
-        volvalue.innerHTML="volume_down"
-        volvalue.title="Click to Mute"
-    }
-   else{
-        volval.innerHTML=Math.round((audio.volume)*100)
-        vol.value=Math.round((audio.volume)*100)
-        volvalue.innerHTML="volume_up"
-        volvalue.title="Click to Mute"
-   }
-}
 function volpm(vvalue){
     
     audio.volume+=vvalue/100
@@ -242,7 +253,7 @@ function skip(duration){
 ///////////////////////////////////////////////////////////////////
 ////////////////////////// Playlist Display block none///////////////////
 playlistbutton.addEventListener("hover",()=>{
-    if(window.innerWidth<=1000)
+    if(window.innerWidth<=700)
     {
         playlistbutton.style.display="block"
         musicList.style.display="none"   
@@ -253,7 +264,7 @@ playlistbutton.addEventListener("hover",()=>{
     }
 })
 window.addEventListener("resize",()=>{
-    if(window.innerWidth<=1000){
+    if(window.innerWidth<=700){
         playlistbutton.style.display="block"
         musicList.style.display="none"
     }
@@ -263,7 +274,7 @@ window.addEventListener("resize",()=>{
     }
 })
 document.addEventListener("loaded",()=>{
-    if(window.innerWidth<=1000){
+    if(window.innerWidth<=700){
         playlistbutton.style.display="block"
         musicList.style.display="none"
     }
