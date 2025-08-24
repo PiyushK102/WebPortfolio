@@ -20,22 +20,10 @@ const ham=document.querySelector(".ham")
 const nav=document.querySelector(".navButtons")
 const hamsym=document.querySelector("#hamsym")
 const closebtn=document.querySelector("#close")
-const Social=document.querySelector(".Social")
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-Social.addEventListener("click",()=>{
-    if(document.querySelector("#socialButtons").style.display=="none"){
-        document.querySelector("#socialButtons").style.display="block"
-        document.querySelector("#uparrow").style.display="block"
-        document.querySelector("#downarrow").style.display="none" 
-    }
-    else{
-        document.querySelector("#socialButtons").style.display="none"
-        document.querySelector("#uparrow").style.display="none"
-        document.querySelector("#downarrow").style.display="block" 
-    }
-})
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////-------PlaylistBox Display-------/////////////////////////////////
 function display(element) {
@@ -129,14 +117,14 @@ function togglePlayPause(){
         Video.play()
         playbtn.innerHTML="pause"
         playbtn.title="Pause"
-        playbtn.style.color="red"
+        playbtn.style.color="rgba(255, 255, 255, 1)"
 
     }
     else{
         Video.pause()
         playbtn.innerHTML="play_arrow"
         playbtn.title="Play"
-        playbtn.style.color="rgb(43, 255, 0)"
+        playbtn.style.color="rgba(255, 255, 255, 1)"
     }   
 }
 function controldisplay(btn){

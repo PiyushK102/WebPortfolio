@@ -46,9 +46,9 @@ li{list-style-type:none;margin-top:.08vw}
 .ham{position:sticky;text-align:center;align-self:flex-start;top:0;left:0;padding:1%;width:50px;height:50px}
 #Logo,#controls,#videoname,.ham{padding:1%}
 *{margin:0}
-body{background-color:rgb(236, 236, 236)
+body{background-color:rgb(22, 22, 22)
 }
-.ham{display:flex;justify-content:center;justify-items:center;align-items:center;align-content:center;font-size:12px;background-color:#ebebebb1;border-radius:50%;cursor:pointer;border:2px solid #b1b1b1}
+.ham{display:flex;justify-content:center;justify-items:center;align-items:center;align-content:center;font-size:12px;background-color:#ffffff;border-radius:50%;cursor:pointer;border:2px solid #b1b1b1}
 #divscreen,#playlistbox,#video{display:flex;box-shadow: 0 0 2px 2px grey;object-fit: fill;}
 #header{background-color:#d3d3d3;width:100%;height:6.5vh;top:0;font-size:28px}
 #screendiv{display:flex;flex-direction:row;width:99%;height:86.5vh;z-index:100;padding:.5%;align-items: center;}
@@ -66,9 +66,11 @@ body{background-color:rgb(236, 236, 236)
 ::-webkit-scrollbar{width:10px;border-radius:0 10px 10px 0}
 ::-webkit-scrollbar-thumb{background-color:#00f;border-radius:10px}
 ::-webkit-scrollbar-track{background-color:#8a8a8a;border-radius:0 10px 10px 0}
-#back,#forward,#fullscr,#minip,#mute,#pause,#play_pause,#voln{width:35px;height:25px;cursor:pointer;display: flex;
+#back,#forward,#fullscr,#minip,#mute,#play_pause,#voln{width:25px;height:25px;cursor:pointer;display: flex;
     text-align:center;vertical-align:baseline;overflow:hidden;position:static;padding:3px;color:#ffffff;border-radius: 5px;align-items: center;justify-content: center;
+    border-radius: 50%;
 }
+#play_pause{border: 3px solid rgb(0, 183, 255)}
 #back:active{rotate:-90deg ;}#forward:active{rotate:90deg ;}
 #back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play_pause:hover,#voln:hover{padding:3px;border-radius:50%;}
 #volumectrl{display:flex;flex-direction: row;align-items:center;justify-content:center;justify-items:center;height:25px;padding:5px 5px;border-radius: 5px;color: #fff;}
