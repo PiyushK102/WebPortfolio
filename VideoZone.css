@@ -72,9 +72,12 @@ body{background-color:rgb(236, 236, 236)
 #back:active{rotate:-90deg ;}#forward:active{rotate:90deg ;}
 #back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play_pause:hover,#voln:hover{padding:3px;border-radius:50%;}
 #volumectrl{display:flex;flex-direction: row;align-items:center;justify-content:center;justify-items:center;height:25px;padding:5px 5px;border-radius: 5px;color: #fff;}
-#volslider{display:none;width:100px;transition:450ms ease-in-out;z-index:2;height:10px;accent-color:rgb(255, 255, 0) ; vertical-align: middle;}
+#volslider{-webkit-appearance: none;appearance: none;
+  display:none;width:100px;
+  transition:450ms ease-in-out;z-index:2;height:5px; 
+  vertical-align: middle;border-radius: 5px;}
 #volval{font-size:"12px";color:#ffffff;padding:3px;width:50px;height:25px;text-align:center;vertical-align: middle;display: flex;align-items: center;justify-content: center;}
-#volslider:focus-within,#volumectrl:hover #volslider{display:block;cursor:pointer;background-color:#fff}
+#volslider:focus-within,#volumectrl:hover #volslider{display:block;cursor:pointer;background-color:#fff;}
 #volumectrl:hover{border-radius:25px}
 #progress{width:inherit;height:3px;margin:10px;border-radius:50%;
         animation-name:accentColor;
@@ -112,6 +115,15 @@ border-radius: 10px;
 border: 5px solid; */
 background-color: #00000075;
 }
+.volslider::-webkit-slider-thumb{  
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 10px 0 ;
+  background-color:greenyellow;}
+  
 /* @keyframes border_Animation{
     0%   {border:5px rgb(255, 255, 0) solid;}
     20%  {border:5px rgb(255, 0, 0) solid;  }
