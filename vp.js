@@ -319,7 +319,7 @@ Video.addEventListener("loadeddata",()=>{
 })
 Video.addEventListener("timeupdate",()=>{
     currentTimeElement.textContent=formatDuration(Video.currentTime)
-    seekbar.style.accentColor=`hsl(${(360*(Video.currentTime/(Video.duration)))},${75}%,${50}%)`
+    seekbar.style.accentColor=`hsl(${(300*(Video.currentTime/(Video.duration))+60)},${75}%,${50}%)`
 
     
 })
