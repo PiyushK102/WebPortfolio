@@ -307,7 +307,7 @@ Video.addEventListener("timeupdate",()=>{
     
 seekbar.addEventListener("input",e => {
     Video.currentTime=(e.target.value);
-    seekbar.style.accentColor=`hsl(${(360*(Video.currentTime/(Video.duration)))},${75}%,${50}%)`
+    seekbar.style.accentColor=`hsl(${(300*(Video.currentTime/(Video.duration))+60)},${75}%,${50}%)`
 
 })
 /////////////////////////////////////////////////////////////////////////////////
