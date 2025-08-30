@@ -54,7 +54,7 @@ body{background-color:rgb(22, 22, 22)
 #screendiv{display:flex;flex-direction:row;width:99%;height:86vh;z-index:100;padding:.5%;align-items: center;}
 #divscreen{width:62%;background-color:#000000;overflow:hidden;height:100%;border-radius: 0 0 0 0;justify-content: center;}
 #controls .material-symbols-rounded{font-variation-settings:'FILL' 0,'wght' 700,'GRAD' 0,'opsz' 35;}
-#screen{width:100%;height:100%;object-fit:contain;position:sticky;top:0;bottom:0;left:0;right:0;}
+#screen{width:99%;height:100%;object-fit:contain;position:sticky;top:0;bottom:0;left:0;right:0;}
 #playlistbox{flex-direction:column;width:38%;height:86vh;background-color:transparent;overflow-y:scroll;border-radius: 0 10px 10px 0;}
 #video{flex-direction:row;padding:.5%;align-items:center;align-content:center;justify-content:space-evenly;cursor:pointer;background-color:azure;margin:10px 5px}
 #video:hover{border:2px solid; border-color:red;background-color: rgb(255, 255, 255);border-radius: 10px;color: rgb(0, 0, 0);}
@@ -98,7 +98,7 @@ body{background-color:rgb(22, 22, 22)
         /* background:linear-gradient(90deg,violet,indigo,blue,green,yellow,orange,red ); */
     }
 #progress:hover{height:5px;cursor:pointer;accent-color: rgb(255, 0, 0);}
-#timer{background-color: rgba(0, 0, 0, 0);width: 98%;display:flex;justify-self: center;align-self: center;align-items: center;align-content:center;border-radius:10px;z-index:150;color:#ffffff;height:25px;padding:0.5% 1%;}
+#timer{background-color: rgba(0, 0, 0, 0);width: 98%;display:flex;justify-self: center;align-self: center;align-items: center;align-content:center;border-radius:10px;z-index:150;color:#ffffff;height:25px;padding:0.5% .75%;}
 #video:fullscreen{z-index:3}
 #videoname img{width:30px;height:30px;vertical-align: middle;}
 #controloff{cursor: pointer;padding:5px;transition: all ease-in-out 1s;width:25px;height:25px;color: rgb(255, 255, 255);align-items: center;align-content: center;
@@ -262,6 +262,7 @@ flex-wrap: wrap;
     #controlon,#controloff {font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz'20;transition: all ease-in-out 1s;width:25px;height:25px;color: rgb(255, 255, 255);}
     #controloff {font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz'20;}
     #play_pause{border: 3px solid rgb(0, 183, 255);border-radius: 50%;}
+
 
 
 }
