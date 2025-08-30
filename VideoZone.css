@@ -172,7 +172,7 @@ background-color: #00000075;
 }
 @media screen and (min-width:250px) and (max-width:600px) and (min-height:500px){
     .material-symbols-rounded{font-variation-settings:'FILL' 1,'wght' 700,'GRAD' 0,'opsz' 8;font-size:10px ;text-align:center;vertical-align:baseline;}
-    #back,#forward,#fullscr,#exitfullscr,#minip,#mute,#pause,#play_pause,#voln{width:35px;height:25px;cursor:pointer;text-align:center;vertical-align:baseline;overflow:hidden;position:static;padding:3px;color:#ffffff}
+    #back,#forward,#fullscr,#exitfullscr,#minip,#mute,#pause,#play_pause,#voln{width:35px;height:35px;cursor:pointer;text-align:center;vertical-align:baseline;overflow:hidden;position:static;padding:3px;color:#ffffff}
     #back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play_pause:hover,#voln:hover{border-radius:5px;background-color:transparent;box-shadow:none}
     #volval{font-size:"12px";color:#ffffff;padding:3px;width:50px;height:25px;text-align:center;vertical-align: text-bottom;display: flex;align-items: center;justify-content: center;}
     *{font-size: 10px;text-align: center;vertical-align: middle;}
@@ -252,6 +252,7 @@ background-color: #00000075;
     .socialButtons{width:fit-content;height:fit-content;}
     #controlon,#controloff {font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz'20;transition: all ease-in-out 1s;width:25px;height:25px;color: rgb(255, 255, 255);}
     #controloff {font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz'20;}
+
 
 
 }
