@@ -307,7 +307,8 @@ Video.addEventListener("timeupdate",()=>{
     
 seekbar.addEventListener("input",e => {
     Video.currentTime=(e.target.value);
-    
+    seekbar.style.accentColor=`hsl(${(360*(Video.currentTime/(Video.duration)))},${75}%,${50}%)`
+
 })
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////--------Duration-----------/////////////////////////
@@ -318,6 +319,8 @@ Video.addEventListener("loadeddata",()=>{
 })
 Video.addEventListener("timeupdate",()=>{
     currentTimeElement.textContent=formatDuration(Video.currentTime)
+    seekbar.style.accentColor=`hsl(${(360*(Video.currentTime/(Video.duration)))},${75}%,${50}%)`
+
     
 })
 const leadingZeroFormatter=new Intl.NumberFormat(undefined,{
