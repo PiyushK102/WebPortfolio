@@ -70,7 +70,7 @@ body{background-color:rgb(22, 22, 22)
     text-align:center;vertical-align:baseline;overflow:hidden;position:static;padding:3px;color:#ffffff;border-radius: 5px;align-items: center;justify-content: center;
     border-radius: 50%;
 }
-#play_pause{border: 3px solid rgb(0, 183, 255)}
+#play_pause{border: 3px solid rgb(0, 183, 255); border-radius:50%;}
 #back:active{rotate:-90deg ;}#forward:active{rotate:90deg ;}
 #back:hover,#forward:hover,#fullscr:hover,#exitfullscr:hover,#minip:hover,#mute:hover,#pause:hover,#play_pause:hover,#voln:hover{padding:3px;border-radius:50%;}
 #volumectrl{display:flex;flex-direction: row;align-items:center;justify-content:center;justify-items:center;height:25px;padding:5px 5px;border-radius: 5px;color: #fff;}
@@ -194,7 +194,7 @@ background-color: #00000075;
     .socialButtons,.socialButtons:hover{width:fit-content;height:fit-content;justify-self: anchor-center;}
     #controlon,#controloff {font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz'20;transition: all ease-in-out 1s;width:25px;height:25px;color: rgb(255, 255, 255);}
     #controloff {font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz'20;}
-    #play_pause{border: 3px solid rgb(0, 183, 255)}
+    #play_pause{border: 3px solid rgb(0, 183, 255);border-radius:50%;}
 }
 @media screen and (min-width:500px) and (max-width:990px) and (max-height:500px){
     *{font-size: 10px;text-align: center;vertical-align: middle;}
@@ -216,7 +216,7 @@ background-color: #00000075;
     #controlon,#controloff {font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz'20;transition: all ease-in-out 1s;width:25px;height:25px;color: rgb(255, 255, 255);}
     #controloff {font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz'20;}
     #controls,#controlscontainer{display:flex;width:100%;opacity:1;border:none;padding:5px 0;align-content:center;text-align:center;vertical-align:middle}
-    #play_pause{border: 3px solid rgb(0, 183, 255)}
+    #play_pause{border: 3px solid rgb(0, 183, 255);border-radius:50%;}
 
 }
 @media screen and (min-width:600px) and (max-width:990px)and (min-height:600px) and (max-height:1300px){
@@ -253,10 +253,11 @@ background-color: #00000075;
     .socialButtons{width:fit-content;height:fit-content;}
     #controlon,#controloff {font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz'20;transition: all ease-in-out 1s;width:25px;height:25px;color: rgb(255, 255, 255);}
     #controloff {font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz'20;
-    #play_pause{border: 3px solid rgb(0, 183, 255)}            
+    #play_pause{border: 3px solid rgb(0, 183, 255);border-radius:50%;}            
     }
 
 
 
 }
+
 
