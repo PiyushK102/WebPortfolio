@@ -194,6 +194,7 @@ background-color: #00000075;
     .socialButtons,.socialButtons:hover{width:fit-content;height:fit-content;justify-self: anchor-center;}
     #controlon,#controloff {font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz'20;transition: all ease-in-out 1s;width:25px;height:25px;color: rgb(255, 255, 255);}
     #controloff {font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz'20;}
+    #play_pause{border: 3px solid rgb(0, 183, 255)}
 }
 @media screen and (min-width:500px) and (max-width:990px) and (max-height:500px){
     *{font-size: 10px;text-align: center;vertical-align: middle;}
@@ -215,7 +216,7 @@ background-color: #00000075;
     #controlon,#controloff {font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz'20;transition: all ease-in-out 1s;width:25px;height:25px;color: rgb(255, 255, 255);}
     #controloff {font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz'20;}
     #controls,#controlscontainer{display:flex;width:100%;opacity:1;border:none;padding:5px 0;align-content:center;text-align:center;vertical-align:middle}
-
+    #play_pause{border: 3px solid rgb(0, 183, 255)}
 
 }
 @media screen and (min-width:600px) and (max-width:990px)and (min-height:600px) and (max-height:1300px){
@@ -251,8 +252,11 @@ background-color: #00000075;
     .socialButtons button{width:15em;height:5em;padding:1%;border-radius:20px;font-size:10px;border-color:#383838;background-color:#fff;color:#00f;justify-content: center;}
     .socialButtons{width:fit-content;height:fit-content;}
     #controlon,#controloff {font-variation-settings:'FILL' 1,'wght' 300,'GRAD' 0,'opsz'20;transition: all ease-in-out 1s;width:25px;height:25px;color: rgb(255, 255, 255);}
-    #controloff {font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz'20;}
+    #controloff {font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz'20;
+    #play_pause{border: 3px solid rgb(0, 183, 255)}            
+    }
 
 
 
 }
+
